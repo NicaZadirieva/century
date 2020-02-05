@@ -211,9 +211,9 @@ export default function Main(props){
                <img src="./img/uzef.png" width="330" height="150"/>
                <img src="./img/374544.jpg" width="250" height="90"/>
                <img src="./img/bogomaz-logo.png" width="150" height="150"/>
-               <img src="./img/_olcqEoeag65jRsN.png" width="250" height="73"/>
+               <img src="./img/olcqEoeag65jRsN.png" width="250" height="73"/>
                <img src="./img/a.jpg" width="250" height="148"/>
-               <img src="./img/_001.png" width="195" height="140"/>
+               <img src="./img/001.png" width="195" height="140"/>
                <img src="./img/latkin-logo.jpg" width="250" height="51"/>
             </div>
             

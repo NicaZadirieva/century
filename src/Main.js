@@ -174,14 +174,14 @@ export default function Main(props){
             <h2 className="adva-title title">Преимущества компании <br/>"Новый век агротехнологий"</h2>
             <div className="d-flex flex-column flex-lg-row justify-content-between ">
                <div className="block-adva d-flex flex-row ">
-                   <img src="./img/1.png" class="adva-image"/>
+                   <img src="./img/icon/calendar.png" class="adva-image"/>
                    <div class="adva-text">
                    <p className="adva-title-block">Более 20 лет на рынке</p>
                    <p className="adva-p">Многолетний опыт производства и доставки, начиная с 1998 года</p>
                    </div>
                </div>
                <div className="block-adva d-flex flex-row">
-                   <img src="./img/4.png" class="adva-image"/>
+                   <img src="./img/icon/factory-icon.png" class="adva-image"/>
                    <div class="adva-text">
                    <p className="adva-title-block">Ведущий отечественный производитель</p>
                    <p className="adva-p">Крупнейший отечественный производитель систем капельного орошения NEO-DRIP</p>
@@ -213,7 +213,7 @@ export default function Main(props){
                <img src="./img/bogomaz-logo.png" width="150" height="150"/>
                <img src="./img/olcqEoeag65jRsN.png" width="250" height="73"/>
                <img src="./img/a.jpg" width="250" height="148"/>
-               <img src="./img/001.png" width="195" height="140"/>
+               <img src="./img/icon/melenskiy-icon.png" width="195" height="140"/>
                <img src="./img/latkin-logo.jpg" width="250" height="51"/>
             </div>
             

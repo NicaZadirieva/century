@@ -398,7 +398,7 @@ main {
     background:url("./img/a_002.jpg");
 }
 #calc {
-    background:url("./img/_001.jpg");
+    background:url("./img/assets/calc.jpg");
 }
 .project .info p.big {
     text-transform: uppercase;
@@ -537,7 +537,7 @@ main {
     display:block;
 }
 .calendar-img {
-    background:url("./img/1.png");
+    background:url("./img/icon/calendar.png");
     background-size:cover;
 }
 .archive {

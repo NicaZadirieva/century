@@ -43,7 +43,7 @@
 	    -moz-appearance: none;
 	    -ms-appearance: none;
 	    appearance: none!important;
-        background: url("./img/arrow_btn.png") no-repeat 96% 50%;
+        background: url("./img/icon/arrow-icon.png") no-repeat 96% 50%;
         background-size: 14px;
         background-color: #e5e6ea;
 }
@@ -330,7 +330,7 @@ main {
     height:67px;
 }
 #setka-left {
-    background:url("./img/a.png");
+    background:url("./img/icon/circles-icon.png");
     width:90px;
     height:56px;
 }
@@ -379,7 +379,7 @@ main {
     background:url("./img/GP9Q2319.jpg");
 }
 #cabbage {
-    background:url("./img/a_003.jpg");
+    background:url("./img/assets/cabbage.jpg");
 }
 .project .info {
     bottom:0;
@@ -395,7 +395,7 @@ main {
     margin-bottom: 18px;
 }
 #pitom {
-    background:url("./img/a_002.jpg");
+    background:url("./img/assets/greenfield.jpg");
 }
 #calc {
     background:url("./img/assets/calc.jpg");
@@ -412,7 +412,7 @@ main {
     
 }
 .companies-img {
-    background:url("./img/89.png");
+    background:url("./img/icon/message-icon.png");
 }
 .companies-block-img {
     max-width:1200px;
@@ -431,7 +431,7 @@ main {
 }
 .articles {
     padding-top:120px;
-    background-image:url("./img/artic-bg.png");
+    background-image:url("./img/assets/artic-bg.png");
     background-size:cover;
     padding-bottom:132px;
 }

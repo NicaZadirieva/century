@@ -188,7 +188,7 @@ export default function Main(props){
                    </div>
                </div>
                <div className="block-adva d-flex flex-row">
-                   <img src="./img/6.png" class="adva-image"/>
+                   <img src="./img/icon/wheel-icon.png" class="adva-image"/>
                    <div class="adva-text">
                    <p className="adva-title-block">Полный сервис</p>
                    <p className="adva-p">Мы предоставляем полный сервис по обслуживанию систем капельного орошения</p>
@@ -209,10 +209,10 @@ export default function Main(props){
                <img src="./img/pokr.jpg" width="150" height="147"/>
                <img src="./img/zao.gif" width="211" height="115"/>
                <img src="./img/uzef.png" width="330" height="150"/>
-               <img src="./img/374544.jpg" width="250" height="90"/>
+               <img src="./img/icon/slava_potato-icon.jpg" width="250" height="90"/>
                <img src="./img/bogomaz-logo.png" width="150" height="150"/>
                <img src="./img/olcqEoeag65jRsN.png" width="250" height="73"/>
-               <img src="./img/a.jpg" width="250" height="148"/>
+               <img src="./img/icon/samarskie_ovoshi-icon.jpg" width="250" height="148"/>
                <img src="./img/icon/melenskiy-icon.png" width="195" height="140"/>
                <img src="./img/latkin-logo.jpg" width="250" height="51"/>
             </div>

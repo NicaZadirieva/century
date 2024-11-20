@@ -1,12 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import About from './About';
+import { changeFields, hideForm, sendForm, showForm } from './actions';
+import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
 import Popup from './Popup';
-import Footer from './Footer';
-import About from './About';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import {hideForm, changeFields,showForm, sendForm} from './actions';
 function App(props) {
   return (
     <div className="App">

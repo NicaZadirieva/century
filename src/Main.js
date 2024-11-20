@@ -206,15 +206,15 @@ export default function Main(props){
               </div>
             </div>
             <div className="companies-block-img d-flex flex-row flex-wrap justify-content-around">
-               <img src="./img/pokr.jpg" width="150" height="147"/>
-               <img src="./img/zao.gif" width="211" height="115"/>
-               <img src="./img/uzef.png" width="330" height="150"/>
+               <img src="./img/icon/pokr-logo.jpg" width="150" height="147"/>
+               <img src="./img/icon/biruli.gif" width="211" height="115"/>
+               <img src="./img/icon/uzef-icon2.png" width="330" height="150"/>
                <img src="./img/icon/slava_potato-icon.jpg" width="250" height="90"/>
-               <img src="./img/bogomaz-logo.png" width="150" height="150"/>
-               <img src="./img/olcqEoeag65jRsN.png" width="250" height="73"/>
+               <img src="./img/icon/bogomaz-logo.png" width="150" height="150"/>
+               <img src="./img/icon/putsko-icon.png" width="250" height="73"/>
                <img src="./img/icon/samarskie_ovoshi-icon.jpg" width="250" height="148"/>
                <img src="./img/icon/melenskiy-icon.png" width="195" height="140"/>
-               <img src="./img/latkin-logo.jpg" width="250" height="51"/>
+               <img src="./img/icon/latkin-logo.jpg" width="250" height="51"/>
             </div>
             
             </div>

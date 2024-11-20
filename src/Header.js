@@ -107,7 +107,7 @@ export default function Header(props) {
           
           <div className="trailer position-relative">
                 <video id="video"  height="auto" muted autoplay="autoplay" loop="loop" preload="auto">
-                        <source src="./img/trailer.mp4"></source>
+                        <source src="./img/video/trailer.mp4"></source>
                         
                         </video>
                 <div className="info-trailer">

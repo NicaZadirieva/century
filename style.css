@@ -76,7 +76,7 @@
 .search {
     width:20px;
     height:17px;
-    background:url("./img/search.png");
+    background:url("./img/icon/search-icon-2.png");
 }
 .mobile-header-list {
     text-transform: uppercase;
@@ -131,7 +131,7 @@ main {
 .btn-search {
     width:25px;
     height:19px;
-    background:url("./img/search-btn.png");
+    background:url("./img/icon/search-icon.png");
     margin:0 auto;
 }
 .for_btn {
@@ -150,7 +150,7 @@ main {
     display:inline-block;
     width:17px;
     height:15px;
-    background:url("./img/tick.png");
+    background:url("./img/icon/tick-icon.png");
     margin-right:4px;
 }
 .desk-header-contact, .footer {
@@ -276,14 +276,14 @@ main {
     font-size:12px;
 }
 #drops {
-    background:url("./img/drops.jpg");
+    background:url("./img/assets/big_field.jpg");
 
 }
 #setka {
-    background:url("./img/setka.JPEG");
+    background:url("./img/assets/field_works.JPEG");
 }
 #vegetables {
-    background:url("./img/vegetables.JPG");
+    background:url("./img/assets/thread.JPG");
 }
 .card-site {
     width:420px;
@@ -325,7 +325,7 @@ main {
     margin-bottom:35px;
 }
 #drops-left {
-    background:url("./img/kap.png");
+    background:url("./img/icon/drops-icon.png");
     width:67px;
     height:67px;
 }
@@ -335,7 +335,7 @@ main {
     height:56px;
 }
 #vegetables-left {
-    background:url("./img/ov.png");
+    background:url("./img/icon/wheat-icon.png");
     width:52px;
     height:67px;
 }
@@ -367,16 +367,16 @@ main {
     font-size:12px;
 }
 #salat {
-    background:url("./img/image1.jpg");
+    background:url("./img/assets/cabbages.jpg");
 }
 #lenti {
-    background:url("./img/file1.jpg");
+    background:url("./img/assets/bushes.jpg");
 }
 #raspberry {
-    background:url("./img/IMG_8716_0.JPG");
+    background:url("./img/assets/2_rubles.jpg");
 }
 #carrot {
-    background:url("./img/GP9Q2319.jpg");
+    background:url("./img/assets/carrots.jpg");
 }
 #cabbage {
     background:url("./img/assets/cabbage.jpg");
@@ -405,7 +405,7 @@ main {
     font-weight:bold;
 }
 .more-img {
-    background:url("./img/more.png");
+    background:url("./img/icon/flower-icon.png");
     width:19px;
     height:19px;
     
@@ -425,7 +425,7 @@ main {
     margin-top:80px;
     padding-top:120px;
 
-    background-image:url("./img/review-bg.jpg");
+    background-image:url("./img/assets/review-bg.jpg");
    background-size:cover;
     padding-bottom:132px;
 }
@@ -462,28 +462,28 @@ main {
     width:87px;
     height:87px;
     background-size:cover;
-    background-image:url("./img/zao.gif");
+    background-image:url("./img/icon/biruli.gif");
 }
 .pokr {
     width:87px;
     height:87px;
-    background-image:url("./img/pokr.jpg");
+    background-image:url("./img/icon/pokr-logo.jpg");
     background-size:cover;
 }
 .search-btn {
     width:25px;
     height:19px;
-    background-image:url("./img/search-btn.png");
+    background-image:url("./img/icon/search-icon.png");
 }
 .article-icon {
     width:21px;
     height:21px;
-    background-image:url("./img/article-icon.png");
+    background-image:url("./img/icon/article-icon.png");
 }
 .review {
     max-width:373px;
     height:260px;
-    background-image:url("./img/review-i-bg.png");
+    background-image:url("./img/assets/review-i-bg.png");
     background-color:white;
     padding-left:40px;
     padding-top:44px;
@@ -542,7 +542,7 @@ main {
 }
 .archive {
     
-    background:url("./img/news-bg.jpg");
+    background:url("./img/assets/big_field_bg.jpg");
     background-size:cover;
     padding-top:100px;
     padding-bottom:132px;
@@ -595,13 +595,13 @@ main {
     background-size:cover;
 }
 #insta {
-    background-image:url("./img/inst.png");
+    background-image:url("./img/icon/inst-icon.png");
 }
 #vk {
-    background-image:url("./img/vk.png");
+    background-image:url("./img/icon/vk-icon.png");
 }
 #ut {
-    background-image:url("./img/ut.png");
+    background-image:url("./img/icon/youtube-icon.png");
 }
 .btn-archive {
     width:136px;
@@ -614,7 +614,7 @@ main {
     text-transform: uppercase; 
 }
 .contact-img {
-    background:url("./img/phone-book-icon.png");
+    background:url("./img/icon/phone_book-icon.png");
 }
 .container-btn {
     margin-left: 32px;
@@ -632,7 +632,7 @@ main {
     margin-top: 40px;
 }
 .img-right-contact {
-    background:url("./img/articles-bg.jpg") no-repeat center center/contain;
+    background:url("./img/assets/articles-bg.jpg") no-repeat center center/contain;
     height:410px;
     margin-top: 88px;
 }

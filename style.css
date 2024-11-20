@@ -71,7 +71,7 @@
 .logo {
     width:67px;
     height:47px;
-    background:url("./img/logo.jpg");
+    background:url("./img/logo/logo.jpg");
 }
 .search {
     width:20px;
@@ -462,12 +462,12 @@ main {
     width:87px;
     height:87px;
     background-size:cover;
-    background-image:url("./img/icon/biruli.gif");
+    background-image:url("./img/logo/biruli.gif");
 }
 .pokr {
     width:87px;
     height:87px;
-    background-image:url("./img/icon/pokr-logo.jpg");
+    background-image:url("./img/logo/pokr-logo/logo.jpg");
     background-size:cover;
 }
 .search-btn {

@@ -1,7 +1,9 @@
-import React from "react";
-export default function Header(props) {
+import { HeaderProps } from './Header.props';
+
+export default function Header(props: HeaderProps) {
   function showForm() {
     props.showForm({
+      /**Здесь должны быть ref */
       form: document.forms["form-contact"],
       popup: document.querySelector(".popup"),
     });

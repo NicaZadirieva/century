@@ -1,11 +1,6 @@
 
 /** NB! popup используется в Main, state.js, Header*/
 
-
-.hamburger-line:nth-child(n + 2) {
-    margin-top:4px;
-}
-
 /* Main + Header + Footer **/
 .desk {
     display:none;
@@ -28,23 +23,8 @@
 
 
 
-.hamburger, .hamburger-menu {
-    padding:5px;
-   
-}
-#video {
-    max-width:100%;
-}
-.hamburger-menu .hamburger-line {
-    width:15px;
-}
-.hamburger-menu {
-    margin-right:11px;
-}
-.hamburger:hover {
-    background:#dddddd;
-    
-}
+
+
 main {
     position:relative;
     top:-6px;

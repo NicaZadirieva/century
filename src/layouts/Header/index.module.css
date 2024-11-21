@@ -1,12 +1,27 @@
-.hamburger-line {
-    background-color: #24aa17;
-    width: 25px;
-    height: 3px;
+.hamburger-menu {
+    margin-right: 11px;
+}
+
+.hamburger:hover {
+    background: #dddddd;
 
 }
 
-.desk-header-contact {
-    display: none;
+.hamburger,
+.hamburger-menu {
+    padding: 5px;
+
+}
+
+
+.hamburger-line {
+    background-color: #24aa17;
+    width: 15px; /*TODO: check 25px*/
+    height: 3px;
+
+}
+.hamburger-line:nth-child(n + 2) {
+    margin-top: 4px;
 }
 
 .mobile-header {
@@ -21,12 +36,10 @@
     padding: 30px;
     display: none;
 }
-
 .mobile-header-list ul,
 .desk-header-contact-list {
     list-style-type: none;
 }
-
 .mobile-header-list a {
     text-decoration: none;
     color: black;
@@ -36,5 +49,13 @@
     width: 20px;
     height: 17px;
     background: url("./img/icon/search-icon-2.png");
+}
+
+.desk-header-contact {
+    display: none;
+}
+
+#video {
+    max-width: 100%;
 }
 

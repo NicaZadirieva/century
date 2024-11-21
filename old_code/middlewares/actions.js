@@ -1,4 +1,4 @@
-import { get_promises } from "./api";
+import { get_promises } from "../api";
 export function hideForm(payload) {
   return {
     type: "HIDING_FORM",

@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "old_code/middlewares/actions.js", "old_code/middlewares", "old_code/api.js"]
 }

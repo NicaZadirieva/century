@@ -1,4 +1,6 @@
 import React from "react";
+
+/**Перенести на уровень страницы. Это не компонент утильный. Встречается 1 раз. */
 export default function About(props) {
   return (
     <div className="about d-flex flex-row justify-content-between">

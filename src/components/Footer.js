@@ -1,5 +1,6 @@
 import React from "react";
-export default function Footer(props) {
+
+export default function Footer() {
   return (
     <div className="footer d-flex flex-row justify-content-between">
       <div className="company d-lg-flex flex-row desk">

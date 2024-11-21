@@ -1,6 +1,6 @@
 main {
     position: relative;
-    top: -6px;
+    top: 0;
 }
 
 /*TODO: попробовать хотя бы переименовать*/
@@ -43,7 +43,12 @@ main {
     top: 0;
     right: 0;
     border-radius: 0 0 0 100%;
+}
 
+.img-left {
+    position: absolute;
+    top: 58px;
+    left: 40px;
 }
 
 main {
@@ -69,11 +74,7 @@ main {
     left: 40px;
 }
 
-.img-left {
-    position: absolute;
-    top: 58px;
-    left: 40px;
-}
+
 
 #drops-left {
     background: url("./img/icon/drops-icon.png");
@@ -91,4 +92,226 @@ main {
     background: url("./img/icon/wheat-icon.png");
     width: 52px;
     height: 67px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.project {
+    width: 280px;
+    height: 280px;
+
+}
+
+.small-project-p {
+    font-size: 12px;
+}
+
+#salat {
+    background: url("./img/assets/cabbages.jpg");
+}
+
+#lenti {
+    background: url("./img/assets/bushes.jpg");
+}
+
+#raspberry {
+    background: url("./img/assets/2_rubles.jpg");
+}
+
+#carrot {
+    background: url("./img/assets/carrots.jpg");
+}
+
+#cabbage {
+    background: url("./img/assets/cabbage.jpg");
+}
+
+.projects-container {
+    align-items: center;
+    flex-direction: column;
+}
+
+.project {
+    margin-bottom: 18px;
+}
+
+.project .info {
+    bottom: 0;
+    color: white;
+    padding: 13px 20px;
+}
+
+/* TODO: Перенести в классы + ввести appearance=big/small*/
+.project .info p.big {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#pitom {
+    background: url("./img/assets/greenfield.jpg");
+}
+
+#calc {
+    background: url("./img/assets/calc.jpg");
+}
+
+.more-img {
+    background: url("./img/icon/flower-icon.png");
+    width: 19px;
+    height: 19px;
+
+
+}
+
+.companies-img {
+    background: url("./img/icon/message-icon.png");
+}
+
+.companies-block-img {
+    max-width: 1200px;
+}
+
+.companies-block-img img {
+    margin-right: 50px;
+    margin-bottom: 70px;
+}
+
+.reviews {
+    margin-top: 80px;
+    padding-top: 120px;
+
+    background-image: url("./img/assets/review-bg.jpg");
+    background-size: cover;
+    padding-bottom: 132px;
+}
+
+.articles {
+    padding-top: 120px;
+    background-image: url("./img/assets/artic-bg.png");
+    background-size: cover;
+    padding-bottom: 132px;
+}
+
+.articles-title {
+    margin-bottom: 45px;
+}
+
+.articles-title + p {
+    margin-bottom: 22px;
+}
+
+.articles-info {
+    max-width: 100%;
+    font-size: 14px;
+}
+
+.review-title {
+    margin-left: 33px;
+}
+
+.btn-review:first-child {
+    margin-right: 42px;
+}
+
+.review .info p {
+    height: 75px;
+}
+
+.who {
+    margin-bottom: 10px;
+    height: 87px;
+}
+
+.zao {
+    width: 87px;
+    height: 87px;
+    background-size: cover;
+    background-image: url("./img/logo/biruli.gif");
+}
+
+.pokr {
+    width: 87px;
+    height: 87px;
+    background-image: url("./img/logo/pokr-logo/logo.jpg");
+    background-size: cover;
+}
+
+.search-btn {
+    width: 25px;
+    height: 19px;
+    background-image: url("./img/icon/search-icon.png");
+}
+
+.article-icon {
+    width: 21px;
+    height: 21px;
+    background-image: url("./img/icon/article-icon.png");
+}
+
+.review {
+    max-width: 373px;
+    height: 260px;
+    background-image: url("./img/assets/review-i-bg.png");
+    background-color: white;
+    padding-left: 40px;
+    padding-top: 44px;
+    padding-bottom: 20px;
+}
+
+.btn-review * {
+    display: inline-block;
+}
+
+.btn-more p {
+    text-transform: uppercase;
+    color: #24aa17;
+    border-bottom: 1px solid #24aa17;
+    padding-bottom: 1px;
+    margin-left: 13px;
+}
+
+.adva-text {
+    margin-left: 20px;
+}
+
+.advantages {
+    margin-top: 214px;
+    max-width: 1200px;
+}
+
+.adva-title {
+    margin-bottom: 70px;
+}
+
+.block-adva {
+    width: 324px;
+
+}
+
+.companies {
+    margin-top: 248px;
+}
+
+.adva-image {
+    width: 54px;
+    height: 52px;
+}
+
+.adva-title-block {
+    font-weight: bold;
+}
+
+.block-adva {
+    font-size: 13px;
+
+}
+
+.review {
+    display: none;
+}
+
+.showInMobile {
+    display: block;
 }

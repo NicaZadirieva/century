@@ -89,6 +89,7 @@ function reducer(state, action) {
       document.querySelector(".popup-container").style.display = "block";
       current = "contact";
       document.body.style.overflow = "hidden";
+      /**TODO: подумать как перевести на react-router-dom */
       window.history.pushState(1, "title", "./contact");
       return { ...state, ...{ opened, current } };
     }

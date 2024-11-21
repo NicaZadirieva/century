@@ -1,0 +1,70 @@
+.popup {
+    max-width: 470px;
+    min-height: 203px;
+    background: white;
+    position: relative;
+
+    left: 0;
+}
+
+.popup {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.popup input {
+    margin-bottom: 15px;
+}
+
+.popup input,
+.popup select,
+.popup textarea {
+    width: 100%;
+
+}
+
+.popup input,
+.popup select {
+    height: 40px;
+}
+
+.popup input,
+.popup select,
+.popup textarea {
+    background: #e5e6ea;
+    border: none;
+    padding-left: 16px;
+}
+
+.popup input,
+.popup textarea {
+    color: rgb(71, 71, 72);
+}
+
+.popup select {
+    color: black;
+    margin-bottom: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none !important;
+    background: url("./img/icon/arrow-icon.png") no-repeat 96% 50%;
+    background-size: 14px;
+    background-color: #e5e6ea;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    z-index: 1050;
+    margin: 0;
+    padding: 0;
+
+}

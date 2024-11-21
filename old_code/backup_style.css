@@ -1,69 +1,12 @@
-.hamburger-line {
-    background-color:#24aa17;
-    width:25px;
-    height:3px;
-    
-}
 
-.popup {
-    max-width:470px;
-    min-height:203px;
-    background:white;
-    position:relative;
-    
-    left:0;
-}
-.popup {
-    padding-left:21px;
-    padding-right:21px;
-}
-.popup input {
-    margin-bottom:15px;
-}
-.popup input, .popup select ,.popup textarea{
-    width:100%;
-    
-}
-.popup input, .popup select {
-    height:40px;
-}
-.popup input, .popup select ,.popup textarea{
-    background:#e5e6ea;
-    border:none;
-    padding-left:16px;
-}
+/** NB! popup используется в Main, state.js, Header*/
 
-.popup input, .popup textarea {
-    color:rgb(71,71,72);
-}
-.popup select {
-    color:black;
-    margin-bottom:30px;
-    -webkit-appearance: none;
-	    -moz-appearance: none;
-	    -ms-appearance: none;
-	    appearance: none!important;
-        background: url("./img/icon/arrow-icon.png") no-repeat 96% 50%;
-        background-size: 14px;
-        background-color: #e5e6ea;
-}
-.popup-container {
-    display:none;
-    position: fixed; /* фиксированное положение */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5); /* цвет фона */
-    z-index: 1050;
-    margin: 0;
-    padding: 0;
-    
-}
 
 .hamburger-line:nth-child(n + 2) {
     margin-top:4px;
 }
+
+/* Main + Header + Footer **/
 .desk {
     display:none;
 
@@ -73,40 +16,18 @@
     height:47px;
     background:url("./img/logo/logo.jpg");
 }
-.search {
-    width:20px;
-    height:17px;
-    background:url("./img/icon/search-icon-2.png");
-}
-.mobile-header-list {
-    text-transform: uppercase;
-    background:white;
-    color:black;
-    padding:30px;
-    display:none;
-}
+
+/** Footer + Header */
 .tel, .site {
     color:#24aa17;
 }
 .tel-block p, .site-block p {
     font-size:10px;
 }
-.mobile-header-list ul,.desk-header-contact-list {
-    list-style-type: none;
-}
-.mobile-header-list a {
-    text-decoration: none;
-    color:black;
-}
-body {
-    font-family:"Open Sans";
-    font-size:15px;
-}
 
-.mobile-header {
-    background:#f5f6f8;
-    height:68px;
-}
+
+
+
 .hamburger, .hamburger-menu {
     padding:5px;
    
@@ -140,12 +61,8 @@ main {
    border-left:1px solid #e5e5e5;
    border-right:1px solid #e5e5e5;
 }
-.mobile-header {
-    display:flex;
-}
-.desk-header-contact {
-    display:none;
-}
+
+/*Header + Footer*/
 .tick {
     display:inline-block;
     width:17px;

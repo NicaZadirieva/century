@@ -1,0 +1,40 @@
+.hamburger-line {
+    background-color: #24aa17;
+    width: 25px;
+    height: 3px;
+
+}
+
+.desk-header-contact {
+    display: none;
+}
+
+.mobile-header {
+    display: flex;
+    background: #f5f6f8;
+    height: 68px;
+}
+.mobile-header-list {
+    text-transform: uppercase;
+    background: white;
+    color: black;
+    padding: 30px;
+    display: none;
+}
+
+.mobile-header-list ul,
+.desk-header-contact-list {
+    list-style-type: none;
+}
+
+.mobile-header-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.search {
+    width: 20px;
+    height: 17px;
+    background: url("./img/icon/search-icon-2.png");
+}
+

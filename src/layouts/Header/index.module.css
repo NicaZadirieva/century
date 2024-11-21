@@ -4,20 +4,17 @@
 
 .hamburger:hover {
     background: #dddddd;
-
 }
 
 .hamburger,
 .hamburger-menu {
     padding: 5px;
-
 }
 
 .hamburger-line {
     background-color: #24aa17;
     width: 15px; /*TODO: check 25px*/
     height: 3px;
-
 }
 
 .hamburger-line:nth-child(n + 2) {
@@ -101,7 +98,6 @@
 
 .desk-header-menu li {
     padding-top: 25px;
-
 }
 
 .desk-header-menu li:first-child {
@@ -145,7 +141,6 @@
 
 .info-trailer {
     position: absolute;
-
     color: white;
     top: 0;
     left: 0;

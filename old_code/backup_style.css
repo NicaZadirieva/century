@@ -21,27 +21,6 @@
 }
 
 
-
-
-
-
-main {
-    position:relative;
-    top:-6px;
-}
-.btn-search {
-    width:25px;
-    height:19px;
-    background:url("./img/icon/search-icon.png");
-    margin:0 auto;
-}
-.for_btn {
-   width:100px;
-   padding-top:25px;
-   border-left:1px solid #e5e5e5;
-   border-right:1px solid #e5e5e5;
-}
-
 /*Header + Footer*/
 .tick {
     display:inline-block;
@@ -50,7 +29,7 @@ main {
     background:url("./img/icon/tick-icon.png");
     margin-right:4px;
 }
-.desk-header-contact, .footer {
+.desk-header-contact {
     background:#f5f6f8;
     height:120px;
     padding-left:64px;
@@ -59,6 +38,7 @@ main {
     border-bottom:1px solid #e5e5e5;
     
 }
+/*Popup + Header + Main*/
 .btn {
     background:#24aa17 !important;
     height:50px;
@@ -67,93 +47,17 @@ main {
     border-radius:0px;
     
 }
-.btn-contact {
 
-    height:37px !important;
-    width:132px !important;
-    position:relative;
-    left:30%;
-    top:-5px;
-}
-.exit {
-    float:right;
-    font-size:20px;
-    font-weight: bold;
-    margin-right:-11px;
-}
-.clearfix {
-    clear:both;
-}
+/*Header + Footer*/
 .logo-title {
     color:#24aa17;
     margin-top:20px;
     margin-left:26px;
 }
-.desk-header-menu a, .desk-header-menu{
-    color:black;
-}
-.desk-header-menu ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-}
-.desk-header-menu a {
-    text-decoration:none;
 
-}
-.desk-header-menu {
-    padding-left:44px;
-    padding-right:64px;
-}
-.desk-header-menu ul {
-    width:100%;
-    padding-right:115px;
-    
-}
-.desk-header-menu li {
-    padding-top:25px;
-   
-}
 
-.desk-header-menu li:first-child {
-    padding-left:32px;
-}
-.btn-menu {
-    padding-top:25px;
-    border-left:1px solid #e5e5e5;
-    border-right:1px solid #e5e5e5;
-    padding-left:20px;
-    padding-right:20px;
-    padding-bottom:25px;
-}
-.desk-menu {
-    text-transform: uppercase;
-    font-size:10px;
-    opacity:0;
-}
 
-.desk-header-menu {
-    border-bottom:1px solid #e5e5e5;
-    text-transform: uppercase;
-    font-size:14px;
-    
-}
-.desk-menu ul {
-    list-style-type:none;
-    margin-left:44px;
-    padding:0;
-    background-color:white;
-}
-.desk-menu li {
-    padding:20px;
-}
-.desk-menu a {
-    color:black;
-    text-decoration: none;
-}
-.btn-menu:hover {
-    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .2);
-}
+
 
 
 

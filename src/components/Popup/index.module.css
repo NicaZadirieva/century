@@ -68,3 +68,22 @@
     padding: 0;
 
 }
+
+.btn-contact {
+    height: 37px !important;
+    width: 132px !important;
+    position: relative;
+    left: 30%;
+    top: -5px;
+}
+
+.exit {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: -11px;
+}
+
+.clearfix {
+    clear: both;
+}

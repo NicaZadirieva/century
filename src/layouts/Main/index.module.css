@@ -2,3 +2,93 @@ main {
     position: relative;
     top: -6px;
 }
+
+/*TODO: попробовать хотя бы переименовать*/
+#drops {
+    background: url("./img/assets/big_field.jpg");
+}
+
+#setka {
+    background: url("./img/assets/field_works.JPEG");
+}
+
+#vegetables {
+    background: url("./img/assets/thread.JPG");
+}
+
+
+.card-site {
+    width: 420px;
+    height: 240px;
+}
+
+.card-site p {
+    position: absolute;
+    top: 160px;
+    left: 30px;
+}
+
+.card-site p a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #24aa17;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+.img-right {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+
+}
+
+main {
+    background: white;
+
+
+}
+
+.card-sites {
+    flex-direction: column;
+}
+
+.card-site {
+    background: white;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, .2);
+    margin-bottom: 35px;
+    top: -8px;
+}
+
+.card-site p {
+    position: absolute;
+    top: 154px;
+    left: 40px;
+}
+
+.img-left {
+    position: absolute;
+    top: 58px;
+    left: 40px;
+}
+
+#drops-left {
+    background: url("./img/icon/drops-icon.png");
+    width: 67px;
+    height: 67px;
+}
+
+#setka-left {
+    background: url("./img/icon/circles-icon.png");
+    width: 90px;
+    height: 56px;
+}
+
+#vegetables-left {
+    background: url("./img/icon/wheat-icon.png");
+    width: 52px;
+    height: 67px;
+}

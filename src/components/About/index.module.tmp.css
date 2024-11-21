@@ -1,0 +1,10 @@
+.about {
+    color: #77767b;
+    background: #f5f6f8;
+    padding-top: 16px;
+}
+
+.about a {
+    text-decoration: none;
+    border-bottom: 1px solid #77767b;
+}

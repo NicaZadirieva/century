@@ -1,9 +1,27 @@
 .footer {
     background: #f5f6f8;
-    height: 120px;
-    padding-left: 64px;
-    padding-right: 64px;
+    color: #77767b;
+    height: 164px; /*TODO: проверить 120px*/
+    padding-left: 0; /*TODO: проверить 64px*/
+    padding-right: 0; /*TODO: проверить 64px*/
     padding-top: 16px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 2px solid rgba(119, 118, 123, 50%); /*TODO: проверить 1px solid #e5e5e5*/
+}
 
+.social-btn {
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+}
+/*TODO: переделать в img. А то как-то коряво*/
+#insta {
+    background-image: url("./img/icon/inst-icon.png");
+}
+
+#vk {
+    background-image: url("./img/icon/vk-icon.png");
+}
+
+#ut {
+    background-image: url("./img/icon/youtube-icon.png");
 }

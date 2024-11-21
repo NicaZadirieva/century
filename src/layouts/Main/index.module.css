@@ -315,3 +315,80 @@ main {
 .showInMobile {
     display: block;
 }
+
+.calendar-img {
+    background: url("./img/icon/calendar.png");
+    background-size: cover;
+}
+
+.archive {
+    background: url("./img/assets/big_field_bg.jpg");
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 132px;
+}
+
+.archive-date {
+    color: #87d07f;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.archive-date-month * {
+    display: inline-block;
+}
+
+.archive-block {
+    background: white;
+    max-width: 100%;
+    height: 444px;
+    padding: 36px 12px;
+    margin-bottom: 60px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+
+.archive-about {
+    color: #9b9a9e;
+    margin-bottom: 60px;
+}
+
+.month {
+    margin-left: 6px;
+}
+
+.btn-archive {
+    width: 136px;
+    height: 37px;
+    text-align: center;
+    padding: 15px 25px;
+    background: #e4e5e9;
+    color: #9b9a9e;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*TODO: найти похожие конструкции background: url и переделать на img*/
+.contact-img {
+    background: url("./img/icon/phone_book-icon.png");
+}
+
+.container-btn {
+    margin-left: 32px;
+    padding-top: 6px;
+
+}
+
+.contact-btns {
+    margin-top: 40px;
+}
+
+.contact_with_us-title {
+    margin-bottom: 40px;
+}
+
+.img-right-contact {
+    background: url("./img/assets/articles-bg.jpg") no-repeat center center/contain;
+    height: 410px;
+    margin-top: 88px;
+}

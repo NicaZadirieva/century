@@ -3,8 +3,8 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import About from "./About";
 import { changeFields, hideForm, sendForm, showForm } from "./actions";
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from "../layouts/Footer";
+import Header from "../layouts/Header";
 import Main from "./Main";
 import Popup from "./Popup";
 function App(props) {

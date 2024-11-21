@@ -53,8 +53,6 @@ main {
 
 main {
     background: white;
-
-
 }
 
 .card-sites {
@@ -73,8 +71,6 @@ main {
     top: 154px;
     left: 40px;
 }
-
-
 
 #drops-left {
     background: url("./img/icon/drops-icon.png");
@@ -101,7 +97,6 @@ main {
 .project {
     width: 280px;
     height: 280px;
-
 }
 
 .small-project-p {
@@ -161,8 +156,6 @@ main {
     background: url("./img/icon/flower-icon.png");
     width: 19px;
     height: 19px;
-
-
 }
 
 .companies-img {
@@ -181,7 +174,6 @@ main {
 .reviews {
     margin-top: 80px;
     padding-top: 120px;
-
     background-image: url("./img/assets/review-bg.jpg");
     background-size: cover;
     padding-bottom: 132px;
@@ -305,7 +297,6 @@ main {
 
 .block-adva {
     font-size: 13px;
-
 }
 
 .review {
@@ -376,7 +367,6 @@ main {
 .container-btn {
     margin-left: 32px;
     padding-top: 6px;
-
 }
 
 .contact-btns {

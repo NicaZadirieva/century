@@ -1,3 +1,6 @@
+import CardSite from '../../components/CardSite';
+import Project from '../../components/Project';
+
 export default function Main(props) {
   function showForm() {
     props.showForm({
@@ -11,124 +14,41 @@ export default function Main(props) {
         {/**CardSites */}
         <div className="cards-sites d-flex flex-wrap">
           {/**CardSite */}
-          <div className="card-site position-relative">
-            {/*Возможно этой блок лучше перевести на img*/}
-            <div className="img-right" id="drops"></div>
-            <div className="img-left" id="drops-left"></div>
-            {/**Paragraph */}
-            <p className="first-p">
-              <a href="#">Капельное орошение</a>
-            </p>
-          </div>
-          <div className="card-site position-relative">
-            <div className="img-right" id="setka"></div>
-            <div className="img-left" id="setka-left"></div>
-            {/**Paragraph */}
-            <p className="second-p">
-              <a href="#">Сетка сеновязальная</a>
-            </p>
-          </div>
-          <div className="card-site position-relative">
-            <div className="img-right" id="vegetables"></div>
-            <div className="img-left" id="vegetables-left"></div>
-            {/**Paragraph */}
-            <p className="third-p">
-              <a href="#">Упаковка для овощных культур</a>
-            </p>
-          </div>
+          {/**first-p, second-p, third-p */}
+          <CardSite imgLeft='drops-left' imgRight='drops'
+          title='Капельное орошение'/>
+          
+          <CardSite imgLeft='setka-left' imgRight='setka'
+          title='Сетка сеновязальная'/>
+
+          <CardSite imgLeft='vegetables-left' imgRight='vegetables'
+          title='Упаковка для овощных культур'/>
         </div>
+
         {/**Projects */}
         <div className="projects d-flex flex-column">
           {/**Title */}
           <h2 className="projects-title title">
             Реализованные проекты систем капельного орошения
           </h2>
-          {/** Сделать массив */}
+          {/** TODO: Сделать массив */}
           <div className="projects-container d-flex order-1 order-md-2">
             {/** Project */}
-            <div className="project position-relative" id="salat">
-              <div className="info position-absolute">
-                <p>Капельный полив салата в ЦФО</p>
-                <div className="d-flex flex-row justify-content-between">
-                  <div className="seen">
-                    <div className="seen-image"></div>
-                    <span>14</span>
-                  </div>
-                  <div className="date">06.09.2019</div>
-                  <div className="liked">
-                    <div className="liked-image"></div>
-                    <span>0</span>
-                  </div>
-                  <div className="disliked">
-                    <div className="disliked-image"></div>
-                    <span>0</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Project imageId='salat' description='Капельный полив салата в ЦФО'
+            likedCounter={0} dislikedCounter={0} dateCreated='06.09.2019'
+            seenCount={14}/>
             {/** Project */}
-            <div className="project position-relative" id="raspberry">
-              <div className="info position-absolute">
-                <p>Капельный полив малины в ЦФО</p>
-                <div className="d-flex flex-row justify-content-between">
-                  <div className="seen">
-                    <div className="seen-image"></div>
-                    <span>50</span>
-                  </div>
-                  <div className="date">31.05.2019</div>
-                  <div className="liked">
-                    <div className="liked-image"></div>
-                    <span>0</span>
-                  </div>
-                  <div className="disliked">
-                    <div className="disliked-image"></div>
-                    <span>0</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Project imageId='raspberry' description='Капельный полив малины в ЦФО'
+            likedCounter={0} dislikedCounter={0} dateCreated='31.05.2019'
+            seenCount={50}/>
             {/** Project */}
-            <div className="project position-relative" id="carrot">
-              <div className="info position-absolute">
-                <p>Капельный полив моркови в Казахстане</p>
-                <div className="d-flex flex-row justify-content-between">
-                  <div className="seen">
-                    <div className="seen-image"></div>
-                    <span>44</span>
-                  </div>
-                  <div className="date">30.04.2019</div>
-                  <div className="liked">
-                    <div className="liked-image"></div>
-                    <span>0</span>
-                  </div>
-                  <div className="disliked">
-                    <div className="disliked-image"></div>
-                    <span>0</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Project imageId='carrot' description='Капельный полив моркови в Казахстане'
+            likedCounter={0} dislikedCounter={0} dateCreated='30.04.2019'
+            seenCount={44}/>
             {/** Project */}
-            <div className="project position-relative" id="cabbage">
-              <div className="info position-absolute">
-                <p>Капельный полив капусты в ПФО</p>
-                <div className="d-flex flex-row justify-content-between">
-                  <div className="seen">
-                    <div className="seen-image"></div>
-                    <span>34</span>
-                  </div>
-                  <div className="date">26.04.2019</div>
-                  <div className="liked">
-                    <div className="liked-image"></div>
-                    <span>0</span>
-                  </div>
-                  <div className="disliked">
-                    <div className="disliked-image"></div>
-                    <span>0</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Project imageId='cabbage' description='Капельный полив капусты в ПФО'
+            likedCounter={0} dislikedCounter={0} dateCreated='26.04.2019'
+            seenCount={34}/>
           </div>
           {/** Projects maxCounter=4. if maxCounter < length => show this*/}
           <div className="btn-more d-flex align-self-md-end align-self-sm-start flex-row order-2 order-md-1">

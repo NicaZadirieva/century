@@ -1,3 +1,5 @@
+import Advantage from '../../components/Advantage';
+import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
 import Project from '../../components/Project';
 
@@ -64,65 +66,75 @@ export default function Main(props) {
           </h2>
           <div className="d-flex flex-column flex-lg-row justify-content-between ">
             {/**Advantage */}
-            <div className="block-adva d-flex flex-row ">
-              <img src="./img/icon/calendar.png" class="adva-image" />
-              <div class="adva-text">
-                <p className="adva-title-block">Более 20 лет на рынке</p>
-                <p className="adva-p">
-                  Многолетний опыт производства и доставки, начиная с 1998 года
-                </p>
-              </div>
-            </div>
+            <Advantage imagePath='./img/icon/calendar.png'
+            title='Более 20 лет на рынке'
+            description='Многолетний опыт производства и доставки, начиная с 1998 года'
+            />
             {/**Advantage */}
-            <div className="block-adva d-flex flex-row">
-              <img src="./img/icon/factory-icon.png" class="adva-image" />
-              <div class="adva-text">
-                <p className="adva-title-block">
-                  Ведущий отечественный производитель
-                </p>
-                <p className="adva-p">
-                  Крупнейший отечественный производитель систем капельного
-                  орошения NEO-DRIP
-                </p>
-              </div>
-            </div>
+            <Advantage imagePath='./img/icon/factory-icon.png'
+            title='Ведущий отечественный производитель'
+            description='Крупнейший отечественный производитель систем капельного
+                  орошения NEO-DRIP'
+            />
             {/**Advantage */}
-            <div className="block-adva d-flex flex-row">
-              <img src="./img/icon/wheel-icon.png" class="adva-image" />
-              <div class="adva-text">
-                <p className="adva-title-block">Полный сервис</p>
-                <p className="adva-p">
-                  Мы предоставляем полный сервис по обслуживанию систем
-                  капельного орошения
-                </p>
-              </div>
-            </div>
+            <Advantage imagePath='./img/icon/wheel-icon.png'
+            title='Полный сервис'
+            description='Мы предоставляем полный сервис по обслуживанию систем
+                  капельного орошения'
+            />
           </div>
         </div>
-        {/**BeliveUsCompanies static*/}
-        <div className="companies d-flex flex-column">
-          <h2 className="company-title title">Нам доверяют</h2>
-          <div className="btn-more d-flex align-self-md-end align-self-sm-start flex-row ">
-            <div className="more-img companies-img"></div>
-            <p>Все клиенты</p>
-          </div>
-        </div>
-        <div className="companies-block-img d-flex flex-row flex-wrap justify-content-around">
-          <img src="./img/logo/pokr-logo/logo.jpg" width="150" height="147" />
-          <img src="./img/logo/biruli.gif" width="211" height="115" />
-          <img src="./img/icon/uzef-icon2.png" width="330" height="150" />
-          <img src="./img/logo/slava_potato-icon.jpg" width="250" height="90" />
-          <img src="./img/logo/biruli.gif" width="150" height="150" />
-          <img src="./img/logo/putsko-icon.png" width="250" height="73" />
-          <img
-            src="./img/logo/samarskie_ovoshi-icon.jpg"
-            width="250"
-            height="148"
-          />
-          <img src="./img/logo/melenskiy-icon.png" width="195" height="140" />
-          <img src="./img/logo/latkin-logo/logo.jpg" width="250" height="51" />
-        </div>
-      </div>
+        <BelievedUsCompanies images={[
+          {
+            url: "./img/logo/pokr-logo/logo.jpg",
+            alt: "Покр-логотип",
+            width: 150,
+            height: 147
+          },
+          {
+            url: "./img/logo/biruli.gif",
+            alt: "Бирули-логотип",
+            width: 211,
+            height: 211
+          },
+          {
+            url: "./img/icon/uzef-icon2.png",
+            alt: "Юзефов-логотип",
+            width: 330,
+            height: 150
+          },
+          {
+            url: "./img/logo/slava_potato-icon.jpg",
+            alt: "Слава картофелю-логотип",
+            width: 250,
+            height: 90
+          },
+          {
+            url: "./img/logo/putsko-icon.png",
+            alt: "Пуцко-логотип",
+            width: 250,
+            height: 73
+          },
+          {
+            url: "./img/logo/samarskie_ovoshi-icon.jpg",
+            alt: "Самарские овощи-логотип",
+            width: 250,
+            height: 148
+          },
+          {
+            url: "./img/logo/melenskiy-icon.png",
+            alt: "Меленский-логотип",
+            width: 195,
+            height: 140
+          },
+          {
+            url: "./img/logo/latkin-logo.jpg",
+            alt: "Меленский-логотип",
+            width: 250,
+            height: 51
+          }
+      ]}/>
+        
       {/** Reviews массив*/}
       <div className="reviews">
         <div className="main-container d-flex flex-column">

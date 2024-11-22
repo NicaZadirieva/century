@@ -1,0 +1,23 @@
+.project {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 18px;
+}
+
+.info {
+    bottom: 0;
+    color: white;
+    padding: 13px 20px;
+}
+
+/* TODO: Перенести в классы + ввести appearance=big/small*/
+.upper-paragraph {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (min-device-width: 768px) {
+    .project {
+        margin-right: 20px;
+    }
+}

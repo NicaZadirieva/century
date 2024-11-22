@@ -111,11 +111,7 @@
          max-width: 1260px;
          margin: 0 auto;
     }
-   
-    .project {
-        margin-right: 20px;
-    }
-    
+
     .projects-container {
         flex-wrap: wrap;
         flex-direction: row;
@@ -135,18 +131,9 @@
         display: flex;
     }
 
-    .img-left {
-        top: 56px;
-        left: 40px;
-    }
-    .card-site {
-        margin-right: 35px;
-    }
-    .cards-sites p {
-        top: 177px;
-        padding-bottom: 2px;
-        
-    }
+    
+
+    /*TODO: здесь изменения Paragraph*/
     .first-p {
         width:135px;
     }
@@ -156,11 +143,7 @@
     .third-p {
         width:173px;
     }
-    .card-site {
-        top:-43px;
-        width:372px;
-        height: 240px;
-    }
+
     .popup {
         left:30%;
     }

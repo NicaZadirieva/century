@@ -18,20 +18,7 @@ main {
 
 
 
-.img-right {
-    width: 180px;
-    height: 180px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 0 0 0 100%;
-}
 
-.img-left {
-    position: absolute;
-    top: 58px;
-    left: 40px;
-}
 
 main {
     background: white;
@@ -41,18 +28,7 @@ main {
     flex-direction: column;
 }
 
-.card-site {
-    background: white;
-    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, .2);
-    margin-bottom: 35px;
-    top: -8px;
-}
 
-.card-site p {
-    position: absolute;
-    top: 154px;
-    left: 40px;
-}
 
 #drops-left {
     background: url("./img/icon/drops-icon.png");
@@ -76,10 +52,7 @@ main {
     font-weight: bold;
 }
 
-.project {
-    width: 280px;
-    height: 280px;
-}
+
 
 .small-project-p {
     font-size: 12px;
@@ -110,21 +83,6 @@ main {
     flex-direction: column;
 }
 
-.project {
-    margin-bottom: 18px;
-}
-
-.project .info {
-    bottom: 0;
-    color: white;
-    padding: 13px 20px;
-}
-
-/* TODO: Перенести в классы + ввести appearance=big/small*/
-.project .info p.big {
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
 #pitom {
     background: url("./img/assets/greenfield.jpg");

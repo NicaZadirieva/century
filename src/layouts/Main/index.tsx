@@ -134,7 +134,7 @@ export default function Main(props) {
             height: 51
           }
       ]}/>
-        
+      </div>
       {/** Reviews массив*/}
       <div className="reviews">
         <div className="main-container d-flex flex-column">

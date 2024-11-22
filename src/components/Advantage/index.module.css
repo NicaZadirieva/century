@@ -1,0 +1,18 @@
+.advantage-container {
+    font-size: 13px;
+    width: 324px;
+}
+
+.text-container {
+    margin-left: 20px;
+}
+
+.title {
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+.image {
+    width: 54px;
+    height: 52px;
+}

@@ -204,8 +204,10 @@ main {
     margin-left: 13px;
 }
 
-.adva-text {
-    margin-left: 20px;
+
+
+.companies {
+    margin-top: 248px;
 }
 
 .advantages {
@@ -213,31 +215,7 @@ main {
     max-width: 1200px;
 }
 
-.adva-title {
-    margin-bottom: 70px;
-}
 
-.block-adva {
-    width: 324px;
-
-}
-
-.companies {
-    margin-top: 248px;
-}
-
-.adva-image {
-    width: 54px;
-    height: 52px;
-}
-
-.adva-title-block {
-    font-weight: bold;
-}
-
-.block-adva {
-    font-size: 13px;
-}
 
 .review {
     display: none;

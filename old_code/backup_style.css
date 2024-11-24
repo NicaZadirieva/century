@@ -88,9 +88,7 @@
     .info-trailer p {
         font-size: 16px;
     }
-   .review {
-       display: block;
-   }
+   
    .mobile {
       display: none;
 	}
@@ -133,7 +131,7 @@
 
     
 
-    /*TODO: здесь изменения Paragraph*/
+    /*TODO: здесь изменения Paragraph, вынести width в props*/
     .first-p {
         width:135px;
     }

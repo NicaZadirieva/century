@@ -118,22 +118,6 @@ main {
     font-size: 14px;
 }
 
-.review-title {
-    margin-left: 33px;
-}
-
-.btn-review:first-child {
-    margin-right: 42px;
-}
-
-.review .info p {
-    height: 75px;
-}
-
-.who {
-    margin-bottom: 10px;
-    height: 87px;
-}
 
 .zao {
     width: 87px;
@@ -149,31 +133,10 @@ main {
     background-size: cover;
 }
 
-.search-btn {
-    width: 25px;
-    height: 19px;
-    background-image: url("./img/icon/search-icon.png");
-}
 
-.article-icon {
-    width: 21px;
-    height: 21px;
-    background-image: url("./img/icon/article-icon.png");
-}
 
-.review {
-    max-width: 373px;
-    height: 260px;
-    background-image: url("./img/assets/review-i-bg.png");
-    background-color: white;
-    padding-left: 40px;
-    padding-top: 44px;
-    padding-bottom: 20px;
-}
 
-.btn-review * {
-    display: inline-block;
-}
+
 
 
 .advantages {
@@ -182,13 +145,7 @@ main {
 }
 
 
-.review {
-    display: none;
-}
 
-.showInMobile {
-    display: block;
-}
 
 .calendar-img {
     background: url("./img/icon/calendar.png");

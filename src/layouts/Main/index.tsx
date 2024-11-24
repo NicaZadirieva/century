@@ -2,6 +2,7 @@ import Advantage from '../../components/Advantage';
 import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
 import Project from '../../components/Project';
+import Review from '../../components/Review';
 
 export default function Main(props) {
   function showForm() {
@@ -145,123 +146,21 @@ export default function Main(props) {
           </div>
 
           <div className="reviews-block">
-            <div>
-              {/**Div */}
-              {/**Review */}
-              <div className="review showInMobile">
-                <div className="who d-flex flex-row align-items-end">
-                  <div className="pokr"></div>
-
-                  <p className="review-title title">
-                    ПСССПК "ЦКП"
-                    <br />
-                    "Покровские <br />
-                    овощи"
-                  </p>
-                </div>
-                <div className="info">
-                  <p>
-                    Благодарим ЗАО "Новый век агротехнологий" за взаимовыгодное
-                    сотрудничество.
-                  </p>
-                </div>
-                <div className="btns-review d-flex flex-row ">
-                  <div className="btn-review">
-                    <div className="search-btn"></div>
-
-                    <p>Читать полностью</p>
-                  </div>
-                  <div className="btn-review">
-                    <div className="article-icon"></div>
-
-                    <p>Фотоскан</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              {/**Review */}
-              <div className="review">
-                <div className="who d-flex flex-row align-items-start">
-                  <div className="zao"></div>
-                  <p className="review-title title">ЗАО "БИРЮЛИ"</p>
-                </div>
-                <div className="info">
-                  <p>
-                    Компания ЗАО "Бирюли" выражает Вам свою благодарность
-                    компании ЗАО "Новый век агротехнологий" за качественную и
-                    своевременную{" "}
-                  </p>
-                </div>
-                <div className="btns-review d-flex flex-row ">
-                  <div className="btn-review">
-                    <div className="search-btn"></div>
-                    <p>Читать полностью</p>
-                  </div>
-                  <div className="btn-review">
-                    <div className="article-icon"></div>
-                    <p>Фотоскан</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              {/**Review */}
-              <div className="review">
-                <div className="who d-flex flex-row align-items-start">
-                  <p className="review-title title">ООО "Агротех"</p>
-                </div>
-                <div className="info">
-                  <p>
-                    Компания ЗАО "Новый век агротехнологий" уже давно является
+            <Review logoImage='pokr' reviewHeader='ПСССПК "ЦКП"\n"Покровские\nовощи"'
+            reviewText='Благодарим ЗАО "Новый век агротехнологий" за взаимовыгодное
+                    сотрудничество.'
+            />
+            {/**TODO: logoImage can be undefined */}
+            <Review reviewHeader='ООО "Агротех"'
+            reviewText='Компания ЗАО "Новый век агротехнологий" уже давно является
                     нашим партнером по поставке упаковочных материалов для
-                    овощей
-                  </p>
-                </div>
-                <div className="btns-review d-flex flex-row ">
-                  <div className="btn-review">
-                    <div className="search-btn"></div>
-                    <p>Читать полностью</p>
-                  </div>
-                  <div className="btn-review">
-                    <div className="article-icon"></div>
-                    <p>Фотоскан</p>
-                  </div>
-                </div>
-              </div>
+                    овощей'
+            />
+            <Review logoImage='pokr' reviewHeader='ПСССПК "ЦКП"\n"Покровские\nовощи"'
+            reviewText='Благодарим ЗАО "Новый век агротехнологий" за взаимовыгодное
+                    сотрудничество.'
+            />
             </div>
-            <div>
-              {/**Review */}
-              <div className="review">
-                <div className="who d-flex flex-row align-items-end">
-                  <div className="pokr"></div>
-                  <p className="review-title title">
-                    ПСССПК "ЦКП"
-                    <br />
-                    "Покровские <br />
-                    овощи"
-                  </p>
-                </div>
-                <div className="info">
-                  <p>
-                    Благодарим ЗАО "Новый век агротехнологий" за взаимовыгодное
-                    сотрудничество.
-                  </p>
-                </div>
-                <div className="btns-review d-flex flex-row ">
-                  <div className="btn-review">
-                    <div className="search-btn"></div>
-                    <p>Читать полностью</p>
-                  </div>
-                  <div className="btn-review">
-                    <div className="article-icon"></div>
-                    <p>Фотоскан</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       {/**Articles */}

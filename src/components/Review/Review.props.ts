@@ -1,5 +1,5 @@
 export interface ReviewProps {
-    logoImage: string;
+    logoImage?: string;
     reviewHeader: string;
     reviewText: string;
 }

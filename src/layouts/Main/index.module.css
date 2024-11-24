@@ -48,12 +48,6 @@ main {
     height: 67px;
 }
 
-.title {
-    font-weight: bold;
-}
-
-
-
 .small-project-p {
     font-size: 12px;
 }
@@ -92,24 +86,9 @@ main {
     background: url("./img/assets/calc.jpg");
 }
 
-.more-img {
-    background: url("./img/icon/flower-icon.png");
-    width: 19px;
-    height: 19px;
-}
 
-.companies-img {
-    background: url("./img/icon/message-icon.png");
-}
 
-.companies-block-img {
-    max-width: 1200px;
-}
 
-.companies-block-img img {
-    margin-right: 50px;
-    margin-bottom: 70px;
-}
 
 .reviews {
     margin-top: 80px;
@@ -196,25 +175,11 @@ main {
     display: inline-block;
 }
 
-.btn-more p {
-    text-transform: uppercase;
-    color: #24aa17;
-    border-bottom: 1px solid #24aa17;
-    padding-bottom: 1px;
-    margin-left: 13px;
-}
-
-
-
-.companies {
-    margin-top: 248px;
-}
 
 .advantages {
     margin-top: 214px;
     max-width: 1200px;
 }
-
 
 
 .review {

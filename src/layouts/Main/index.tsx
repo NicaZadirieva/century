@@ -1,4 +1,5 @@
 import Advantage from '../../components/Advantage';
+import Article from '../../components/Article';
 import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
 import Project from '../../components/Project';
@@ -182,82 +183,35 @@ export default function Main(props) {
           </div>
           {/**Article */}
           <div className="projects-container d-flex flex-lg-row flex-column">
-            <div className="project position-relative" id="lenti">
-              <div className="info position-absolute">
-                <p className="big">
-                  Ленты для капельного орошения: виды, особенности, правила
-                  выбора
-                </p>
-                <p className="small-project-p">
-                  Капельный полив имеет массу преимуществ: беспе...
-                </p>
-                <div className="d-flex flex-row justify-content-between">
-                  <div className="seen">
-                    <div className="seen-image"></div>
-                    <span>15</span>
-                  </div>
-                  <div className="date">03.09.2019</div>
-                  <div className="liked">
-                    <div className="liked-image"></div>
-                    <span>0</span>
-                  </div>
-                  <div className="disliked">
-                    <div className="disliked-image"></div>
-                    <span>0</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Article imageId={'lenti'} 
+            title={`Ленты для капельного орошения: виды, особенности, правила
+                  выбора`} 
+            description='Капельный полив имеет массу преимуществ: беспе...'
+            seenCount={15}
+            likedCounter={0}
+            dislikedCounter={0}
+            dateCreated='03.09.2019'
+                  />
+            
             {/**Article */}
-            <div className="project position-relative" id="pitom">
-              <div className="info position-absolute">
-                <p className="big">Организация орошения в питомниках</p>
-                <p className="small-project-p">
-                  Технология полива культурных растений в питомни...
-                </p>
-                <div className="d-flex flex-row justify-content-between">
-                  <div className="seen">
-                    <div className="seen-image"></div>
-                    <span>12</span>
-                  </div>
-                  <div className="date">13.08.2019</div>
-                  <div className="liked">
-                    <div className="liked-image"></div>
-                    <span>1</span>
-                  </div>
-                  <div className="disliked">
-                    <div className="disliked-image"></div>
-                    <span>0</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Article imageId={'pitom'} 
+            title={`Организация орошения в питомниках`} 
+            description='Технология полива культурных растений в питомни...'
+            seenCount={12}
+            likedCounter={1}
+            dislikedCounter={0}
+            dateCreated='13.08.2019'
+                  />
+            
             {/**Article */}
-            <div className="project position-relative" id="calc">
-              <div className="info position-absolute">
-                <p className="big">
-                  Методика расчета систем капельного орошения
-                </p>
-                <p className="small-project-p">
-                  Эффективность функционирования системы капельно...
-                </p>
-                <div className="d-flex flex-row justify-content-between">
-                  <div className="seen">
-                    <div className="seen-image"></div>
-                    <span>21</span>
-                  </div>
-                  <div className="date">13.08.2019</div>
-                  <div className="liked">
-                    <div className="liked-image"></div>
-                    <span>1</span>
-                  </div>
-                  <div className="disliked">
-                    <div className="disliked-image"></div>
-                    <span>0</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Article imageId={'calc'} 
+            title={`Методика расчета систем капельного орошения`} 
+            description='Эффективность функционирования системы капельно...'
+            seenCount={21}
+            likedCounter={1}
+            dislikedCounter={0}
+            dateCreated='13.08.2019'/>
+
           </div>
         </div>
         <div className="mobile">

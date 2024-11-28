@@ -2,17 +2,13 @@ import Advantage from '../../components/Advantage';
 import Article from '../../components/Article';
 import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
+import { Contacts } from '../../components/Contacts';
 import NewsItem from '../../components/NewsItem';
 import Project from '../../components/Project';
 import Review from '../../components/Review';
 
 export default function Main(props) {
-  function showForm() {
-    props.showForm({
-      form: document.forms["form-contact"],
-      popup: document.querySelector(".popup"),
-    });
-  }
+  
   return (
     <main>
       <div className="main-container">
@@ -283,33 +279,7 @@ export default function Main(props) {
         </div>
       </div>
       {/**Contacts */}
-      <div className="contact_with_us">
-        <div className="main-container d-flex flex-row">
-          <div className="text">
-            <h2 className="title contact_with_us-title">Связаться с нами</h2>
-            <p>
-              Если у вас есть вопросы по нашей продукции или вы хотели бы
-              оставить свои комментарии или предложения, пожалуйста, свяжитесь с
-              нами. Наши специалисты всегда рады ответить на ваши вопросы.
-            </p>
-            <div className="contact-btns d-flex flex-row">
-              <div
-                onClick={showForm}
-                className="btn btn-call-2 d-flex flex-column justify-content-center"
-              >
-                <div>оставить заявку</div>
-              </div>
-              <div className="container-btn">
-                <div className="btn-more d-flex">
-                  <div className="more-img contact-img "></div>
-                  <p>Все проекты</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="img-right-contact col-xs-12 col-sm-6 desk"></div>
-        </div>
-      </div>
+      <Contacts/>
     </main>
   );
 }

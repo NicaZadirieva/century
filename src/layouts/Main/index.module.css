@@ -159,26 +159,7 @@ main {
 
 
 
-/*TODO: найти похожие конструкции background: url и переделать на img*/
-.contact-img {
-    background: url("./img/icon/phone_book-icon.png");
-}
 
-.container-btn {
-    margin-left: 32px;
-    padding-top: 6px;
-}
 
-.contact-btns {
-    margin-top: 40px;
-}
 
-.contact_with_us-title {
-    margin-bottom: 40px;
-}
 
-.img-right-contact {
-    background: url("./img/assets/articles-bg.jpg") no-repeat center center/contain;
-    height: 410px;
-    margin-top: 88px;
-}

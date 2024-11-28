@@ -2,6 +2,7 @@ import Advantage from '../../components/Advantage';
 import Article from '../../components/Article';
 import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
+import NewsItem from '../../components/NewsItem';
 import Project from '../../components/Project';
 import Review from '../../components/Review';
 
@@ -231,81 +232,53 @@ export default function Main(props) {
           </div>
           <div className="archives order-1 order-md-2 d-flex flex-lg-row flex-column justify-content-between align-items-center">
             {/**News */}
-            <div className="archive-block ">
-              <div className="archive-date-month">
-                <div className="archive-date">06</div>
-                <div className="month">сентября</div>
-              </div>
-              <p className="title">
-                Компания ЗАО "Новый век агротехнологий" впервые примет участие в
-                "Дне поля Ставропольского края 2019"{" "}
-              </p>
-              <p className="archive-about">
-                С 19 по 20 сентября 2019 года, на территории выставочного
+            <NewsItem 
+            day={6}
+            month={'сентября'}
+            title={`Компания ЗАО "Новый век агротехнологий" впервые примет участие в
+                "Дне поля Ставропольского края 2019"`}
+            description={`С 19 по 20 сентября 2019 года, на территории выставочного
                 комплекса АПК Ставропольского края, пройдет "День поля
-                Ставропольского края 2019"
-              </p>
-              <div className="btn-archive d-flex flex-column justify-content-center">
-                <div>Подробнее</div>
-              </div>
-            </div>
+                Ставропольского края 2019`}
+
+            />
+            
             {/**News */}
-            <div className="archive-block ">
-              <div className="archive-date-month">
-                <div className="archive-date">06</div>
-                <div className="month">сентября</div>
-              </div>
-              <p className="title">
-                Компания ЗАО "Новый век агротехнологий" впервые примет участие в
-                "Дне поля Ставропольского края 2019"{" "}
-              </p>
-              <p className="archive-about">
-                С 19 по 20 сентября 2019 года, на территории выставочного
+            <NewsItem 
+            day={6}
+            month={'сентября'}
+            title={`Компания ЗАО "Новый век агротехнологий" впервые примет участие в
+                "Дне поля Ставропольского края 2019"`}
+            description={`С 19 по 20 сентября 2019 года, на территории выставочного
                 комплекса АПК Ставропольского края, пройдет "День поля
-                Ставропольского края 2019"
-              </p>
-              <div className="btn-archive d-flex flex-column justify-content-center">
-                <div>Подробнее</div>
-              </div>
-            </div>
+                Ставропольского края 2019`}
+
+            />
+           
             {/**News */}
-            <div className="archive-block ">
-              <div className="archive-date-month">
-                <div className="archive-date">06</div>
-                <div className="month">сентября</div>
-              </div>
-              <p className="title">
-                Компания ЗАО "Новый век агротехнологий" впервые примет участие в
-                "Дне поля Ставропольского края 2019"{" "}
-              </p>
-              <p className="archive-about">
-                С 19 по 20 сентября 2019 года, на территории выставочного
+            <NewsItem 
+            day={6}
+            month={'сентября'}
+            title={`Компания ЗАО "Новый век агротехнологий" впервые примет участие в
+                "Дне поля Ставропольского края 2019"`}
+            description={`С 19 по 20 сентября 2019 года, на территории выставочного
                 комплекса АПК Ставропольского края, пройдет "День поля
-                Ставропольского края 2019"
-              </p>
-              <div className="btn-archive d-flex flex-column justify-content-center">
-                <div>Подробнее</div>
-              </div>
-            </div>
+                Ставропольского края 2019`}
+
+            />
+
             {/**News */}
-            <div className="archive-block ">
-              <div className="archive-date-month">
-                <div className="archive-date">06</div>
-                <div className="month">сентября</div>
-              </div>
-              <p className="title">
-                Компания ЗАО "Новый век агротехнологий" впервые примет участие в
-                "Дне поля Ставропольского края 2019"{" "}
-              </p>
-              <p className="archive-about">
-                С 19 по 20 сентября 2019 года, на территории выставочного
+            <NewsItem 
+            day={6}
+            month={'сентября'}
+            title={`Компания ЗАО "Новый век агротехнологий" впервые примет участие в
+                "Дне поля Ставропольского края 2019"`}
+            description={`С 19 по 20 сентября 2019 года, на территории выставочного
                 комплекса АПК Ставропольского края, пройдет "День поля
-                Ставропольского края 2019"
-              </p>
-              <div className="btn-archive d-flex flex-column justify-content-center">
-                <div>Подробнее</div>
-              </div>
-            </div>
+                Ставропольского края 2019`}
+
+            />
+            
           </div>
         </div>
       </div>

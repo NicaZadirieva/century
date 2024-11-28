@@ -6,6 +6,7 @@ import CardSites from '../../components/CardSites';
 import { Contacts } from '../../components/Contacts';
 import NewsItem from '../../components/NewsItem';
 import Project from '../../components/Project';
+import Projects from '../../components/Projects';
 import Review from '../../components/Review';
 
 export default function Main() {
@@ -28,11 +29,7 @@ export default function Main() {
         </CardSites>
 
         {/**Projects */}
-        <div className="projects d-flex flex-column">
-          {/**Title */}
-          <h2 className="projects-title title">
-            Реализованные проекты систем капельного орошения
-          </h2>
+        <Projects>
           {/** TODO: Сделать массив */}
           <div className="projects-container d-flex order-1 order-md-2">
             {/** Project */}
@@ -53,11 +50,7 @@ export default function Main() {
             seenCount={34}/>
           </div>
           {/** Projects maxCounter=4. if maxCounter < length => show this*/}
-          <div className="btn-more d-flex align-self-md-end align-self-sm-start flex-row order-2 order-md-1">
-            <div className="more-img"></div>
-            <p>Все проекты</p>
-          </div>
-        </div>
+          </Projects>
         {/**Advantages массив */}
         <div className="advantages">
           <h2 className="adva-title title">

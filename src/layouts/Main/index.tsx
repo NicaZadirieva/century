@@ -2,18 +2,19 @@ import Advantage from '../../components/Advantage';
 import Article from '../../components/Article';
 import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
+import CardSites from '../../components/CardSites';
 import { Contacts } from '../../components/Contacts';
 import NewsItem from '../../components/NewsItem';
 import Project from '../../components/Project';
 import Review from '../../components/Review';
 
-export default function Main(props) {
+export default function Main() {
   
   return (
     <main>
       <div className="main-container">
         {/**CardSites */}
-        <div className="cards-sites d-flex flex-wrap">
+        <CardSites>
           {/**CardSite */}
           {/**first-p, second-p, third-p */}
           <CardSite imgLeft='drops-left' imgRight='drops'
@@ -24,7 +25,7 @@ export default function Main(props) {
 
           <CardSite imgLeft='vegetables-left' imgRight='vegetables'
           title='Упаковка для овощных культур'/>
-        </div>
+        </CardSites>
 
         {/**Projects */}
         <div className="projects d-flex flex-column">

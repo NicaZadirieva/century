@@ -158,7 +158,7 @@ export default function Main() {
               фермерских хозяйств {/**if articles length == 0*/}
             </p>
             <div className="desk">
-              <div className="btn-more d-flex flex-row ">
+              <div className="btn-more d-flex flex-row">
                 <div className="more-img companies-img"></div>
                 <p>Все статьи</p>
               </div>

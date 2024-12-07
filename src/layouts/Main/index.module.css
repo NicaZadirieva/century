@@ -93,18 +93,8 @@ main {
     padding-bottom: 132px;
 }
 
-.articles-title {
-    margin-bottom: 45px;
-}
 
-.articles-title + p {
-    margin-bottom: 22px;
-}
 
-.articles-info {
-    max-width: 100%;
-    font-size: 14px;
-}
 
 
 .zao {

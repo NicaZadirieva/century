@@ -1,0 +1,29 @@
+.articles-info {
+    max-width: 100%;
+    font-size: 14px;
+}
+
+.paragraph {
+    margin-bottom: 22px;
+}
+
+.title {
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+.articles-title {
+    margin-bottom: 45px;
+}
+
+
+@media screen and (min-device-width: 768px) {
+    .main-container {
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+
+    .articles-info {
+        max-width: 188px;
+    }
+}

@@ -84,13 +84,7 @@ main {
 
 
 
-.reviews {
-    margin-top: 80px;
-    padding-top: 120px;
-    background-image: url("./img/assets/review-bg.jpg");
-    background-size: cover;
-    padding-bottom: 132px;
-}
+
 
 .articles {
     padding-top: 120px;

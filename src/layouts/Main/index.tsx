@@ -1,4 +1,5 @@
 import Advantage from '../../components/Advantage';
+import Advantages from '../../components/Advantages';
 import Article from '../../components/Article';
 import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
@@ -8,6 +9,7 @@ import NewsItem from '../../components/NewsItem';
 import Project from '../../components/Project';
 import Projects from '../../components/Projects';
 import Review from '../../components/Review';
+import Reviews from '../../components/Reviews';
 
 export default function Main() {
   
@@ -57,7 +59,7 @@ export default function Main() {
             Преимущества компании <br />
             "Новый век агротехнологий"
           </h2>
-          <div className="d-flex flex-column flex-lg-row justify-content-between ">
+          <Advantages>
             {/**Advantage */}
             <Advantage imagePath='./img/icon/calendar.png'
             title='Более 20 лет на рынке'
@@ -75,7 +77,7 @@ export default function Main() {
             description='Мы предоставляем полный сервис по обслуживанию систем
                   капельного орошения'
             />
-          </div>
+          </Advantages>
         </div>
         <BelievedUsCompanies images={[
           {
@@ -129,15 +131,7 @@ export default function Main() {
       ]}/>
       </div>
       {/** Reviews массив*/}
-      <div className="reviews">
-        <div className="main-container d-flex flex-column">
-          <h2 className="reviews-title title">Отзывы наших клиентов</h2>
-          <div className="btn-more d-flex align-self-md-end align-self-sm-start flex-row ">
-            <div className="more-img companies-img"></div>
-            <p>Все отзывы</p>
-          </div>
-
-          <div className="reviews-block">
+      <Reviews>
             <Review logoImage='pokr' reviewHeader='ПСССПК "ЦКП"\n"Покровские\nовощи"'
             reviewText='Благодарим ЗАО "Новый век агротехнологий" за взаимовыгодное
                     сотрудничество.'
@@ -152,9 +146,7 @@ export default function Main() {
             reviewText='Благодарим ЗАО "Новый век агротехнологий" за взаимовыгодное
                     сотрудничество.'
             />
-            </div>
-        </div>
-      </div>
+      </Reviews> 
       {/**Articles */}
       <div className="articles">
         <div className="main-container d-flex flex-lg-row flex-column justify-content-between">

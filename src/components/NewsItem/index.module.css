@@ -38,8 +38,10 @@
     text-transform: uppercase;
 }
 
-/** TODO: .title
-*/
+.title {
+    margin-bottom: 70px;
+    font-weight: bold;
+}
 
 @media screen and (min-device-width: 768px) {
     .archive-block {

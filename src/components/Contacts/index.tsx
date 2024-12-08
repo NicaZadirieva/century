@@ -5,7 +5,7 @@ const CONTACTS_DESCRIPTION = `Если у вас есть вопросы по н
               оставить свои комментарии или предложения, пожалуйста, свяжитесь с
               нами. Наши специалисты всегда рады ответить на ваши вопросы.`;
 
-export function Contacts() {
+export default function Contacts() {
     /* TODO: добавить отображение формы
     function showForm() {
     props.showForm({

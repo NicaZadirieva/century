@@ -1,11 +1,12 @@
 import Advantage from '../../components/Advantage';
 import Advantages from '../../components/Advantages';
+import Archive from '../../components/Archive';
 import Article from '../../components/Article';
 import Articles from '../../components/Articles';
 import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
 import CardSites from '../../components/CardSites';
-import { Contacts } from '../../components/Contacts';
+import Contacts from '../../components/Contacts';
 import NewsItem from '../../components/NewsItem';
 import Project from '../../components/Project';
 import Projects from '../../components/Projects';
@@ -183,14 +184,7 @@ export default function Main() {
         
       </Articles>
       {/**Archive массив*/}
-      <div className="archive">
-        <div className="main-container d-flex flex-column">
-          <h2 className="archive-title title">Архив новостей</h2>
-          <div className="btn-more d-flex align-self-md-end align-self-sm-start flex-row order-2 order-md-1">
-            <div className="more-img calendar-img"></div>
-            <p>Все новости</p>
-          </div>
-          <div className="archives order-1 order-md-2 d-flex flex-lg-row flex-column justify-content-between align-items-center">
+      <Archive>
             {/**News */}
             <NewsItem 
             day={6}
@@ -238,10 +232,8 @@ export default function Main() {
                 Ставропольского края 2019`}
 
             />
-            
-          </div>
-        </div>
-      </div>
+
+      </Archive>
       {/**Contacts */}
       <Contacts/>
     </main>

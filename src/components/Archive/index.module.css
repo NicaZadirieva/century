@@ -1,0 +1,33 @@
+.archive {
+    background: url("./img/assets/big_field_bg.jpg");
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 132px;
+}
+
+.title {
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+.paragraph {
+    margin-bottom: 22px;
+}
+
+.more-img {
+    background: url("./img/icon/flower-icon.png");
+    width: 19px;
+    height: 19px;
+}
+
+.calendar-img {
+    background: url("./img/icon/calendar.png");
+    background-size: cover;
+}
+
+@media screen and (min-device-width: 768px) {
+    .main-container {
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+}

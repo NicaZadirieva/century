@@ -1,13 +1,13 @@
-import { HeaderProps } from './Header.props';
 
-export default function Header(props: HeaderProps) {
-  function showForm() {
-    props.showForm({
-      /**Здесь должны быть ref */
-      form: document.forms["form-contact"],
-      popup: document.querySelector(".popup"),
-    });
-  }
+export default function Header(/* props: HeaderProps */) {
+  // TODO:
+  // function showForm() {
+  //   props.showForm({
+  //     /**Здесь должны быть ref */
+  //     form: document.forms["form-contact"],
+  //     popup: document.querySelector(".popup"),
+  //   });
+  // }
   return (
     <header>
       <div className="desk-header-contact desk flex-row justify-content-between">
@@ -37,7 +37,7 @@ export default function Header(props: HeaderProps) {
           </div>
         </div>
         <div
-          onClick={showForm}
+          /* onClick={showForm} */
           className="btn btn-call d-flex flex-column justify-content-center"
         >
           <div>Заказать звонок</div>
@@ -134,7 +134,7 @@ export default function Header(props: HeaderProps) {
           </li>
         </ul>
         <div
-          onClick={showForm}
+          /* onClick={showForm} */
           className="btn btn-call-mobile d-flex flex-column justify-content-center mobile"
         >
           <div>Заказать звонок</div>
@@ -146,8 +146,8 @@ export default function Header(props: HeaderProps) {
           id="video"
           height="auto"
           muted
-          autoplay="autoplay"
-          loop="loop"
+          autoPlay={true}
+          loop={true}
           preload="auto"
         >
           <source src="./img/video/trailer.mp4"></source>

@@ -37,7 +37,7 @@ export function Contacts() {
               </div>
             </div>
           </div>
-          <div className={cn(styles["img-right-contact"], styles["desk"], "col-xs-12", "col-sm-6")}></div>
+          <div className={cn(styles["img-right-contact"], "desk", "col-xs-12", "col-sm-6")}></div>
         </div>
       </div>
     );

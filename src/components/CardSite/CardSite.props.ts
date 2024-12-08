@@ -2,10 +2,15 @@ export interface CardSiteProps {
     /**TODO: перенести на уровень тега img */
     
     /**id of right image */
-    imgRight: string;
+    imgRight: Img;
     /**id of left image */
-    imgLeft: string;
+    imgLeft: Img;
 
     /**Description of images */
     title: string;
+}
+
+export interface Img {
+    src: string;
+    alt: string;
 }

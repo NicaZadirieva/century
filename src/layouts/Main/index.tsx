@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import Advantage from '../../components/Advantage';
 import Advantages from '../../components/Advantages';
 import Archive from '../../components/Archive';
@@ -12,69 +13,101 @@ import Project from '../../components/Project';
 import Projects from '../../components/Projects';
 import Review from '../../components/Review';
 import Reviews from '../../components/Reviews';
+import styles from './index.module.css';
 
 export default function Main() {
   
   return (
     <main>
-      <div className="main-container">
+      <div className={styles["main-container"]}>
         {/**CardSites */}
         <CardSites>
           {/**CardSite */}
           {/**first-p, second-p, third-p */}
-          <CardSite imgLeft='drops-left' imgRight='drops'
+          <CardSite imgLeft={{
+            src: '/icon/drops-icon.png',
+            alt: 'Капельное орошение',
+          }} imgRight={{
+            src: '/assets/big_field.jpg',
+            alt: 'Капельное орошение',
+          }}
           title='Капельное орошение'/>
           
-          <CardSite imgLeft='setka-left' imgRight='setka'
+          <CardSite imgLeft={{
+            src: '/icon/circles-icon.png',
+            alt: 'Сетка сеновязальная',
+          }} imgRight={{
+            src: '/assets/field_works.JPEG',
+            alt: 'Сетка сеновязальная',
+          }} 
           title='Сетка сеновязальная'/>
 
-          <CardSite imgLeft='vegetables-left' imgRight='vegetables'
+          <CardSite 
+          imgLeft={{
+            src: '/icon/wheat-icon.png',
+            alt: 'Упаковка для овощных культур',
+          }} imgRight={{
+            src: '/assets/thread.JPG',
+            alt: 'Упаковка для овощных культур',
+          }} 
+          
           title='Упаковка для овощных культур'/>
         </CardSites>
 
         {/**Projects */}
         <Projects>
           {/** TODO: Сделать массив */}
-          <div className="projects-container d-flex order-1 order-md-2">
+          <div className={cn(styles["projects-container"], "d-flex", "order-1", "order-md-2")}>
             {/** Project */}
-            <Project imageId='salat' description='Капельный полив салата в ЦФО'
+            <Project image={{
+            src: '/assets/cabbages.jpg',
+            alt: 'Капельный полив салата в ЦФО'}} description='Капельный полив салата в ЦФО'
             likedCounter={0} dislikedCounter={0} dateCreated='06.09.2019'
             seenCount={14}/>
             {/** Project */}
-            <Project imageId='raspberry' description='Капельный полив малины в ЦФО'
+            <Project image={{
+            src: '/assets/2_rubles.jpg',
+            alt: 'Капельный полив малины в ЦФО'}}
+            description='Капельный полив малины в ЦФО'
             likedCounter={0} dislikedCounter={0} dateCreated='31.05.2019'
             seenCount={50}/>
             {/** Project */}
-            <Project imageId='carrot' description='Капельный полив моркови в Казахстане'
+            <Project image={{
+            src: '/assets/carrots.jpg',
+            alt: 'Капельный полив моркови в Казахстане'}}
+            description='Капельный полив моркови в Казахстане'
             likedCounter={0} dislikedCounter={0} dateCreated='30.04.2019'
             seenCount={44}/>
             {/** Project */}
-            <Project imageId='cabbage' description='Капельный полив капусты в ПФО'
+            <Project image={{
+            src: '/assets/cabbage.jpg',
+            alt: 'Капельный полив капусты в ПФО'}}
+            description='Капельный полив капусты в ПФО'
             likedCounter={0} dislikedCounter={0} dateCreated='26.04.2019'
             seenCount={34}/>
           </div>
           {/** Projects maxCounter=4. if maxCounter < length => show this*/}
           </Projects>
         {/**Advantages массив */}
-        <div className="advantages">
-          <h2 className="adva-title title">
+        <div className={styles["advantages"]}>
+          <h2 className={cn(styles["adva-title"], styles["title"])}>
             Преимущества компании <br />
             "Новый век агротехнологий"
           </h2>
           <Advantages>
             {/**Advantage */}
-            <Advantage imagePath='./img/icon/calendar.png'
+            <Advantage imagePath='/icon/calendar.png'
             title='Более 20 лет на рынке'
             description='Многолетний опыт производства и доставки, начиная с 1998 года'
             />
             {/**Advantage */}
-            <Advantage imagePath='./img/icon/factory-icon.png'
+            <Advantage imagePath='/icon/factory-icon.png'
             title='Ведущий отечественный производитель'
             description='Крупнейший отечественный производитель систем капельного
                   орошения NEO-DRIP'
             />
             {/**Advantage */}
-            <Advantage imagePath='./img/icon/wheel-icon.png'
+            <Advantage imagePath='/icon/wheel-icon.png'
             title='Полный сервис'
             description='Мы предоставляем полный сервис по обслуживанию систем
                   капельного орошения'
@@ -83,49 +116,49 @@ export default function Main() {
         </div>
         <BelievedUsCompanies images={[
           {
-            url: "./img/logo/pokr-logo/logo.jpg",
+            url: "/logo/pokr-logo.jpg",
             alt: "Покр-логотип",
             width: 150,
             height: 147
           },
           {
-            url: "./img/logo/biruli.gif",
+            url: "/logo/biruli.gif",
             alt: "Бирули-логотип",
             width: 211,
             height: 211
           },
           {
-            url: "./img/icon/uzef-icon2.png",
+            url: "/icon/uzef-icon2.png",
             alt: "Юзефов-логотип",
             width: 330,
             height: 150
           },
           {
-            url: "./img/logo/slava_potato-icon.jpg",
+            url: "/logo/slava_potato-icon.jpg",
             alt: "Слава картофелю-логотип",
             width: 250,
             height: 90
           },
           {
-            url: "./img/logo/putsko-icon.png",
+            url: "/logo/putsko-icon.png",
             alt: "Пуцко-логотип",
             width: 250,
             height: 73
           },
           {
-            url: "./img/logo/samarskie_ovoshi-icon.jpg",
+            url: "/logo/samarskie_ovoshi-icon.jpg",
             alt: "Самарские овощи-логотип",
             width: 250,
             height: 148
           },
           {
-            url: "./img/logo/melenskiy-icon.png",
+            url: "/logo/melenskiy-icon.png",
             alt: "Меленский-логотип",
             width: 195,
             height: 140
           },
           {
-            url: "./img/logo/latkin-logo.jpg",
+            url: "/logo/latkin-logo.jpg",
             alt: "Меленский-логотип",
             width: 250,
             height: 51
@@ -134,7 +167,8 @@ export default function Main() {
       </div>
       {/** Reviews массив*/}
       <Reviews>
-            <Review logoImage='pokr' reviewHeader='ПСССПК "ЦКП"\n"Покровские\nовощи"'
+            <Review logoImage='pokr' reviewHeader={`ПСССПК "ЦКП
+            Покровские овощи"`}
             reviewText='Благодарим ЗАО "Новый век агротехнологий" за взаимовыгодное
                     сотрудничество.'
             />
@@ -144,7 +178,8 @@ export default function Main() {
                     нашим партнером по поставке упаковочных материалов для
                     овощей'
             />
-            <Review logoImage='pokr' reviewHeader='ПСССПК "ЦКП"\n"Покровские\nовощи"'
+            <Review logoImage='pokr' reviewHeader={`ПСССПК "ЦКП
+            Покровские овощи"`}
             reviewText='Благодарим ЗАО "Новый век агротехнологий" за взаимовыгодное
                     сотрудничество.'
             />

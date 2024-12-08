@@ -1,3 +1,10 @@
+.articles {
+    padding-top: 120px;
+    background-image: url("/img/assets/artic-bg.png");
+    background-size: cover;
+    padding-bottom: 132px;
+}
+
 .articles-info {
     max-width: 100%;
     font-size: 14px;

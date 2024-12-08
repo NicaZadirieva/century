@@ -86,12 +86,6 @@ main {
 
 
 
-.articles {
-    padding-top: 120px;
-    background-image: url("./img/assets/artic-bg.png");
-    background-size: cover;
-    padding-bottom: 132px;
-}
 
 
 
@@ -101,13 +95,13 @@ main {
     width: 87px;
     height: 87px;
     background-size: cover;
-    background-image: url("./img/logo/biruli.gif");
+    background-image: url("/img/logo/biruli.gif");
 }
 
 .pokr {
     width: 87px;
     height: 87px;
-    background-image: url("./img/logo/pokr-logo/logo.jpg");
+    background-image: url("/img/logo/pokr-logo/logo.jpg");
     background-size: cover;
 }
 
@@ -116,14 +110,36 @@ main {
 
 
 
+.projects-container {
+    align-items: center;
+    flex-direction: column;
+}
 
 .advantages {
     margin-top: 214px;
     max-width: 1200px;
 }
 
+.adva-title {
+    margin-bottom: 70px;
+}
 
+.title {
+    margin-bottom: 70px;
+    font-weight: bold;
+}
 
+@media screen and (min-device-width: 768px) {
+    .main-container {
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+
+        .projects-container {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+}
 
 
 

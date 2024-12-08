@@ -4,7 +4,8 @@ import { ProjectProps } from './Project.props';
 import styles from './index.module.css';
 export default function Project(props: ProjectProps){
     return (
-        <div className={cn(styles['project'], "position-relative")} id={props.imageId}>
+        <div className={cn(styles['project'], "position-relative")}>
+          <img src={props.image.src} alt={props.image.alt}/>
             <div className={cn(styles['info'], "position-absolute")}>
                 <Paragraph className={styles['upper-paragraph']}>{props.description}</Paragraph>
                 <div className="d-flex flex-row justify-content-between">

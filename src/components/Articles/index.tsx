@@ -12,20 +12,20 @@ export default function Articles({children}: {children: ReactNode}) {
               Здесь будут представлены публикации для сельхозорганизаций и
               фермерских хозяйств {/**if articles length == 0*/}
             </p>
-            <div className={styles["desk"]}>
+            <div className={"desk"}>
             {/**TODO: выделить в переменную внутри Articles */}
               <div className={cn(styles["btn-more"], "d-flex", "flex-row")}>
-                <div className="more-img companies-img"></div>
+                <div className={cn(styles["more-img"], styles["companies-img"])}></div>
                 <p className={styles["paragraph"]}>Все статьи</p>
               </div>
             </div>
           </div>
           {/**Article */}
-          <div className="projects-container d-flex flex-lg-row flex-column">
+          <div className={cn(styles["projects-container"], "d-flex", "flex-lg-row", "flex-column")}>
             {children}
           </div>
         </div>
-        <div className={styles["mobile"]}>
+        <div className={"showInMobile"}>
             {/**TODO: выделить в переменную внутри Articles */}
           <div className={cn(styles["btn-more"], "d-flex", "flex-row")}>
             <div className={cn(styles["more-img"], styles["companies-img"])}></div>

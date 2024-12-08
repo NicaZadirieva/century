@@ -17,6 +17,18 @@
 }
 
 
+.projects-container {
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Здесь был companies-img*/
+.more-img {
+    background: url("./img/icon/message-icon.png");
+    width: 19px;
+    height: 19px;
+}
+
 @media screen and (min-device-width: 768px) {
     .main-container {
         max-width: 1260px;
@@ -25,5 +37,10 @@
 
     .articles-info {
         max-width: 188px;
+    }
+
+    .projects-container {
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }

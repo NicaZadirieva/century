@@ -1,6 +1,7 @@
 import Advantage from '../../components/Advantage';
 import Advantages from '../../components/Advantages';
 import Article from '../../components/Article';
+import Articles from '../../components/Articles';
 import BelievedUsCompanies from '../../components/BelivedUsCompanies';
 import CardSite from '../../components/CardSite';
 import CardSites from '../../components/CardSites';
@@ -148,27 +149,12 @@ export default function Main() {
             />
       </Reviews> 
       {/**Articles */}
-      <div className="articles">
-        <div className="main-container d-flex flex-lg-row flex-column justify-content-between">
-          <div className="articles-info d-flex flex-column">
-            <h2 className="articles-title title">Статьи</h2>
-
-            <p>
-              Здесь будут представлены публикации для сельхозорганизаций и
-              фермерских хозяйств {/**if articles length == 0*/}
-            </p>
-            <div className="desk">
-              <div className="btn-more d-flex flex-row">
-                <div className="more-img companies-img"></div>
-                <p>Все статьи</p>
-              </div>
-            </div>
-          </div>
+      <Articles>
           {/**Article */}
-          <div className="projects-container d-flex flex-lg-row flex-column">
             <Article imageId={'lenti'} 
             title={`Ленты для капельного орошения: виды, особенности, правила
                   выбора`} 
+            /**TODO: сделать конфигурируемой длину description */
             description='Капельный полив имеет массу преимуществ: беспе...'
             seenCount={15}
             likedCounter={0}
@@ -194,16 +180,8 @@ export default function Main() {
             likedCounter={1}
             dislikedCounter={0}
             dateCreated='13.08.2019'/>
-
-          </div>
-        </div>
-        <div className="mobile">
-          <div className="btn-more d-flex flex-row ">
-            <div className="more-img companies-img"></div>
-            <p>Все статьи</p>
-          </div>
-        </div>
-      </div>
+        
+      </Articles>
       {/**Archive массив*/}
       <div className="archive">
         <div className="main-container d-flex flex-column">

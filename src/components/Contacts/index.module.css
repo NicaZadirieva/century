@@ -4,11 +4,7 @@
 
 /*TODO: найти похожие конструкции background: url и переделать на img*/
 .contact-img {
-    background: url("./img/icon/phone_book-icon.png");
-}
-
-.more-img {
-    background: url("./img/icon/flower-icon.png");
+    background: url("/icon/phone_book-icon.png");
     width: 19px;
     height: 19px;
 }
@@ -23,7 +19,7 @@
 }
 
 .img-right-contact {
-    background: url("./img/assets/articles-bg.jpg") no-repeat center center/contain;
+    background: url("/assets/articles-bg.jpg") no-repeat center center/contain;
     height: 410px;
     margin-top: 88px;
 }
@@ -35,13 +31,26 @@
     width: 200px;
     color: white;
     border-radius: 0px;
+    text-align: center;
+    transition: .3s;
+}
 
+.btn:hover {
+    color: black;
 }
 
 .text {
     max-width: 100%;
     padding-top: 182px;
     padding-bottom: 190px;
+}
+
+.upper-paragraph {
+    text-transform: uppercase;
+    color: #24aa17;
+    border-bottom: 1px solid #24aa17;
+    padding-bottom: 1px;
+    margin-left: 13px;
 }
 
 @media screen and (min-device-width: 768px) {

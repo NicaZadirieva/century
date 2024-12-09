@@ -25,14 +25,14 @@ export default function Contacts() {
             <div className={cn(styles["contact-btns"], "d-flex", "flex-row")}>
               <div
                 /*onClick={showForm}*/
-                className={cn(styles["btn"], "d-flex", "flex-column", "justify-content-center")}
+                className={cn(styles["btn"], "btn-call-2", "d-flex", "flex-column", "justify-content-center")}
               >
-                <div>Оставить заявку</div>
+                <div>оставить заявку</div>
               </div>
               <div className={styles["container-btn"]}>
                 <div className={cn(styles["btn-more"], "d-flex")}>
                   <div className={cn(styles["more-img"], styles["contact-img"])}></div>
-                  <p>Все проекты</p>
+                  <p className={styles["upper-paragraph"]}>Все проекты</p>
                 </div>
               </div>
             </div>

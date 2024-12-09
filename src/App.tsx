@@ -9,7 +9,7 @@ export default function App() {
       <Main />
       {/* <Popup /> */}
       <Footer />
-      {/*<About />*/}
+      
     </div>
   );
 }

@@ -8,11 +8,64 @@
     border-bottom: 2px solid rgba(119, 118, 123, 50%); /*TODO: проверить 1px solid #e5e5e5*/
 }
 
+
+.logo {
+    width: 67px;
+    height: 47px;
+    background: url("/logo/logo.jpg");
+}
+
+.logo-title {
+    color: #24aa17;
+    margin-top: 20px;
+    margin-left: 26px;
+}
+
 .social-btn {
     width: 28px;
     height: 28px;
     background-size: cover;
 }
+
+.about {
+    color: #77767b;
+    background: #f5f6f8;
+    padding-top: 16px;
+}
+
+.about a {
+    text-decoration: none;
+    border-bottom: 1px solid #77767b;
+}
+/*TODO: переименовать класс*/
+.desk-header-contact-list {
+    list-style-type: none;
+}
+
+.tick {
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    background: url("/icon/tick-icon.png");
+    margin-right: 4px;
+}
+
+.info {
+    bottom: 0;
+    color: white;
+    padding: 13px 20px;
+}
+
+.tel,
+.site {
+    color: #24aa17;
+}
+
+.tel-block p,
+.site-block p {
+    font-size: 10px;
+}
+
 /*TODO: переделать в img. А то как-то коряво*/
 #insta {
     background-image: url("./img/icon/inst-icon.png");
@@ -24,4 +77,10 @@
 
 #ut {
     background-image: url("./img/icon/youtube-icon.png");
+}
+@media screen and (min-device-width: 768px) {
+    .footer,.about {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 }

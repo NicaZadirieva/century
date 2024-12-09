@@ -16,7 +16,7 @@ export default function Articles({children}: {children: ReactNode}) {
             {/**TODO: выделить в переменную внутри Articles */}
               <div className={cn(styles["btn-more"], "d-flex", "flex-row")}>
                 <div className={cn(styles["more-img"], styles["companies-img"])}></div>
-                <p className={styles["paragraph"]}>Все статьи</p>
+                <p className={cn(styles["paragraph"], styles["upper-paragraph"])}>Все статьи</p>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function Articles({children}: {children: ReactNode}) {
             {/**TODO: выделить в переменную внутри Articles */}
           <div className={cn(styles["btn-more"], "d-flex", "flex-row")}>
             <div className={cn(styles["more-img"], styles["companies-img"])}></div>
-            <p className={styles["paragraph"]}>Все статьи</p>
+            <p className={cn(styles["paragraph"], styles["upper-paragraph"])}>Все статьи</p>
           </div>
         </div>
     </div>

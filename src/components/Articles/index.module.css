@@ -1,6 +1,6 @@
 .articles {
     padding-top: 120px;
-    background-image: url("/img/assets/artic-bg.png");
+    background-image: url("/assets/artic-bg.png");
     background-size: cover;
     padding-bottom: 132px;
 }
@@ -12,6 +12,14 @@
 
 .paragraph {
     margin-bottom: 22px;
+}
+
+.upper-paragraph {
+    text-transform: uppercase;
+    color: #24aa17;
+    border-bottom: 1px solid #24aa17;
+    padding-bottom: 1px;
+    margin-left: 13px;
 }
 
 .title {
@@ -31,7 +39,7 @@
 
 /*Здесь был companies-img*/
 .more-img {
-    background: url("./img/icon/message-icon.png");
+    background: url("/icon/message-icon.png");
     width: 19px;
     height: 19px;
 }

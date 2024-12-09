@@ -1,9 +1,9 @@
 import cn from 'classnames';
 import { AdvantagesProps } from './Advantages.props';
-
+import styles from './index.module.css';
 export default function Advantages({ children }: AdvantagesProps) {
     return (
-        <div className={cn("d-flex", "flex-column", "flex-lg-row", "justify-content-between")}>
+        <div className={cn(styles["advantages"], "d-flex", "flex-column", "flex-lg-row", "justify-content-between")}>
             {children}
         </div>
     )

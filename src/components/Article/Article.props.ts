@@ -1,6 +1,7 @@
+import { Img } from '../CardSite/CardSite.props';
+
 export interface ArticleProps {
-    /**TODO: Заменить на pictureUrl */
-    imageId: string,
+    image: Img,
     title: string;
     description: string;
     dateCreated: string;

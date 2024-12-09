@@ -3,7 +3,8 @@ import { ArticleProps } from './Article.props';
 import styles from './index.module.css';
 export default function Article(props: ArticleProps) {
     return (
-            <div className={cn(styles["project"],"position-relative")} id={props.imageId}>
+            <div className={cn(styles["project"],"position-relative")}>
+              <img src={props.image.src} alt={props.image.alt}/>
               <div className={cn(styles["info"], "position-absolute")}>
                 <p className={styles['upper-paragraph']}>
                   {props.title}

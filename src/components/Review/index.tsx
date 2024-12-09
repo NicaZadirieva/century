@@ -9,9 +9,7 @@ export default function Review(props: ReviewProps) {
     <div>
       <div className={cn(styles["review"], "showInMobile")}>
         <div className={cn(styles["who"], "d-flex", "flex-row", "align-items-end")}>
-            {/**TODO: добавить изображение + поменять стили 
-             * props.logoImage
-            */}
+            {props.logoImage && <img src={props.logoImage?.src} alt={props.logoImage?.alt} />}
           
           <Paragraph className={cn(styles["review-title"], styles["title"])}>
             {/**Интересно как без br. Наверное, с '\n' */}

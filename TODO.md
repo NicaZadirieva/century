@@ -11,3 +11,4 @@
    .articles-title {
    margin-bottom: 45px;
    }
+7. Кнопки "все клиенты", "все проекты" и т.д. - добавить cursor pointer + a

@@ -15,7 +15,7 @@ export default function Projects({ children } : ProjectsProps) {
           {/** TODO: Projects maxCounter=4. if maxCounter < length => show this*/}
           <div className={cn(styles["btn-more"], "d-flex", "align-self-md-end", "align-self-sm-start", "flex-row", "order-2", "order-md-1")}>
             <div className={styles["more-img"]}></div>
-            <p>Все проекты</p>
+            <p className={styles["paragraph"]}>Все проекты</p>
           </div>
         </div>
     )

@@ -3,11 +3,19 @@
      flex-direction: column;
  }
  .more-img {
-     background: url("./img/icon/flower-icon.png");
+     background: url("/icon/flower-icon.png");
      width: 19px;
      height: 19px;
  }
  
+ .paragraph {
+    text-transform: uppercase;
+    color: #24aa17;
+    border-bottom: 1px solid #24aa17;
+    padding-bottom: 1px;
+    margin-left: 13px;
+ }
+
  @media screen and (min-device-width: 768px) {
      .projects-container {
          flex-wrap: wrap;

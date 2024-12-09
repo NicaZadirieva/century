@@ -1,4 +1,5 @@
-
+import cn from 'classnames';
+import styles from './index.module.css';
 export default function Header(/* props: HeaderProps */) {
   // TODO:
   // function showForm() {
@@ -10,51 +11,51 @@ export default function Header(/* props: HeaderProps */) {
   // }
   return (
     <header>
-      <div className="desk-header-contact desk flex-row justify-content-between">
-        <div className="company d-flex flex-row">
-          <div className="logo"></div>
-          <p className="logo-title">Новый век технологий</p>
+      <div className={cn(styles["desk-header-contact"], "desk", "flex-row", "justify-content-between")}>
+        <div className={cn("d-flex", "flex-row")}>
+          <div className={styles["logo"]}></div>
+          <p className={styles["logo-title"]}>Новый век технологий</p>
         </div>
-        <ul className="desk-header-contact-list">
+        <ul className={styles["desk-header-contact-list"]}>
           <li>
-            <div className="tick"></div>Капельное орошение
+            <div className={styles["tick"]}></div>Капельное орошение
           </li>
           <li>
-            <div className="tick"></div>Упаковка для кормовых культур
+            <div className={styles["tick"]}></div>Упаковка для кормовых культур
           </li>
           <li>
-            <div className="tick"></div>Упаковка для овощных культур
+            <div className={styles["tick"]}></div>Упаковка для овощных культур
           </li>
         </ul>
-        <div className="info d-flex flex-column">
-          <div className="tel-block ">
-            <div className="tel">8 800 555-86-88</div>
+        {/**TODO: повтор. Перенести в компонент ContactInfo */}
+        <div className={cn(styles["info"] ,"d-flex", "flex-column")}>
+          <div className={styles["tel-block"]}>
+            <div className={styles["tel"]}>8 800 555-86-88</div>
             <p>Звонок по России - бесплатный</p>
           </div>
-          <div className="site-block">
-            <div className="site">info@neo-agriservis.ru</div>
+          <div className={styles["site-block"]}>
+            <div className={styles["site"]}>info@neo-agriservis.ru</div>
             <p>Пн.-Пт.:8:30 - 17:00</p>
           </div>
         </div>
         <div
           /* onClick={showForm} */
-          className="btn btn-call d-flex flex-column justify-content-center"
-        >
+          className={cn(styles["btn"], "d-flex", "flex-column", "justify-content-center")}>
           <div>Заказать звонок</div>
         </div>
       </div>
 
-      <div className="desk-header-menu desk  flex-row">
-        <div className="btn-menu d-flex flex-row ">
-          <div className="hamburger-menu d-flex flex-column ">
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
+      <div className={cn(styles["desk-header-menu"], "desk", "flex-row")}>
+        <div className={cn(styles["btn-menu"], "d-flex", "flex-row")}>
+          <div className={cn(styles["hamburger-menu"], "d-flex", "flex-column")}>
+            <span className={styles["hamburger-line"]}></span>
+            <span className={styles["hamburger-line"]}></span>
+            <span className={styles["hamburger-line"]}></span>
           </div>
 
           <a href="#">Продукция</a>
         </div>
-        <ul className="d-flex flex-row justify-content-between">
+        <ul className={cn("d-flex", "flex-row", "justify-content-between")}>
           <li>
             <a href="#">Услуги</a>
           </li>
@@ -74,11 +75,11 @@ export default function Header(/* props: HeaderProps */) {
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <div className="for_btn">
-          <div className="btn-search"></div>
+        <div className={styles["for_btn"]}>
+          <div className={styles["btn-search"]}></div>
         </div>
       </div>
-      <div className="desk-menu desk position-absolute">
+      <div className={cn(styles["desk-menu"], "desk", "position-absolute")}>
         <ul>
           <li>
             <a href="#">Капельное орошение</a>

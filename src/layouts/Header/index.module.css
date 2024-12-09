@@ -45,10 +45,19 @@
     color: black;
 }
 
+.btn {
+    background: #24aa17 !important;
+    height: 50px;
+    width: 200px;
+    color: white;
+    border-radius: 0px;
+
+}
+
 .search {
     width: 20px;
     height: 17px;
-    background: url("./img/icon/search-icon-2.png");
+    background: url("/icon/search-icon-2.png");
 }
 
 .desk-header-contact {
@@ -62,7 +71,7 @@
 .btn-search {
     width: 25px;
     height: 19px;
-    background: url("./img/icon/search-icon.png");
+    background: url("/icon/search-icon.png");
     margin: 0 auto;
 }
 
@@ -154,4 +163,38 @@
 
 .info-trailer p {
     font-size: 12px;
+}
+
+.logo {
+    width: 67px;
+    height: 47px;
+    background: url("/logo/logo.jpg");
+}
+
+.logo-title {
+    color: #24aa17;
+    margin-top: 20px;
+    margin-left: 26px;
+}
+
+.tick {
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    background: url("/icon/tick-icon.png");
+    margin-right: 4px;
+}
+
+@media screen and (min-device-width: 768px) {
+    .desk-header-menu {
+        display: flex;
+    }
+    .desk-menu {
+        z-index: 1000;
+        transition: opacity 1s ease;
+    }
+
+    .desk-menu-opened {
+        opacity: 1
+    }
 }

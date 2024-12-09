@@ -1,5 +1,7 @@
 .companies-img {
-    background: url("./img/icon/message-icon.png");
+    background: url("/icon/message-icon.png");
+    width: 19px;
+    height: 19px;
 }
 
 .companies-block-img {
@@ -26,10 +28,4 @@
     border-bottom: 1px solid #24aa17;
     padding-bottom: 1px;
     margin-left: 13px;
-}
-
-.more-img {
-    background: url("./img/icon/flower-icon.png");
-    width: 19px;
-    height: 19px;
 }

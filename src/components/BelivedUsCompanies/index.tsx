@@ -9,8 +9,8 @@ export default function BelievedUsCompanies(props: BelievedUsCompaniesProps) {
         <div className={cn(styles["companies"], "d-flex", "flex-column")}>
           <h2 className={cn(styles["company-title"])}>Нам доверяют</h2>
           <div className={cn("d-flex", "align-self-md-end", "align-self-sm-start", "flex-row")}>
-            <div className={cn(styles["more-img"], styles["companies-img"])}></div>
-            <Paragraph className='paragraph'>Все клиенты</Paragraph>
+            <div className={styles["companies-img"]}></div>
+            <Paragraph className={styles["paragraph"]}>Все клиенты</Paragraph>
           </div>
         </div>
         <div className={cn(styles["companies-block-img"], "d-flex", "flex-row", "flex-wrap", "justify-content-around")}>

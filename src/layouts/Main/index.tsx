@@ -87,7 +87,7 @@ export default function Main() {
             {/** Project */}
             <Project
               image={{
-                src: "/assets/2_rubles.jpg",
+                src: "/assets/2_rubles.JPG",
                 alt: "Капельный полив малины в ЦФО",
               }}
               description="Капельный полив малины в ЦФО"

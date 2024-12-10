@@ -86,9 +86,7 @@
     .desk {
       display: block;
 	}
-   .block-adva:nth-child(n + 1){
-       margin-top: 60px;
-   }
+   
     .desk-menu {
          z-index: 1000;
          transition: opacity 1s ease;

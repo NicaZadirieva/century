@@ -141,7 +141,7 @@ export default function Header(/* props: HeaderProps */) {
         </button>
       </div>
 
-      <div className="trailer position-relative">
+      <div className={cn(styles["trailer"], "position-relative")}>
         <video
           id="video"
           height="auto"
@@ -150,9 +150,9 @@ export default function Header(/* props: HeaderProps */) {
           loop={true}
           preload="auto"
         >
-          <source src="./img/video/trailer.mp4"></source>
+          <source src="/video/trailer.mp4"></source>
         </video>
-        <div className="info-trailer">
+        <div className={styles["info-trailer"]}>
           <h1>Новый век агротехнологий</h1>
           <p>
             Мы создаем и внедряем инновационные технологии интеллектуального

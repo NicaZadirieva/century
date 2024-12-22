@@ -11,7 +11,7 @@ export default function Header(/* props: HeaderProps */) {
   // }
   return (
     <header>
-      <div className={cn(styles["desk-header-contact"], "desk", "flex-row", "justify-content-between")}>
+      <div className={cn(styles["desk-header-contact"], styles["desk"], "d-flex", "flex-row", "justify-content-between")}>
         <div className={cn("d-flex", "flex-row")}>
           <div className={styles["logo"]}></div>
           <p className={styles["logo-title"]}>Новый век технологий</p>
@@ -38,14 +38,14 @@ export default function Header(/* props: HeaderProps */) {
             <p>Пн.-Пт.:8:30 - 17:00</p>
           </div>
         </div>
-        <div
+         <button type="button"
           /* onClick={showForm} */
-          className={cn(styles["btn"], "d-flex", "flex-column", "justify-content-center")}>
-          <div>Заказать звонок</div>
-        </div>
+          className={cn(styles["btn"], styles["btn-call"], "text-center")}
+        >Заказать звонок
+        </button>
       </div>
 
-      <div className={cn(styles["desk-header-menu"], "desk", "flex-row")}>
+      <div className={cn(styles["desk-header-menu"], styles["desk"], "d-flex", "flex-row")}>
         <div className={cn(styles["btn-menu"], "d-flex", "flex-row")}>
           <div className={cn(styles["hamburger-menu"], "d-flex", "flex-column")}>
             <span className={styles["hamburger-line"]}></span>
@@ -92,19 +92,19 @@ export default function Header(/* props: HeaderProps */) {
           </li>
         </ul>
       </div>
-      <div className="mobile-header mobile flex-row justify-content-around align-items-center">
-        <div className="hamburger d-flex flex-column ">
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
+      <div className={cn(styles["mobile-header"] ,"showInMobile", "flex-row", "justify-content-around", "align-items-center")}>
+        <div className={cn(styles["hamburger"], "d-flex", "flex-column")}>
+          <span className={styles["hamburger-line"]}></span>
+          <span className={styles["hamburger-line"]}></span>
+          <span className={styles["hamburger-line"]}></span>
         </div>
-        <div className="company d-flex flex-row">
-          <div className="logo"></div>
+        <div className="d-flex flex-row">
+          <div className={styles["logo"]}></div>
           <p>Новый век технологий</p>
         </div>
-        <div className="search"></div>
+        <div className={styles["search"]}></div>
       </div>
-      <div className="mobile-header-list mobile">
+      <div className={cn(styles["mobile-header-list"], styles["mobile"])}>
         <ul className="p-0 m-0">
           <li>
             <a href="#">Капельное орошение</a>
@@ -134,12 +134,11 @@ export default function Header(/* props: HeaderProps */) {
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <div
+        <button type="button" title="Заказать звонок"
           /* onClick={showForm} */
-          className="btn btn-call-mobile d-flex flex-column justify-content-center mobile"
+          className={cn(styles["btn"], styles["mobile"], "text-center")}
         >
-          <div>Заказать звонок</div>
-        </div>
+        </button>
       </div>
 
       <div className="trailer position-relative">

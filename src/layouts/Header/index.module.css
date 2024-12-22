@@ -50,8 +50,7 @@
     height: 50px;
     width: 200px;
     color: white;
-    border-radius: 0px;
-
+    border: none;
 }
 
 .search {
@@ -184,7 +183,22 @@
     background: url("/icon/tick-icon.png");
     margin-right: 4px;
 }
-
+.desk-header-contact {
+    background: #f5f6f8;
+    height: 120px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 16px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.tel-block p,
+.site-block p {
+    font-size: 10px;
+}
+.tel,
+.site {
+    color: #24aa17;
+}
 @media screen and (min-device-width: 768px) {
     .desk-header-menu {
         display: flex;

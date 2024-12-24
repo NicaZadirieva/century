@@ -22,4 +22,11 @@ p {
   .showInMobile {
       display: none;
   }
+
+   @media screen and (min-device-width: 768px) {
+      .restrict-width {
+        max-width: 1260px;
+        margin: 0 auto;
+      }
+    }
 }

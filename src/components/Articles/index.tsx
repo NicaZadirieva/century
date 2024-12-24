@@ -4,7 +4,7 @@ import styles from './index.module.css';
 export default function Articles({children}: {children: ReactNode}) {
     return (
     <div className={styles["articles"]}>
-        <div className={cn(styles["main-container"], "d-flex", "flex-lg-row", "flex-column", "justify-content-between")}>
+        <div className={cn("restrict-width", "d-flex", "flex-lg-row", "flex-column", "justify-content-between")}>
           <div className={cn(styles["articles-info"], "d-flex", "flex-column")}>
             <h2 className={styles["title"]}>Статьи</h2>
 

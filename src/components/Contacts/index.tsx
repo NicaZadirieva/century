@@ -16,7 +16,7 @@ export default function Contacts() {
     return (
         /**TODO: возможно придется изменить на фрагмент */
         <div className={styles["contact_with_us"]}>
-        <div className={cn(styles["main-container"], "d-flex", "flex-row")}>
+        <div className={cn("restrict-width", "d-flex", "flex-row")}>
           <div className={styles["text"]}>
             <h2 className={styles["title"]}>{CONTACTS_TITLE}</h2>
             <p>

@@ -28,10 +28,3 @@
     background: url("/icon/calendar.png");
     background-size: cover;
 }
-
-@media screen and (min-device-width: 768px) {
-    .main-container {
-        max-width: 1260px;
-        margin: 0 auto;
-    }
-}

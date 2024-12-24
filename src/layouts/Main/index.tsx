@@ -19,7 +19,7 @@ export default function Main() {
   
   return (
     <main>
-      <div className={styles["main-container"]}>
+      <div className={"restrict-width"}>
         {/**CardSites */}
         <CardSites>
           {/**CardSite */}

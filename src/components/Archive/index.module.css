@@ -22,9 +22,10 @@
     margin-left: 13px;
 }
 
-.calendar-img {
-    width: 19px;
-    height: 19px;
-    background: url("/icon/calendar.png");
-    background-size: cover;
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
 }

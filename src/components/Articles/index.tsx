@@ -6,7 +6,7 @@ export default function Articles({children}: {children: ReactNode}) {
     <div className={styles["articles"]}>
         <div className={cn(styles["main-container"], "d-flex", "flex-lg-row", "flex-column", "justify-content-between")}>
           <div className={cn(styles["articles-info"], "d-flex", "flex-column")}>
-            <h2 className={cn(styles["articles-title"], styles["title"])}>Статьи</h2>
+            <h2 className={styles["title"]}>Статьи</h2>
 
             <p className={styles['paragraph']}>
               Здесь будут представлены публикации для сельхозорганизаций и

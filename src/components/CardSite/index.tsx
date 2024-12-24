@@ -5,7 +5,6 @@ import styles from './index.module.css';
 export default function CardSite(props: CardSiteProps) {
     return (
         <div className={cn(styles["card-site"], "position-relative")}>
-            {/*TODO: Возможно этой блок лучше перевести на img*/}
             <div className={styles['img-right']}>
                 <img className="img" src={props.imgRight.src} alt={props.imgRight.alt} />
             </div>

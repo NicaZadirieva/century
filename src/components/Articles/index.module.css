@@ -23,14 +23,9 @@
 }
 
 .title {
-    margin-bottom: 70px;
+    margin-bottom: 45px;
     font-weight: bold;
 }
-
-.articles-title {
-    margin-bottom: 45px;
-}
-
 
 .projects-container {
     align-items: center;

@@ -11,8 +11,7 @@ export default function Review(props: ReviewProps) {
         <div className={cn(styles["who"], "d-flex", "flex-row", "align-items-end")}>
             {props.logoImage && <img src={props.logoImage?.src} alt={props.logoImage?.alt} />}
           
-          <Paragraph className={cn(styles["review-title"], styles["title"])}>
-            {/**Интересно как без br. Наверное, с '\n' */}
+          <Paragraph className={styles["title"]}>
             {props.reviewHeader}
           </Paragraph>
         </div>

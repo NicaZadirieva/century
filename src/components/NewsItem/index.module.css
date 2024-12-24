@@ -45,9 +45,9 @@
 
 @media screen and (min-device-width: 768px) {
     .archive-block {
-            width: 278px;
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 0;
+        width: 278px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 }

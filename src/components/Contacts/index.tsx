@@ -18,7 +18,7 @@ export default function Contacts() {
         <div className={styles["contact_with_us"]}>
         <div className={cn(styles["main-container"], "d-flex", "flex-row")}>
           <div className={styles["text"]}>
-            <h2 className={cn(styles["title"], styles["contact_with_us-title"])}>{CONTACTS_TITLE}</h2>
+            <h2 className={styles["title"]}>{CONTACTS_TITLE}</h2>
             <p>
               {CONTACTS_DESCRIPTION}
             </p>

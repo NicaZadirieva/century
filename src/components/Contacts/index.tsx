@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import Button from '../shared/button';
 import styles from './index.module.css';
 const CONTACTS_TITLE = 'Связаться с нами';
 const CONTACTS_DESCRIPTION = `Если у вас есть вопросы по нашей продукции или вы хотели бы
@@ -23,17 +24,14 @@ export default function Contacts() {
               {CONTACTS_DESCRIPTION}
             </p>
             <div className={cn(styles["contact-btns"], "d-flex", "flex-row")}>
-              <div
+              <button
                 /*onClick={showForm}*/
-                className={cn(styles["btn"], "btn-call-2", "d-flex", "flex-column", "justify-content-center")}
+                className={cn(styles["btn"])}
               >
                 <div>оставить заявку</div>
-              </div>
+              </button>
               <div className={styles["container-btn"]}>
-                <div className={cn(styles["btn-more"], "d-flex")}>
-                  <div className={cn(styles["more-img"], styles["contact-img"])}></div>
-                  <p className={styles["upper-paragraph"]}>Все проекты</p>
-                </div>
+                <Button iconUrl="/icon/phone_book-icon.png">Все проекты</Button>
               </div>
             </div>
           </div>

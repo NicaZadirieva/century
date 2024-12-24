@@ -1,21 +1,9 @@
-.title {
-    margin-bottom: 40px;
-}
 
-/*TODO: найти похожие конструкции background: url и переделать на img*/
-.contact-img {
-    background: url("/icon/phone_book-icon.png");
-    width: 19px;
-    height: 19px;
-}
-
-.container-btn {
-    margin-left: 32px;
-    padding-top: 6px;
-}
 
 .contact-btns {
-    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .img-right-contact {
@@ -33,6 +21,7 @@
     border-radius: 0px;
     text-align: center;
     transition: .3s;
+    border: none;
 }
 
 .btn:hover {
@@ -43,12 +32,4 @@
     max-width: 100%;
     padding-top: 182px;
     padding-bottom: 190px;
-}
-
-.upper-paragraph {
-    text-transform: uppercase;
-    color: #24aa17;
-    border-bottom: 1px solid #24aa17;
-    padding-bottom: 1px;
-    margin-left: 13px;
 }

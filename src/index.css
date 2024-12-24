@@ -1,8 +1,4 @@
 /* Main + Header + Footer **/
-.desk {
-  display: none;
-
-}
 
 .showInMobile {
   display: block;
@@ -14,11 +10,6 @@ p {
 }
 
 @media screen and (min-device-width: 768px) {
-  /*TODO: 2 одинаковых по смыслу стиля. Попробовать использовать ток showInMobile*/
-  .desk {
-      display: block;
-  
-  }
   .showInMobile {
       display: none;
   }

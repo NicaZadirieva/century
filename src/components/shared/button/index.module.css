@@ -1,0 +1,19 @@
+.button {
+    /*TODO: перенести на bootstrap*/
+    align-items: flex-end;
+    background-color: white;
+    border: none;
+    gap: 15px;
+}
+
+.button__text {
+    text-transform: uppercase;
+    color: #24aa17;
+    border-bottom: 1px solid #24aa17;
+}
+
+.button__icon {
+    display: block;
+    width: 17px;
+    height: 19px;
+}

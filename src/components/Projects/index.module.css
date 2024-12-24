@@ -2,19 +2,14 @@
      align-items: center;
      flex-direction: column;
  }
- .more-img {
-     background: url("/icon/flower-icon.png");
-     width: 19px;
-     height: 19px;
- }
- 
- .paragraph {
-    text-transform: uppercase;
-    color: #24aa17;
-    border-bottom: 1px solid #24aa17;
-    padding-bottom: 1px;
-    margin-left: 13px;
- }
+
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
  @media screen and (min-device-width: 768px) {
      .projects-container {

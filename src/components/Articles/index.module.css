@@ -22,6 +22,7 @@
     margin-left: 13px;
 }
 
+
 .title {
     margin-bottom: 45px;
     font-weight: bold;
@@ -30,13 +31,6 @@
 .projects-container {
     align-items: center;
     flex-direction: column;
-}
-
-/*Здесь был companies-img*/
-.more-img {
-    background: url("/icon/message-icon.png");
-    width: 19px;
-    height: 19px;
 }
 
 @media screen and (min-device-width: 768px) {

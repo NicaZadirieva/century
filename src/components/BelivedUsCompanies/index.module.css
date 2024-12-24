@@ -1,31 +1,26 @@
-.companies-img {
-    background: url("/icon/message-icon.png");
-    width: 19px;
-    height: 19px;
-}
 
 .companies-block-img {
     max-width: 1200px;
-}
-
-.companies-block-img img {
-    margin-right: 50px;
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .companies {
     margin-top: 248px;
+    
 }
 
 .title {
-    margin-bottom: 70px;
     font-weight: bold;
 }
 
-.paragraph {
-    text-transform: uppercase;
-    color: #24aa17;
-    border-bottom: 1px solid #24aa17;
-    padding-bottom: 1px;
-    margin-left: 13px;
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
 }

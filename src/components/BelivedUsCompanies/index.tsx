@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import Paragraph from '../Paragraph';
+import Button from '../shared/button';
 import { BelievedUsCompaniesProps } from './BelievedUsCompanies.props';
 import styles from './index.module.css';
 export default function BelievedUsCompanies(props: BelievedUsCompaniesProps) {
@@ -7,12 +7,12 @@ export default function BelievedUsCompanies(props: BelievedUsCompaniesProps) {
     return (
         <>
         <div className={cn(styles["companies"], "d-flex", "flex-column")}>
-          <h2 className={styles["title"]}>Нам доверяют</h2>
-          <div className={cn("d-flex", "align-self-md-end", "align-self-sm-start", "flex-row")}>
-            <div className={styles["companies-img"]}></div>
-            <Paragraph className={styles["paragraph"]}>Все клиенты</Paragraph>
+          <div className={styles["title-container"]}>
+            <h2 className={styles["title"]}>Нам доверяют</h2>
+            <Button iconUrl="/icon/message-icon.png">Все клиенты</Button>
           </div>
-        </div>
+          </div>
+
         <div className={cn(styles["companies-block-img"], "d-flex", "flex-row", "flex-wrap", "justify-content-around")}>
           {
             companies.map((company, index) => (

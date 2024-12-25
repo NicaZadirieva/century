@@ -1,6 +1,6 @@
 import cn from "classnames";
 import { ReactNode } from "react";
-import Button from "../shared/button";
+import IconedButton from "../shared/IconedButton";
 import styles from "./index.module.css";
 export default function Articles({ children }: { children: ReactNode }) {
   return (
@@ -21,8 +21,8 @@ export default function Articles({ children }: { children: ReactNode }) {
             Здесь будут представлены публикации для сельхозорганизаций и
             фермерских хозяйств
           </p>
-          <div className={cn('desk', styles['button-container'])}>
-            <Button iconUrl="/icon/message-icon.png">Все статьи</Button>
+          <div className={cn('desk', styles['IconedButton-container'])}>
+            <IconedButton iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
           </div>
         </div>
           
@@ -38,7 +38,7 @@ export default function Articles({ children }: { children: ReactNode }) {
         </div>
       </div>
       <div  className="showInMobile">
-        <Button iconUrl="/icon/message-icon.png">Все статьи</Button>
+        <IconedButton iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
       </div>
     </div>
   );

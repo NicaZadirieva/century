@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import Button from '../shared/button';
+import IconedButton from '../shared/IconedButton';
 import styles from './index.module.css';
 const CONTACTS_TITLE = 'Связаться с нами';
 const CONTACTS_DESCRIPTION = `Если у вас есть вопросы по нашей продукции или вы хотели бы
@@ -24,14 +24,14 @@ export default function Contacts() {
               {CONTACTS_DESCRIPTION}
             </p>
             <div className={cn(styles["contact-btns"], "d-flex", "flex-row")}>
-              <button
+              <IconedButton
                 /*onClick={showForm}*/
                 className={cn(styles["btn"])}
               >
                 <div>оставить заявку</div>
-              </button>
+              </IconedButton>
               <div className={styles["container-btn"]}>
-                <Button iconUrl="/icon/phone_book-icon.png">Все проекты</Button>
+                <IconedButton iconUrl="/icon/phone_book-icon.png">Все проекты</IconedButton>
               </div>
             </div>
           </div>

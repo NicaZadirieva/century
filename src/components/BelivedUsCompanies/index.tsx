@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import Button from '../shared/button';
+import IconedButton from '../shared/IconedButton';
 import { BelievedUsCompaniesProps } from './BelievedUsCompanies.props';
 import styles from './index.module.css';
 export default function BelievedUsCompanies(props: BelievedUsCompaniesProps) {
@@ -9,7 +9,7 @@ export default function BelievedUsCompanies(props: BelievedUsCompaniesProps) {
         <div className={cn(styles["companies"], "d-flex", "flex-column")}>
           <div className={styles["title-container"]}>
             <h2 className={styles["title"]}>Нам доверяют</h2>
-            <Button iconUrl="/icon/message-icon.png">Все клиенты</Button>
+            <IconedButton iconUrl="/icon/message-icon.png">Все клиенты</IconedButton>
           </div>
           </div>
 

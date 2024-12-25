@@ -1,7 +1,7 @@
 import cn from 'classnames';
-import ButtonProps from './button.props';
+import IconedButtonProps from './button.props';
 import styles from './index.module.css';
-export default function Button(props: ButtonProps) {
+export default function IconedButton(props: IconedButtonProps) {
     return (
         <button className={cn(styles["button"], 
             props.className,

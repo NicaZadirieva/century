@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import Button from '../shared/button';
+import IconedButton from '../shared/IconedButton';
 import { ArchiveProps } from './Archive.props';
 import styles from './index.module.css';
 export default function Archive({children}: ArchiveProps) {
@@ -18,7 +18,7 @@ export default function Archive({children}: ArchiveProps) {
                 "order-md-1"
               )}
             >
-              <Button iconUrl="/icon/calendar.png">Все новости</Button>
+              <IconedButton iconUrl="/icon/calendar.png">Все новости</IconedButton>
     
             </div>
           </div>

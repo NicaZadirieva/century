@@ -168,31 +168,36 @@
 
 .logo {
     width: 67px;
-    height: 47px;
+    height: 67px;
     background: url("/logo/logo.jpg");
+    background-repeat: no-repeat;
 }
 
 .logo-title {
     color: #24aa17;
-    margin-top: 20px;
     margin-left: 26px;
 }
+.contact-list__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-.tick {
+.contact-list__item__tick {
     display: inline-block;
     width: 17px;
     height: 15px;
     background: url("/icon/tick-icon.png");
-    margin-right: 4px;
+    
 }
 .desk-header-contact {
     background: #f5f6f8;
     height: 120px;
     padding-left: 64px;
     padding-right: 64px;
-    padding-top: 16px;
     border-bottom: 1px solid #e5e5e5;
 }
+
 .tel-block p,
 .site-block p {
     font-size: 10px;

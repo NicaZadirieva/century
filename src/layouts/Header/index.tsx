@@ -12,24 +12,24 @@ export default function Header(/* props: HeaderProps */) {
   // }
   return (
     <header>
-      <div className={cn(styles["desk-header-contact"], styles["desk"], "d-flex", "flex-row", "justify-content-between")}>
-        <div className={cn("d-flex", "flex-row")}>
+      <div className={cn(styles["desk-header-contact"], "desk", "d-flex", "flex-row", "justify-content-between", "align-items-center")}>
+        <div className={cn(styles["logo-container"],"d-flex", "flex-row", "align-items-center")}>
           <div className={styles["logo"]}></div>
           <p className={styles["logo-title"]}>Новый век технологий</p>
         </div>
         <ul className={styles["desk-header-contact-list"]}>
-          <li>
-            <div className={styles["tick"]}></div>Капельное орошение
+          <li className={styles["contact-list__item"]}>
+            <div className={styles["contact-list__item__tick"]}></div>Капельное орошение
           </li>
-          <li>
-            <div className={styles["tick"]}></div>Упаковка для кормовых культур
+          <li className={styles["contact-list__item"]}>
+            <div className={styles["contact-list__item__tick"]}></div>Упаковка для кормовых культур
           </li>
-          <li>
-            <div className={styles["tick"]}></div>Упаковка для овощных культур
+          <li className={styles["contact-list__item"]}>
+            <div className={styles["contact-list__item__tick"]}></div>Упаковка для овощных культур
           </li>
         </ul>
         {/**TODO: повтор. Перенести в компонент ContactInfo */}
-        <div className={cn(styles["info"] ,"d-flex", "flex-column")}>
+        <div className={cn(styles["info"] ,"d-flex", "flex-column", "justify-content-between")}>
           <div className={styles["tel-block"]}>
             <div className={styles["tel"]}>8 800 555-86-88</div>
             <p>Звонок по России - бесплатный</p>

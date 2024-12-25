@@ -1,68 +1,68 @@
 .footer {
     background: #f5f6f8;
     color: #77767b;
-    height: 164px; /*TODO: проверить 120px*/
-    padding-left: 0; /*TODO: проверить 64px*/
-    padding-right: 0; /*TODO: проверить 64px*/
-    padding-top: 16px;
-    border-bottom: 2px solid rgba(119, 118, 123, 50%); /*TODO: проверить 1px solid #e5e5e5*/
+    height: 164px;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 2px solid rgba(119, 118, 123, 50%);
 }
 
-
 .logo {
+    gap: 15px;
+}
+
+.logo__image {
     width: 67px;
     height: 47px;
     background: url("/logo/logo.jpg");
 }
 
-.logo-title {
+.logo__title {
     color: #24aa17;
-    margin-top: 20px;
-    margin-left: 26px;
 }
 
-.social-btn {
+.social__button {
     width: 28px;
     height: 28px;
     background-size: cover;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
-.about {
-    color: #77767b;
-    background: #f5f6f8;
-    padding-top: 16px;
-}
-
-.about a {
-    text-decoration: none;
-    border-bottom: 1px solid #77767b;
-}
-/*TODO: переименовать класс*/
-.desk-header-contact-list {
+.footer__suggests {
     list-style-type: none;
 }
 
-.tick {
-    display: inline-block;
+.footer__suggest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__suggest__tick {
     width: 17px;
     height: 15px;
     background: url("/icon/tick-icon.png");
-    margin-right: 4px;
 }
 /*TODO: повтор стилей. Для ContactInfo*/
-.info {
-    bottom: 0;
-    color: white;
-    padding: 13px 20px;
+.contact {
+    color: black;
 }
 
-.tel,
-.site {
+
+.contact__email,
+.contact__phone {
     color: #24aa17;
+    text-decoration: none;
+    transition: .3s;
 }
-
-.tel-block p,
-.site-block p {
+.contact__email:hover,
+.contact__phone:hover {
+    color: black;
+}
+.contact p {
     font-size: 10px;
 }
 

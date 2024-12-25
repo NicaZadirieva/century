@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import Button from '../../components/shared/Button';
 import styles from './index.module.css';
 export default function Header(/* props: HeaderProps */) {
   // TODO:
@@ -38,11 +39,7 @@ export default function Header(/* props: HeaderProps */) {
             <p>Пн.-Пт.:8:30 - 17:00</p>
           </div>
         </div>
-         <button type="button"
-          /* onClick={showForm} */
-          className={cn(styles["btn"], styles["btn-call"], "text-center")}
-        >Заказать звонок
-        </button>
+         <Button onClick={() => {}}>Заказать звонок</Button>
       </div>
 
       <div className={cn(styles["desk-header-menu"], styles["desk"], "d-flex", "flex-row")}>

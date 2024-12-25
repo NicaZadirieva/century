@@ -9,6 +9,7 @@
 .hamburger,
 .hamburger-menu {
     padding: 5px;
+    cursor: pointer;
 }
 
 .hamburger-line {
@@ -67,21 +68,22 @@
     max-width: 100%;
 }
 
-.btn-search {
+.btn__search {
     width: 25px;
     height: 19px;
     background: url("/icon/search-icon.png");
     margin: 0 auto;
+    cursor: pointer;
 }
 
-.for_btn {
+.btn__container {
     width: 100px;
-    padding-top: 25px;
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
 }
 
 .desk-header-menu {
+    align-items: center;
     padding-left: 44px;
     padding-right: 64px;
     color: black;
@@ -104,9 +106,6 @@
 }
 
 
-.desk-header-menu li {
-    padding-top: 25px;
-}
 
 .desk-header-menu li:first-child {
     padding-left: 32px;

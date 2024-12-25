@@ -42,8 +42,8 @@ export default function Header(/* props: HeaderProps */) {
          <Button onClick={() => {}}>Заказать звонок</Button>
       </div>
 
-      <div className={cn(styles["desk-header-menu"], styles["desk"], "d-flex", "flex-row")}>
-        <div className={cn(styles["btn-menu"], "d-flex", "flex-row")}>
+      <div className={cn(styles["desk-header-menu"], "desk", "d-flex", "flex-row")}>
+        <div className={cn(styles["btn-menu"], "d-flex", "flex-row", "align-items-center")}>
           <div className={cn(styles["hamburger-menu"], "d-flex", "flex-column")}>
             <span className={styles["hamburger-line"]}></span>
             <span className={styles["hamburger-line"]}></span>
@@ -72,8 +72,8 @@ export default function Header(/* props: HeaderProps */) {
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <div className={styles["for_btn"]}>
-          <div className={styles["btn-search"]}></div>
+        <div className={styles["btn__container"]}>
+          <div className={styles["btn__search"]}></div>
         </div>
       </div>
       <div className={cn(styles["desk-menu"], "desk", "position-absolute")}>
@@ -101,7 +101,7 @@ export default function Header(/* props: HeaderProps */) {
         </div>
         <div className={styles["search"]}></div>
       </div>
-      <div className={cn(styles["mobile-header-list"], styles["mobile"])}>
+      <div className={cn(styles["mobile-header-list"], "showInMobile")}>
         <ul className="p-0 m-0">
           <li>
             <a href="#">Капельное орошение</a>
@@ -131,11 +131,7 @@ export default function Header(/* props: HeaderProps */) {
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <button type="button" title="Заказать звонок"
-          /* onClick={showForm} */
-          className={cn(styles["btn"], styles["mobile"], "text-center")}
-        >
-        </button>
+        <Button onClick={() => {}}>Заказать звонок</Button>
       </div>
 
       <div className={cn(styles["trailer"], "position-relative")}>

@@ -16,23 +16,33 @@ export default function Contacts() {
     });
   }*/
     return (
-        /**TODO: возможно придется изменить на фрагмент */
-        <div className={styles["contact_with_us"]}>
-        <div className={cn("restrict-width", "d-flex", "flex-row")}>
-          <div className={styles["text"]}>
-            <h2 className={styles["title"]}>{CONTACTS_TITLE}</h2>
-            <p>
-              {CONTACTS_DESCRIPTION}
-            </p>
-            <div className={cn(styles["contact-btns"], "d-flex", "flex-row")}>
-              <Button onClick={(event: MouseEvent) => {console.log(event)}}> Оставить заявку </Button>
-              <div className={styles["container-btn"]}>
-                <IconedButton iconUrl="/icon/phone_book-icon.png">Все проекты</IconedButton>
-              </div>
+      <section className={cn(styles["contact-with-us"], "restrict-width", "d-flex", "flex-row")}>
+          <div className={cn(styles["contact-with-us__content"], "d-flex", "flex-column")}>
+            <h2 className={styles["contact-with-us__title"]}>{CONTACTS_TITLE}</h2>
+            <p>{CONTACTS_DESCRIPTION}</p>
+            <div className={cn(styles["contact-with-us__btns"], "d-flex", "flex-row", "align-items-center")}>
+              <Button
+                onClick={(event: MouseEvent) => {
+                  console.log(event);
+                }}
+              >
+                Оставить заявку
+              </Button>
+                <IconedButton iconUrl="/icon/phone_book-icon.png">
+                  Все проекты
+                </IconedButton>
+
             </div>
           </div>
-          <div className={cn(styles["img-right-contact"], "desk", "col-xs-12", "col-sm-6")}></div>
-        </div>
-      </div>
+          <div
+            className={cn(
+              styles["contact-with-us__image"],
+              "desk",
+              "col-xs-12",
+              "col-sm-6"
+            )}
+          ></div>
+
+      </section>
     );
 }

@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 export default function Articles({ children }: { children: ReactNode }) {
   return (
     <div className={styles["articles"]}>
-      <div
+      <header
         className={cn(
           "restrict-width",
           "d-flex",
@@ -14,31 +14,31 @@ export default function Articles({ children }: { children: ReactNode }) {
           "justify-content-between"
         )}
       >
-        <div className={cn(styles["articles-info"], "d-flex", "flex-column")}>
-          <h2 className={styles["title"]}>Статьи</h2>
+        <div className={cn(styles["articles__description"], "d-flex", "flex-column")}>
+          <h2 className={styles["articles__title"]}>Статьи</h2>
 
-          <p className={styles["paragraph"]}>
+          <p className={styles["articles__paragraph"]}>
             Здесь будут представлены публикации для сельхозорганизаций и
             фермерских хозяйств
           </p>
-          <div className={cn('desk', styles['IconedButton-container'])}>
-            <IconedButton iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
+          <div className={'desk'}>
+            <IconedButton className={styles["articles__button"]} iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
           </div>
         </div>
           
-        <div
+        <main
           className={cn(
-            styles["projects-container"],
+            styles["articles__projects"],
             "d-flex",
             "flex-lg-row",
             "flex-column"
           )}
         >
           {children}
-        </div>
-      </div>
+        </main>
+      </header>
       <div  className="showInMobile">
-        <IconedButton iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
+        <IconedButton className={styles["articles__button"]} iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
       </div>
     </div>
   );

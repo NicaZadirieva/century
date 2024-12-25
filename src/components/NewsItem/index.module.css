@@ -1,51 +1,39 @@
-.archive-block {
+.archive {
     background: white;
-    max-width: 100%;
     height: 444px;
-    padding: 36px 12px;
-    margin-bottom: 60px;
-    margin-right: 16px;
-    margin-left: 16px;
-}
-/*TODO: посмотреть, действительно ли нужны стили*/
-.archive-date, .month {
-    display: inline-block;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
 }
 
-.archive-date {
+
+.archive__date__day {
     color: #87d07f;
     font-size: 50px;
     font-weight: bold;
 }
 
-.archive-about {
+.archive__description {
     color: #9b9a9e;
-    margin-bottom: 60px;
 }
 
-.month {
+.archive__date__month {
     margin-left: 6px;
 }
 
-.btn-archive {
-    width: 136px;
-    height: 37px;
-    text-align: center;
-    padding: 15px 25px;
-    background: #e4e5e9;
-    color: #9b9a9e;
-    font-weight: bold;
-    text-transform: uppercase;
+.archive__button {
+    min-width: 100%;
 }
 
 .title {
-    margin-bottom: 70px;
     font-weight: bold;
 }
 
 @media screen and (min-device-width: 768px) {
-    .archive-block {
-        width: 278px;
+    .archive__date {
+        width: 100%;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 0;

@@ -25,6 +25,7 @@ export default function Archive({children}: ArchiveProps) {
 
           <div
             className={cn(
+              styles['news-container'],
               "order-1",
               "order-md-2",
               "d-flex",

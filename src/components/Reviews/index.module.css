@@ -14,3 +14,6 @@
     align-items: center;
     margin-bottom: 30px;
 }
+.button {
+    background-color: transparent;
+}

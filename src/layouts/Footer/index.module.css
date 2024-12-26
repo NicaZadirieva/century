@@ -69,7 +69,7 @@
 /*-----------------------------------------*/
 
 @media screen and (min-device-width: 768px) {
-    .footer,.about {
+    .footer {
         padding-left: 64px;
         padding-right: 64px;
     }

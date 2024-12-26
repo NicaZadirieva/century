@@ -1,3 +1,12 @@
+.header {
+    background: #f5f6f8;
+    padding-left: 0;
+    padding-right: 0;
+    height: 164px;
+}
+
+/**HAMBURGER MENU*/
+
 .hamburger-menu {
     margin-right: 11px;
 }
@@ -22,13 +31,16 @@
     margin-top: 4px;
 }
 
-.mobile-header {
+/**HAMBURGER MENU END*/
+
+.header.showInMobile {
     display: flex;
     background: #f5f6f8;
     height: 68px;
 }
 
-.mobile-header-list {
+/** TICKS ON MOBILE */
+.header__suggests.showInMobile {
     text-transform: uppercase;
     background: white;
     color: black;
@@ -36,23 +48,44 @@
     display: none;
 }
 
-.mobile-header-list ul,
-.desk-header-contact-list {
+ul.header__suggests  {
     list-style-type: none;
 }
 
-.mobile-header-list a {
+.header_suggest__tick {
+    width: 17px;
+    height: 15px;
+    background: url("/icon/tick-icon.png");
+}
+
+/** TICKS ON MOBILE END */
+
+
+/** TICKS on DESKTOP **/
+.header__suggests {
+    list-style-type: none;
+}
+
+.header__suggest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__suggest__tick {
+    width: 17px;
+    height: 15px;
+    background: url("/icon/tick-icon.png");
+}
+
+/** TICKS on DESKTOP END **/
+
+.header__list.showInMobile a {
     text-decoration: none;
     color: black;
 }
 
-.btn {
-    background: #24aa17 !important;
-    height: 50px;
-    width: 200px;
-    color: white;
-    border: none;
-}
 
 .search {
     width: 20px;
@@ -60,9 +93,6 @@
     background: url("/icon/search-icon-2.png");
 }
 
-.desk-header-contact {
-    display: none;
-}
 
 #video {
     max-width: 100%;
@@ -81,74 +111,68 @@
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
 }
+/** HEADER MENU */
 
-.desk-header-menu {
-    align-items: center;
-    padding-left: 44px;
-    padding-right: 64px;
-    color: black;
-    border-bottom: 1px solid #e5e5e5;
-    text-transform: uppercase;
-    font-size: 14px;
-}
 
-.desk-header-menu a {
+.header__menu__list a {
     color: black;
     text-decoration: none;
 }
 
-.desk-header-menu ul {
+ul.header__menu__list {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 25px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 25px;
     width: 100%;
-    padding-right: 115px;
 }
 
 
 
-.desk-header-menu li:first-child {
-    padding-left: 32px;
+ul.header__menu__list:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
+/** HEADER MENU END */
 
-.desk-menu {
+
+/** MENU on DESKTOP **/
+
+.menu.desk {
     text-transform: uppercase;
     font-size: 10px;
     opacity: 0;
 }
 
-.desk-menu ul {
+.menu.desk ul {
     list-style-type: none;
     margin-left: 44px;
     padding: 0;
     background-color: white;
 }
 
-.desk-menu li {
+.menu.desk li {
     padding: 20px;
 }
 
-.desk-menu a {
+.menu.desk a {
     color: black;
     text-decoration: none;
 }
 
-.btn-menu {
-    padding-top: 25px;
-    border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 25px;
-}
+/** MENU on DESKTOP END **/
 
-.btn-menu:hover {
-    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .2);
-}
+
+/** VIDEO SECTION **/
+
 .trailer {
     overflow: hidden;
 }
-.info-trailer {
+.trailer__info {
     position: absolute;
     color: white;
     top: 50%;
@@ -158,67 +182,80 @@
     transform: translate(-50%, -50%);
 }
 
-.info-trailer h1 {
+.trailer__info h1 {
     font-size: 32px;
 }
 
-.info-trailer p {
+.trailer__info p {
     font-size: 18px;
 }
 
+/** VIDEO SECTION END **/
+
+/** LOGO **/
 .logo {
+    gap: 15px;
+}
+
+.logo__image {
     width: 67px;
-    height: 67px;
+    height: 47px;
     background: url("/logo/logo.jpg");
-    background-repeat: no-repeat;
 }
 
-.logo-title {
+.logo__title {
     color: #24aa17;
-    margin-left: 26px;
-}
-.contact-list__item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
-.contact-list__item__tick {
-    display: inline-block;
-    width: 17px;
-    height: 15px;
-    background: url("/icon/tick-icon.png");
-    
-}
-.desk-header-contact {
-    background: #f5f6f8;
-    height: 120px;
-    padding-left: 64px;
-    padding-right: 64px;
-    border-bottom: 1px solid #e5e5e5;
+/** LOGO END **/
+
+
+/*TODO: повтор стилей. Для ContactInfo*/
+/** CONTACT INFO **/
+.contact {
+    color: black;
 }
 
-.tel-block p,
-.site-block p {
+
+.contact__email,
+.contact__phone {
+    color: #24aa17;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contact__email:hover,
+.contact__phone:hover {
+    color: black;
+}
+
+.contact p {
     font-size: 10px;
 }
-.tel,
-.site {
-    color: #24aa17;
-}
+
+/** CONTACT INFO END **/
+
 @media screen and (min-device-width: 768px) {
-    .desk-header-menu {
+
+    .header__menu {
         display: flex;
     }
-    .desk-menu {
+
+    .desk.menu {
         z-index: 1000;
         transition: opacity 1s ease;
     }
 
-    .desk-menu-opened {
+    .desk.menu__opened {
         opacity: 1
     }
-    .info-trailer {
+
+    .trailer__info {
         max-width: 714px;
+    }
+
+    .header {
+        padding-left: 64px;
+        padding-right: 64px;
     }
 }

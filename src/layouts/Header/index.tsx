@@ -1,6 +1,6 @@
-import cn from 'classnames';
-import Button from '../../components/shared/Button';
-import styles from './index.module.css';
+import cn from "classnames";
+import Button from "../../components/shared/Button";
+import styles from "./index.module.css";
 export default function Header(/* props: HeaderProps */) {
   // TODO:
   // function showForm() {
@@ -12,71 +12,124 @@ export default function Header(/* props: HeaderProps */) {
   // }
   return (
     <header>
-      <div className={cn(styles["desk-header-contact"], "desk", "d-flex", "flex-row", "justify-content-between", "align-items-center")}>
-        <div className={cn(styles["logo-container"],"d-flex", "flex-row", "align-items-center")}>
-          <div className={styles["logo"]}></div>
-          <p className={styles["logo-title"]}>Новый век технологий</p>
+      <div
+        className={cn(
+          styles["header"],
+          "desk",
+          "d-flex",
+          "flex-row",
+          "justify-content-between",
+          "align-items-center"
+        )}
+      >
+        <div
+          className={cn(
+            styles["logo"],
+            "d-lg-flex",
+            "flex-row",
+            "align-items-center",
+            "desk"
+          )}
+        >
+          <div className={styles["logo__image"]}></div>
+          <p className={styles["logo__title"]}>Новый век технологий</p>
         </div>
-        <ul className={styles["desk-header-contact-list"]}>
-          <li className={styles["contact-list__item"]}>
-            <div className={styles["contact-list__item__tick"]}></div>Капельное орошение
+        <ul className={cn(styles["header__suggests"], "desk")}>
+          <li className={styles["header__suggest"]}>
+            <div className={styles["header__suggest__tick"]}></div>
+            <span>Капельное орошение</span>
           </li>
-          <li className={styles["contact-list__item"]}>
-            <div className={styles["contact-list__item__tick"]}></div>Упаковка для кормовых культур
+          <li className={styles["header__suggest"]}>
+            <div className={styles["header__suggest__tick"]}></div>
+            <span>Упаковка для кормовых культур</span>
           </li>
-          <li className={styles["contact-list__item"]}>
-            <div className={styles["contact-list__item__tick"]}></div>Упаковка для овощных культур
+          <li className={styles["header__suggest"]}>
+            <div className={styles["header__suggest__tick"]}></div>
+            <span>Упаковка для овощных культур</span>
           </li>
         </ul>
-        {/**TODO: повтор. Перенести в компонент ContactInfo */}
-        <div className={cn(styles["info"] ,"d-flex", "flex-column", "justify-content-between")}>
-          <div className={styles["tel-block"]}>
-            <div className={styles["tel"]}>8 800 555-86-88</div>
+        <div className={cn(styles["contact"], "d-flex", "flex-column")}>
+          <div className={styles["contact__phone__container"]}>
+            <a href="tel:+78005558688" className={styles["contact__phone"]}>
+              8 800 555-86-88
+            </a>
             <p>Звонок по России - бесплатный</p>
           </div>
-          <div className={styles["site-block"]}>
-            <div className={styles["site"]}>info@neo-agriservis.ru</div>
+          <div className={styles["contact__email__container"]}>
+            <a
+              href="mailto:info@neo-agriservis.ru"
+              className={styles["contact__email"]}
+            >
+              info@neo-agriservis.ru
+            </a>
             <p>Пн.-Пт.:8:30 - 17:00</p>
           </div>
         </div>
-         <Button onClick={() => {}}>Заказать звонок</Button>
+        <Button onClick={() => {}}>Заказать звонок</Button>
       </div>
 
-      <div className={cn(styles["desk-header-menu"], "desk", "d-flex", "flex-row")}>
-        <div className={cn(styles["btn-menu"], "d-flex", "flex-row", "align-items-center")}>
-          <div className={cn(styles["hamburger-menu"], "d-flex", "flex-column")}>
+      <div
+        className={cn(
+          styles["header__menu"],
+          "desk",
+          "d-flex",
+          "flex-row",
+          "align-items-center"
+        )}
+      ></div>
+      <ul
+        className={cn(
+          styles["header__menu__list"],
+          "d-flex",
+          "flex-row",
+          "align-items-center",
+          "justify-content-between"
+        )}
+      >
+        <li
+          className={cn(
+            styles["header__menu__li"],
+            "d-flex",
+            "flex-row",
+            "align-items-center"
+          )}
+        >
+          <div
+            className={cn(styles["hamburger-menu"], "d-flex", "flex-column")}
+          >
             <span className={styles["hamburger-line"]}></span>
             <span className={styles["hamburger-line"]}></span>
             <span className={styles["hamburger-line"]}></span>
           </div>
 
           <a href="#">Продукция</a>
-        </div>
-        <ul className={cn("d-flex", "flex-row", "justify-content-between")}>
-          <li>
-            <a href="#">Услуги</a>
-          </li>
-          <li>
-            <a href="#">Реализованные проекты</a>
-          </li>
-          <li>
-            <a href="#">Статьи</a>
-          </li>
-          <li>
-            <a href="#">Клиенты</a>
-          </li>
-          <li>
-            <a href="#">О компании</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <div className={styles["btn__container"]}>
-          <div className={styles["btn__search"]}></div>
-        </div>
-      </div>
-      <div className={cn(styles["desk-menu"], "desk", "position-absolute")}>
+        </li>
+        <li className={styles["header__menu__li"]}>
+          <a href="#">Услуги</a>
+        </li>
+        <li className={styles["header__menu__li"]}>
+          <a href="#">Реализованные проекты</a>
+        </li>
+        <li className={styles["header__menu__li"]}>
+          <a href="#">Статьи</a>
+        </li>
+        <li className={styles["header__menu__li"]}>
+          <a href="#">Клиенты</a>
+        </li>
+        <li className={styles["header__menu__li"]}>
+          <a href="#">О компании</a>
+        </li>
+        <li className={styles["header__menu__li"]}>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <div className={styles["btn__container"]}>
+            <div className={styles["btn__search"]}></div>
+          </div>
+        </li>
+      </ul>
+
+      <div className={cn(styles["menu"], "desk", "position-absolute")}>
         <ul>
           <li>
             <a href="#">Капельное орошение</a>
@@ -89,7 +142,15 @@ export default function Header(/* props: HeaderProps */) {
           </li>
         </ul>
       </div>
-      <div className={cn(styles["mobile-header"] ,"showInMobile", "flex-row", "justify-content-around", "align-items-center")}>
+      <header
+        className={cn(
+          styles["header"],
+          "showInMobile",
+          "flex-row",
+          "justify-content-around",
+          "align-items-center"
+        )}
+      >
         <div className={cn(styles["hamburger"], "d-flex", "flex-column")}>
           <span className={styles["hamburger-line"]}></span>
           <span className={styles["hamburger-line"]}></span>
@@ -100,8 +161,9 @@ export default function Header(/* props: HeaderProps */) {
           <p>Новый век технологий</p>
         </div>
         <div className={styles["search"]}></div>
-      </div>
-      <div className={cn(styles["mobile-header-list"], "showInMobile")}>
+      </header>
+      {/**TODO: протестировать на мобилках */}
+      <div className={cn(styles["header__list"], "showInMobile")}>
         <ul className="p-0 m-0">
           <li>
             <a href="#">Капельное орошение</a>
@@ -145,7 +207,7 @@ export default function Header(/* props: HeaderProps */) {
         >
           <source src="/video/trailer.mp4"></source>
         </video>
-        <div className={styles["info-trailer"]}>
+        <div className={styles["trailer__info"]}>
           <h1>Новый век агротехнологий</h1>
           <p>
             Мы создаем и внедряем инновационные технологии интеллектуального

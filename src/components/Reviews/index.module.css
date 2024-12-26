@@ -1,24 +1,16 @@
 .reviews {
-    margin-top: 80px;
-    padding-top: 120px;
-    background-image: url("./img/assets/review-bg.jpg");
+    background-image: url("/assets/review-bg.jpg");
     background-size: cover;
-    padding-bottom: 132px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 50px;
+    box-sizing: border-box;
 }
 
-.title {
-    margin-bottom: 70px;
-    font-weight: bold;
-}
-
-.paragraph {
-    text-transform: uppercase;
-    color: #24aa17;
-    border-bottom: 1px solid #24aa17;
-    padding-bottom: 1px;
-    margin-left: 13px;
-}
-
-.companies-img {
-    background: url("./img/icon/message-icon.png");
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }

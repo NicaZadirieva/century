@@ -4,5 +4,7 @@ export default interface IconedButtonProps {
     children: ReactNode,
     iconUrl: string,
     className?: string,
-    showInMobile?: boolean
+    showInMobile?: boolean,
+    iconWidth?: number,
+    iconHeight?: number
 }

@@ -13,8 +13,9 @@
 
 .logo__image {
     width: 67px;
-    height: 47px;
+    height: 67px;
     background: url("/logo/logo.jpg");
+    background-repeat: no-repeat;
 }
 
 .logo__title {

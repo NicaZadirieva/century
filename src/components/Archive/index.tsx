@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import IconedButton from '../shared/IconedButton';
+import Title from '../Title';
 import { ArchiveProps } from './Archive.props';
 import styles from './index.module.css';
 export default function Archive({children}: ArchiveProps) {
@@ -7,7 +8,7 @@ export default function Archive({children}: ArchiveProps) {
       <div className={styles["archive"]}>
         <div className={cn("restrict-width", "d-flex", "flex-column")}>
           <div className={styles["title-container"]}>
-            <h2 className={styles["title"]}>Архив новостей</h2>
+            <Title level={2}>Архив новостей</Title>
             <div
               className={cn(
                 "d-flex",

@@ -2,22 +2,20 @@
     padding-top: 120px;
     background-image: url("/assets/artic-bg.png");
     background-size: cover;
-    padding-bottom: 132px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    height: 100vh;
 }
+
+
 
 .articles__description {
-    max-width: 100%;
     font-size: 14px;
+    height: inherit;
+    gap: 35px;
+
 }
 
-.articles__paragraph {
-    margin-bottom: 22px;
-}
-
-.articles__title {
-    margin-bottom: 45px;
-    font-weight: bold;
-}
 
 .articles__button {
   padding: 0;

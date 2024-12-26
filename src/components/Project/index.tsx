@@ -9,7 +9,6 @@ export default function Project(props: ProjectProps){
             <div className={cn(styles['info'], "position-absolute")}>
                 <Paragraph className={styles['upper-paragraph']}>{props.description}</Paragraph>
                 <div className="d-flex flex-row justify-content-between">
-                {/**Здесь стили не даны в файле */}
                   <div className={styles["seen"]}>
                     <div className={styles["seen-image"]}></div>
                     <span>{props.seenCount || 0}</span>

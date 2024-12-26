@@ -1,114 +1,12 @@
 main {
     position: relative;
-    top: 0;
-}
-
-/*TODO: попробовать хотя бы переименовать*/
-#drops {
-    background: url("./img/assets/big_field.jpg");
-}
-
-#setka {
-    background: url("./img/assets/field_works.JPEG");
-}
-
-#vegetables {
-    background: url("./img/assets/thread.JPG");
-}
-
-
-
-
-
-main {
     background: white;
+    top: 0;
 }
 
 .card-sites {
     flex-direction: column;
 }
-
-
-
-#drops-left {
-    background: url("./img/icon/drops-icon.png");
-    width: 67px;
-    height: 67px;
-}
-
-#setka-left {
-    background: url("./img/icon/circles-icon.png");
-    width: 90px;
-    height: 56px;
-}
-
-#vegetables-left {
-    background: url("./img/icon/wheat-icon.png");
-    width: 52px;
-    height: 67px;
-}
-
-
-#salat {
-    background: url("./img/assets/cabbages.jpg");
-}
-
-#lenti {
-    background: url("./img/assets/bushes.jpg");
-}
-
-#raspberry {
-    background: url("./img/assets/2_rubles.jpg");
-}
-
-#carrot {
-    background: url("./img/assets/carrots.jpg");
-}
-
-#cabbage {
-    background: url("./img/assets/cabbage.jpg");
-}
-
-
-
-
-#pitom {
-    background: url("./img/assets/greenfield.jpg");
-}
-
-#calc {
-    background: url("./img/assets/calc.jpg");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.zao {
-    width: 87px;
-    height: 87px;
-    background-size: cover;
-    background-image: url("/img/logo/biruli.gif");
-}
-
-.pokr {
-    width: 87px;
-    height: 87px;
-    background-image: url("/img/logo/pokr-logo/logo.jpg");
-    background-size: cover;
-}
-
-
-
-
-
 
 .projects-container {
     align-items: center;
@@ -116,11 +14,11 @@ main {
 }
 
 .advantages {
-    margin-top: 214px;
+    margin-top: 50px;
     max-width: 1200px;
 }
 
-.adva-title {
+.advantages__title {
     margin-bottom: 70px;
 }
 

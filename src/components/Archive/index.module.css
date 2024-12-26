@@ -3,6 +3,7 @@
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 132px;
+    height: 100vh;
 }
 
 .title {
@@ -15,7 +16,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .news-container {

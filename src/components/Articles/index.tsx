@@ -1,13 +1,14 @@
 import cn from "classnames";
 import { ReactNode } from "react";
 import IconedButton from "../shared/IconedButton";
+import Title from '../Title';
 import styles from "./index.module.css";
 export default function Articles({ children }: { children: ReactNode }) {
   return (
-    <div className={styles["articles"]}>
+    <div className={cn(styles["articles"], "restrict-width", "d-flex", "flex-row", 'align-items-center', "justify-content-between")}>
       <header
         className={cn(
-          "restrict-width",
+          styles["articles__header"],
           "d-flex",
           "flex-lg-row",
           "flex-column",
@@ -15,7 +16,7 @@ export default function Articles({ children }: { children: ReactNode }) {
         )}
       >
         <div className={cn(styles["articles__description"], "d-flex", "flex-column")}>
-          <h2 className={styles["articles__title"]}>Статьи</h2>
+          <Title level={2} className={styles["articles__title"]}>Статьи</Title>
 
           <p className={styles["articles__paragraph"]}>
             Здесь будут представлены публикации для сельхозорганизаций и
@@ -26,7 +27,9 @@ export default function Articles({ children }: { children: ReactNode }) {
           </div>
         </div>
           
-        <main
+        
+      </header>
+      <main
           className={cn(
             styles["articles__projects"],
             "d-flex",
@@ -36,7 +39,6 @@ export default function Articles({ children }: { children: ReactNode }) {
         >
           {children}
         </main>
-      </header>
       <div  className="showInMobile">
         <IconedButton className={styles["articles__button"]} iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
       </div>

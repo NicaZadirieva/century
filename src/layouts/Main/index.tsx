@@ -13,6 +13,7 @@ import Project from '../../components/Project';
 import Projects from '../../components/Projects';
 import Review from '../../components/Review';
 import Reviews from '../../components/Reviews';
+import Title from '../../components/Title';
 import styles from './index.module.css';
 
 export default function Main() {
@@ -125,10 +126,7 @@ export default function Main() {
         </Projects>
         {/**Advantages массив */}
         <div className={styles["advantages"]}>
-          <h2 className={cn(styles["adva-title"], styles["title"])}>
-            Преимущества компании <br />
-            "Новый век агротехнологий"
-          </h2>
+          <Title level={2} className={styles["advantages__title"]}> Преимущества компании "Новый век агротехнологий"</Title>
           <Advantages>
             {/**Advantage */}
             <Advantage

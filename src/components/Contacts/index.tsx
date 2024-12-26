@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import Button from '../shared/Button';
 import IconedButton from '../shared/IconedButton';
+import Title from '../Title';
 import styles from './index.module.css';
 const CONTACTS_TITLE = 'Связаться с нами';
 const CONTACTS_DESCRIPTION = `Если у вас есть вопросы по нашей продукции или вы хотели бы
@@ -18,7 +19,7 @@ export default function Contacts() {
     return (
       <section className={cn(styles["contact-with-us"], "restrict-width", "d-flex", "flex-row")}>
           <div className={cn(styles["contact-with-us__content"], "d-flex", "flex-column")}>
-            <h2 className={styles["contact-with-us__title"]}>{CONTACTS_TITLE}</h2>
+            <Title level={2} className={styles["contact-with-us__title"]}>{CONTACTS_TITLE}</Title>
             <p>{CONTACTS_DESCRIPTION}</p>
             <div className={cn(styles["contact-with-us__btns"], "d-flex", "flex-row", "align-items-center")}>
               <Button

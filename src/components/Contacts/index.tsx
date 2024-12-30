@@ -1,7 +1,7 @@
 import cn from 'classnames';
-import Button from '../shared/Button';
-import IconedButton from '../shared/IconedButton';
-import Title from '../Title';
+
+import { MouseEvent } from 'react';
+import { Button, IconedButton, Title } from '../../widgets';
 import styles from './index.module.css';
 const CONTACTS_TITLE = 'Связаться с нами';
 const CONTACTS_DESCRIPTION = `Если у вас есть вопросы по нашей продукции или вы хотели бы
@@ -23,9 +23,7 @@ export default function Contacts() {
             <p>{CONTACTS_DESCRIPTION}</p>
             <div className={cn(styles["contact-with-us__btns"], "d-flex", "flex-row", "align-items-center")}>
               <Button
-                onClick={(event: MouseEvent) => {
-                  console.log(event);
-                }}
+                onClick={(event: MouseEvent) => { console.log(event); }}
               >
                 Оставить заявку
               </Button>

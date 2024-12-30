@@ -13,7 +13,8 @@ import Project from '../../components/Project';
 import Projects from '../../components/Projects';
 import Review from '../../components/Review';
 import Reviews from '../../components/Reviews';
-import Title from '../../components/Title';
+
+import { Title } from '../../widgets';
 import styles from './index.module.css';
 
 export default function Main() {

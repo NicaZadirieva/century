@@ -1,6 +1,6 @@
 import cn from 'classnames';
-import Title from '../Title';
-import IconedButton from '../shared/IconedButton';
+
+import { IconedButton, Title } from '../../widgets';
 import { ProjectsProps } from './Projects.props';
 import styles from './index.module.css';
 export default function Projects({ children } : ProjectsProps) {

@@ -1,6 +1,6 @@
 import cn from 'classnames';
+import { IconedButton } from '../../widgets';
 import Paragraph from '../Paragraph';
-import IconedButton from '../shared/IconedButton';
 import styles from './index.module.css';
 import { ReviewProps } from './Review.props';
 /**TODO: разобраться с кнопками. Выделить в отдельный компонент Button. */

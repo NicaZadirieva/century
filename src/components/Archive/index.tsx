@@ -1,6 +1,6 @@
 import cn from 'classnames';
-import IconedButton from '../shared/IconedButton';
-import Title from '../Title';
+
+import { IconedButton, Title } from '../../widgets';
 import { ArchiveProps } from './Archive.props';
 import styles from './index.module.css';
 export default function Archive({children}: ArchiveProps) {

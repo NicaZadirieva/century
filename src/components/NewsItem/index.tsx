@@ -1,4 +1,4 @@
-import Button from '../shared/Button';
+import { Button } from '../../widgets';
 import styles from './index.module.css';
 import { NewsItemProps } from './NewsItem.props';
 export default function NewsItem(props: NewsItemProps) {

@@ -1,5 +1,6 @@
 import cn from "classnames";
-import Button from "../../components/shared/Button";
+
+import { Button } from '../../widgets';
 import styles from "./index.module.css";
 export default function Header(/* props: HeaderProps */) {
   // TODO:

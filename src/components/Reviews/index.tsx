@@ -1,7 +1,6 @@
 import cn from 'classnames';
 import Slider, { Settings } from 'react-slick';
-import Title from '../Title';
-import IconedButton from '../shared/IconedButton';
+import { IconedButton, Title } from '../../widgets';
 import { ReviewsProps } from './Reviews.props';
 import styles from './index.module.css';
 

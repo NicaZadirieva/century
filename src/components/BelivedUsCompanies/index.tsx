@@ -1,6 +1,5 @@
 import cn from 'classnames';
-import IconedButton from '../shared/IconedButton';
-import Title from '../Title';
+import { IconedButton, Title } from '../../widgets';
 import { BelievedUsCompaniesProps } from './BelievedUsCompanies.props';
 import styles from './index.module.css';
 export default function BelievedUsCompanies(props: BelievedUsCompaniesProps) {

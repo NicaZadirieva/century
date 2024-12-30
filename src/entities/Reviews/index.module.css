@@ -1,0 +1,19 @@
+.reviews {
+    background-image: url("/assets/review-bg.jpg");
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.button {
+    background-color: transparent;
+}

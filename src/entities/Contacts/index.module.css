@@ -1,0 +1,16 @@
+.contact-with-us__btns {
+    gap: 32px;
+}
+
+.contact-with-us__image {
+    background: url("/assets/articles-bg.jpg") no-repeat center center/contain;
+    height: 410px;
+    margin-top: 88px;
+}
+
+.contact-with-us__content {
+    max-width: 100%;
+    padding-top: 182px;
+    padding-bottom: 190px;
+    gap: 20px;
+}

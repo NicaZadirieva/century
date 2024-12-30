@@ -1,0 +1,46 @@
+main {
+    position: relative;
+    background: white;
+    top: 0;
+}
+
+.card-sites {
+    flex-direction: column;
+}
+
+.projects-container {
+    align-items: center;
+    flex-direction: column;
+}
+
+.advantages {
+    margin-top: 50px;
+    max-width: 1200px;
+}
+
+.advantages__title {
+    margin-bottom: 70px;
+}
+
+.title {
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+@media screen and (min-device-width: 768px) {
+
+    .projects-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+

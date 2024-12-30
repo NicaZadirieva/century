@@ -1,0 +1,25 @@
+
+.review {
+    display: flex;
+    height: 300px;
+    background-image: url("/assets/review-i-bg.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 373px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+}
+
+.review__img__img {
+    height: 87px;
+}
+.review__button__container {
+    flex-wrap: wrap;
+    gap: 15px;
+}

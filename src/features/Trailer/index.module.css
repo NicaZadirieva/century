@@ -1,0 +1,35 @@
+/** VIDEO SECTION **/
+
+.trailer {
+    overflow: hidden;
+}
+
+.trailer__info {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    max-width: 428px;
+    transform: translate(-50%, -50%);
+}
+
+.trailer__info h1 {
+    font-size: 32px;
+}
+
+.trailer__info p {
+    font-size: 18px;
+}
+
+/** VIDEO SECTION END **/
+
+#video {
+    max-width: 100%;
+}
+
+@media screen and (min-device-width: 768px) {
+    .trailer__info {
+        max-width: 714px;
+    }
+}

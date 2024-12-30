@@ -1,0 +1,16 @@
+.footer {
+    background: #f5f6f8;
+    color: #77767b;
+    height: 164px;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 2px solid rgba(119, 118, 123, 50%);
+}
+
+
+@media screen and (min-device-width: 768px) {
+    .footer {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}

@@ -1,0 +1,22 @@
+ .projects-container {
+     align-items: center;
+     flex-direction: column;
+ }
+
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+ @media screen and (min-device-width: 768px) {
+     .projects-container {
+         flex-wrap: wrap;
+         flex-direction: row;
+     }
+ }

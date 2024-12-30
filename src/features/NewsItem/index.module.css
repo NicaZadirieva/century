@@ -1,0 +1,41 @@
+.archive {
+    background: white;
+    height: 444px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+
+.archive__date__day {
+    color: #87d07f;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.archive__description {
+    color: #9b9a9e;
+}
+
+.archive__date__month {
+    margin-left: 6px;
+}
+
+.archive__button {
+    min-width: 100%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+@media screen and (min-device-width: 768px) {
+    .archive__date {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}

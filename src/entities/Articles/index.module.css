@@ -1,0 +1,40 @@
+.articles {
+    padding-top: 120px;
+    background-image: url("/assets/artic-bg.png");
+    background-size: cover;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+
+.articles__description {
+    font-size: 14px;
+    height: inherit;
+    gap: 35px;
+
+}
+
+
+.articles__button {
+  padding: 0;
+  background: transparent;
+}
+
+.articles__projects {
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-device-width: 768px) {
+
+    .articles__description {
+        max-width: 188px;
+    }
+
+    .articles__projects {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}

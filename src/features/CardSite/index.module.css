@@ -1,0 +1,59 @@
+.card-site {
+    width: 420px;
+    height: 240px;
+    background: white;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, .2);
+    /*TODO: очень странные стили*/
+    margin-bottom: 35px;
+    top: -8px;
+}
+/*TODO: возможно можно будет вынести*/
+.paragraph {
+    position: absolute;
+    top: 154px;/*160px;*/
+    left: 40px;/*30px;*/
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #24aa17;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+.img-right {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+    overflow: hidden;
+}
+
+.img-left {
+    position: absolute;
+    top: 58px;
+    left: 40px;
+}
+
+
+@media screen and (min-device-width: 768px) {
+    .card-site {
+        top: -43px; /*TODO: ?*/
+        width: 372px;
+        height: 240px;
+        margin-right: 35px;
+    }
+
+    .img-left {
+        top: 56px;
+        left: 40px;
+    }
+
+    .paragraph {
+        top: 177px;
+        padding-bottom: 2px;
+    }
+}

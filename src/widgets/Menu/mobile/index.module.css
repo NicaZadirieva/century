@@ -1,0 +1,21 @@
+/* основные стили */
+@import url(../index.module.css);
+
+.header.showInMobile {
+    display: flex;
+    background: #f5f6f8;
+    height: 68px;
+}
+
+.header__list.showInMobile a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-device-width: 768px) {
+
+    .header {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}

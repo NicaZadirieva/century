@@ -14,3 +14,14 @@
     height: 15px;
     background: url("/icon/tick-icon.png");
 }
+
+/** TICKS ON MOBILE */
+.suggests.showInMobile {
+    text-transform: uppercase;
+    background: white;
+    color: black;
+    padding: 30px;
+    display: none;
+}
+
+/** TICKS ON MOBILE END */

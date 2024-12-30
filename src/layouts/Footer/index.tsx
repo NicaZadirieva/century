@@ -1,4 +1,5 @@
 import cn from "classnames";
+import SocialButton from '../../widgets/SocialButton';
 import styles from "./index.module.css";
 /**TODO: Подумать, надо ли разделять на компоненты */
 /**TODO: что-то в принципе можно выделить в константы. В том числе и компоненты */
@@ -44,17 +45,9 @@ export default function Footer() {
       <div className={cn(styles["social__content"], "d-flex", "flex-column", "justify-content-center")}>
         <p className={styles["social__paragraph"]}>Мы в соц.сетях</p>
         <div className={cn(styles["social__buttons"], "d-flex", "flex-row", "justify-content-between")}>
-          {/**TODO: сделать компонент */}
-          {/**SocialButton src={} alt={} */}
-          <button type="button" className={styles["social__button"]}>
-            <img src={"/icon/inst-icon.png"} alt="Инстаграмм" />
-          </button>
-          <button type="button" className={styles["social__button"]}>
-            <img src={"/icon/vk-icon.png"} alt="Вконтакте" />
-          </button>
-          <button type="button" className={styles["social__button"]}>
-            <img src={"/icon/youtube-icon.png"} alt="Ютуб" />
-          </button>
+          <SocialButton linkUrl={"#"} iconUrl="/icon/inst-icon.png" alt="Инстаграмм"/>
+          <SocialButton linkUrl={"#"} iconUrl="/icon/vk-icon.png" alt="Вконтакте"/>
+          <SocialButton linkUrl={"#"} iconUrl="/icon/youtube-icon.png" alt="Ютуб"/>
         </div>
       </div>
     </footer>

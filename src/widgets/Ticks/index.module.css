@@ -1,0 +1,16 @@
+.suggests {
+    list-style-type: none;
+}
+
+.suggest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.suggest__tick {
+    width: 17px;
+    height: 15px;
+    background: url("/icon/tick-icon.png");
+}

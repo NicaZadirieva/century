@@ -1,0 +1,20 @@
+.contact {
+    color: black;
+}
+
+
+.contact__email,
+.contact__phone {
+    color: #24aa17;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contact__email:hover,
+.contact__phone:hover {
+    color: black;
+}
+
+.contact p {
+    font-size: 10px;
+}

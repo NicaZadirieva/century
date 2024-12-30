@@ -7,58 +7,6 @@
     border-bottom: 2px solid rgba(119, 118, 123, 50%);
 }
 
-.logo {
-    gap: 15px;
-}
-
-.logo__image {
-    width: 67px;
-    height: 67px;
-    background: url("/logo/logo.jpg");
-    background-repeat: no-repeat;
-}
-
-.logo__title {
-    color: #24aa17;
-}
-
-.footer__suggests {
-    list-style-type: none;
-}
-
-.footer__suggest {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-}
-
-.footer__suggest__tick {
-    width: 17px;
-    height: 15px;
-    background: url("/icon/tick-icon.png");
-}
-/*TODO: повтор стилей. Для ContactInfo*/
-.contact {
-    color: black;
-}
-
-
-.contact__email,
-.contact__phone {
-    color: #24aa17;
-    text-decoration: none;
-    transition: .3s;
-}
-.contact__email:hover,
-.contact__phone:hover {
-    color: black;
-}
-.contact p {
-    font-size: 10px;
-}
-
-/*-----------------------------------------*/
 
 @media screen and (min-device-width: 768px) {
     .footer {

@@ -1,4 +1,5 @@
-1. Пересмотреть пропсы контейнеров (заканчиваются на 's')
+1. (!) Перейти на адаптив
+2. Пересмотреть пропсы контейнеров (заканчиваются на 's')
 
 - widgets (done)
 - layouts (done)
@@ -6,7 +7,7 @@
 - entities (in progress)
 - app (in progress)
 
-2. Перейти на БЭМ
+3. Перейти на БЭМ
 
 - widgets (done)
 - layouts (done)
@@ -14,4 +15,4 @@
 - entities (in progress)
 - app (in progress)
 
-3. Расписать, что делает и зачем каждый action в old_code
+4. Расписать, что делает и зачем каждый action в old_code

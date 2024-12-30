@@ -1,8 +1,4 @@
 import cn from 'classnames';
-
-
-
-
 import { Advantages, Archive, Articles, BelievedUsCompanies, CardSites, Contacts, Projects, Reviews } from '../../entities';
 import { Advantage, Article, CardSite, NewsItem, Project, Review } from '../../features';
 import { Title } from '../../widgets';

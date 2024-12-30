@@ -3,8 +3,7 @@ import { IconedButton } from '../../widgets';
 import Paragraph from '../../widgets/Paragraph';
 import styles from './index.module.css';
 import { ReviewProps } from './Review.props';
-/**TODO: разобраться с кнопками. Выделить в отдельный компонент Button. */
-/**TODO: разобраться с лишними div-ами и стилями */
+
 export default function Review(props: ReviewProps) {
   return (
       <div className={cn(styles["review"], "d-flex", "flex-column")}>

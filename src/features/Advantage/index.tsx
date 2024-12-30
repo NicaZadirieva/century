@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import Paragraph from '../Paragraph';
+import Paragraph from '../../widgets/Paragraph';
 import { AdvantageProps } from './Advantage.props';
 import styles from './index.module.css';
 export default function Advantage(props: AdvantageProps) {

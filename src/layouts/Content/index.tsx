@@ -1,23 +1,14 @@
 import cn from 'classnames';
-import Advantage from '../../components/Advantage';
-import Advantages from '../../components/Advantages';
-import Archive from '../../components/Archive';
-import Article from '../../components/Article';
-import Articles from '../../components/Articles';
-import BelievedUsCompanies from '../../components/BelivedUsCompanies';
-import CardSite from '../../components/CardSite';
-import CardSites from '../../components/CardSites';
-import Contacts from '../../components/Contacts';
-import NewsItem from '../../components/NewsItem';
-import Project from '../../components/Project';
-import Projects from '../../components/Projects';
-import Review from '../../components/Review';
-import Reviews from '../../components/Reviews';
 
+
+
+
+import { Advantages, Archive, Articles, BelievedUsCompanies, CardSites, Contacts, Projects, Reviews } from '../../entities';
+import { Advantage, Article, CardSite, NewsItem, Project, Review } from '../../features';
 import { Title } from '../../widgets';
 import styles from './index.module.css';
 
-export default function Main() {
+export default function Content() {
   
   return (
     <main>

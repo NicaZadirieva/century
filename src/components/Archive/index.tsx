@@ -19,7 +19,7 @@ export default function Archive({children}: ArchiveProps) {
                 "order-md-1"
               )}
             >
-              <IconedButton iconUrl="/icon/calendar.png">Все новости</IconedButton>
+              <IconedButton linkUrl={'#'} iconUrl="/icon/calendar.png">Все новости</IconedButton>
     
             </div>
           </div>

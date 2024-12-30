@@ -6,6 +6,11 @@
     gap: 15px;
 }
 
+/* если кнопка является ссылкой */
+a.button {
+    text-decoration: none;
+}
+
 .button__text {
     text-transform: uppercase;
     color: #24aa17;

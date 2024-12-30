@@ -10,7 +10,7 @@ export default function BelievedUsCompanies(props: BelievedUsCompaniesProps) {
         <div className={cn(styles["companies"], "d-flex", "flex-column")}>
           <div className={styles["title-container"]}>
             <Title level={2}>Нам доверяют</Title>
-            <IconedButton iconUrl="/icon/message-icon.png">Все клиенты</IconedButton>
+            <IconedButton linkUrl={'#'} iconUrl="/icon/message-icon.png">Все клиенты</IconedButton>
           </div>
           </div>
 

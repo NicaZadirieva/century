@@ -23,7 +23,7 @@ export default function Articles({ children }: { children: ReactNode }) {
             фермерских хозяйств
           </p>
           <div className={'desk'}>
-            <IconedButton className={styles["articles__button"]} iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
+            <IconedButton linkUrl={'#'} className={styles["articles__button"]} iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
           </div>
         </div>
           
@@ -40,7 +40,7 @@ export default function Articles({ children }: { children: ReactNode }) {
           {children}
         </main>
       <div  className="showInMobile">
-        <IconedButton className={styles["articles__button"]} iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
+        <IconedButton linkUrl={'#'} className={styles["articles__button"]} iconUrl="/icon/message-icon.png">Все статьи</IconedButton>
       </div>
     </div>
   );

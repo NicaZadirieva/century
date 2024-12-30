@@ -6,5 +6,6 @@ export default interface IconedButtonProps {
     className?: string,
     showInMobile?: boolean,
     iconWidth?: number,
-    iconHeight?: number
+    iconHeight?: number,
+    linkUrl?: string
 }

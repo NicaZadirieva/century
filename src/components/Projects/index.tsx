@@ -8,7 +8,7 @@ export default function Projects({ children } : ProjectsProps) {
         <div className={cn(styles["projects"], "restrict-width")}>
           <div className={styles["title-container"]}>
             <Title level={2} className={styles["title"]}>Реализованные проекты систем капельного орошения</Title>
-            <IconedButton iconUrl='/icon/flower-icon.png'>Все проекты</IconedButton>
+            <IconedButton linkUrl={'#'} iconUrl='/icon/flower-icon.png'>Все проекты</IconedButton>
           </div>
           
           <div className={cn(styles["projects-container"], "d-flex", "order-1", "order-md-2")}>

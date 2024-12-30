@@ -29,7 +29,7 @@ export default function Contacts() {
               >
                 Оставить заявку
               </Button>
-                <IconedButton iconUrl="/icon/phone_book-icon.png">
+                <IconedButton linkUrl={'#'} iconUrl="/icon/phone_book-icon.png">
                   Все проекты
                 </IconedButton>
 

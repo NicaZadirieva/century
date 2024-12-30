@@ -21,7 +21,7 @@ export default function Reviews({ children }: ReviewsProps) {
           <div className={cn(styles["title-container"], "d-flex", "flex-row")}>
             <Title level={2}>Отзывы наших клиентов</Title>
           
-              <IconedButton className={styles["button"]} iconUrl="/icon/message-icon.png">
+              <IconedButton linkUrl={'#'} className={styles["button"]} iconUrl="/icon/message-icon.png">
                 Все отзывы
               </IconedButton>
           </div>

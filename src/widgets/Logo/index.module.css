@@ -12,3 +12,9 @@
 .logo__title {
     color: #24aa17;
 }
+
+@media screen and (max-width: 1200px) {
+    .logo__title {
+        display: none;
+    }
+}

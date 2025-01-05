@@ -1,32 +1,24 @@
 .header {
     background: #f5f6f8;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 64px;
+    padding-right: 64px;
     height: 164px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
-@media screen and (min-device-width: 768px) {
-
-    .header__menu {
-        display: flex;
-    }
-
-    .desk.menu {
-        z-index: 1000;
-        transition: opacity 1s ease;
-    }
-
-    .desk.menu__opened {
-        opacity: 1
-    }
-
-    .trailer__info {
-        max-width: 714px;
-    }
-
+@media screen and (max-width: 873px) {
     .header {
-        padding-left: 64px;
-        padding-right: 64px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: fit-content;
+    }
+
+    .header__btn {
+        display: none;
     }
 }

@@ -75,6 +75,11 @@
         list-style-type: none;
         padding: 15px;
     }
+
+    .header__mobile .header__btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
    
 }
 

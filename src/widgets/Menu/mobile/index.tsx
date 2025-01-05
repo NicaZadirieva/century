@@ -1,9 +1,18 @@
 import cn from 'classnames';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { sendDataActions } from '../../../store/sendData.slice';
+import { appDispatch } from '../../../store/store';
+import Button from '../../Button';
 import styles from './index.module.css';
 /**TODO: возможно это все-таки MobileHeader */
 export default function MobileMenu() {
   const [displayed, setDisplayed] = useState(false);
+  const dispatch = useDispatch<appDispatch>();
+  
+  function showForm() {
+    dispatch(sendDataActions.showForm());
+  }
   const toggleMenu = function() {
     setDisplayed(!displayed);
   }
@@ -27,7 +36,7 @@ export default function MobileMenu() {
         </div>
         <div className={styles["search"]}></div>
       </header>
-      <div style={{display: displayed ? "block" : "none"}} >
+      <div style={{display: displayed ? "block" : "none"}}>
         <ul className={cn(styles["header__list"], "m-0")}>
           <li>
             <a href="#">Капельное орошение</a>
@@ -57,7 +66,7 @@ export default function MobileMenu() {
             <a href="#">Контакты</a>
           </li>
         </ul>
-       
+        <Button className={styles["header__btn"]} onClick={() => { showForm(); }}>Заказать звонок</Button>
       </div>
     </div>
   );

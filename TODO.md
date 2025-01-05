@@ -14,3 +14,5 @@
 - features (in progress)
 - entities (in progress)
 - app (in progress)
+
+4. Отключить прокрутку при открытом popup

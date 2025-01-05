@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px) {
+    .cards-sites {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 873px) {
+    
+
+}

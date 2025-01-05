@@ -1,237 +1,36 @@
-let current = "index";
-let current_fio = window.localStorage.getItem('fio');
-let current_telephone = window.localStorage.getItem('telephone');
-let current_region = window.localStorage.getItem('region');
-let current_message = window.localStorage.getItem('message');
-let opened = false;
-let openedMenu = false;
-let TOP = 35;
-if(current_fio) {
-   $("[name='fio']").val(current_fio);
-}
-if(current_telephone) {
-  $('[name="telephone"]').val(current_telephone);
-}
-if(current_region) {
-   $('select').val(current_region);
-}
-if(current_message) {
-   
-   $("[name='textarea']").val(current_message);
-}
-/*
-$("[name='fio']").bind('input',(e)=> {
-  current_fio = e.target.value;
-  window.localStorage.setItem('fio',current_fio);
-})
-$("[name='telephone']").bind('input',(e)=> {
-  current_telephone =e.target.value;
-  window.localStorage.setItem('telephone',current_telephone);
-})
-$('select').on('change',(e)=>{
-  current_region = $("option:selected").val();
-  window.localStorage.setItem('region',current_region);
-})
-$('textarea').bind('input', (e)=> {
-  current_message = e.target.value;
-  window.localStorage.setItem('message',current_message);
-})*/
-$(".hamburger").click(function(ev) {
-  
-    $(".mobile-header-list").slideToggle("slow",function(){});
-    
-})
-
-$(".btn-menu").click(function() {
-    $(".desk-menu").toggleClass("desk-menu-opened");
-})
-/*
-$(".exit").click(function() {
-     
-    animate({
-        duration: 1000,
-        timing: function(timeFraction) {
-          return timeFraction;
-        },
-        draw: function(progress) {
-          $(".popup").css({"top":Math.min((1 - progress)*100,TOP)+'%'});
-          if(progress == 1) {
-             $(".popup-container").hide();
-             document.body.style.overflow = "auto";
-          }
-        }
-      });
-      opened = false;
-     
-    
-    current = "index";
-    history.back();
-})
-$(".btn-call-mobile").click((e)=>{
-  
-    animate({
-       duration: 1000,
-       timing: function(timeFraction) {
-         return timeFraction;
-       },
-       draw: function(progress) {
-         $(".popup").css({"top":Math.min(progress * 100,TOP)+ "%" });
-         
-       }
-     });
-    opened = true;
-     
-   $(".popup").css({"left":0});
-
-   $(".popup-container").show();
-   current = "contact";
-   document.body.style.overflow = "hidden";
-   history.pushState(null, null, "./contact");
-})
-$(".btn-call").click((e)=>{
-     
-    animate({
-       duration: 1000,
-       timing: function(timeFraction) {
-         return timeFraction;
-       },
-       draw: function(progress) {
-         $(".popup").css({"top":Math.min(progress * 100,TOP)+ "%"});
-         console.log(progress * 100);
-        
-       }
-     });
-    opened = true;
-    
-  
-  
-   
-   $(".popup-container").show();
-   current = "contact";
-   document.body.style.overflow = "hidden";
-   history.pushState(null, null, "./contact");
-})
-window.onpopstate = (e)=> {
-  if(current == "contact") {
-     $(".popup-container").hide();
-  }
-};
-$(".btn-contact").click(async (e)=> {
-  e.preventDefault();
-  let fio = document.forms["form-contact"]["fio"].value;
-  let telephone = document.forms["form-contact"]["telephone"].value;
-  let region = $("option:selected").val();
-  let message = document.forms["form-contact"]["textarea"].value;
-  $(".cssload-thecube")[0].style.display = "block";
-  /*let request = $.ajax({
-  url: "https://formcarry.com/s/493WjuAKEOf",
-  method: "POST",
-  data: { fio, telephone, region, message },
-  dataType: "json"
-});
-  */
- /*$(".btn-contact")[0].disabled = true;
- fetch("https://formcarry.com/s/493WjuAKEOf",{
-   method:'POST',
-   headers: {
-    'Content-Type': 'application/json',
-
-   },
-   body: JSON.stringify({ fio, telephone, region, message })
- }).then(
-   (response) =>{
-     if(!response.ok) {
-      $(".btn-contact")[0].disabled = false;
-      $(".cssload-thecube")[0].style.display = "none";
-      
-      return;
-     }
-  
-  $(".cssload-thecube")[0].style.display = "none";
-  window.localStorage.removeItem("fio");
-  window.localStorage.removeItem("telephone");
-  window.localStorage.removeItem("region");
-  window.localStorage.removeItem("message");
-  $("[name='fio']").val("");
-  $('[name="telephone"]').val("");
- $('select').val("Регион");
- $("[name='textarea']").val("")
- $(".btn-contact")[0].disabled = false;
- $(".cssload-thecube").hide();
-   }
- );
- /*
-  
-request.done(function( msg ) {
-  
-  alert("ура");
-  $(".cssload-thecube")[0].style.display = "none";
-  window.localStorage.removeItem("fio");
-  window.localStorage.removeItem("telephone");
-  window.localStorage.removeItem("region");
-  window.localStorage.removeItem("message");
-  $("[name='fio']").val("");
-  $('[name="telephone"]').val("");
- $('select').val("Регион");
- $("[name='textarea']").val("")
- $(".btn-contact")[0].disabled = false;
- $(".cssload-thecube").hide();
-});
- 
-request.fail(function( jqXHR, textStatus ) {
-  alert( "Request failed: " + textStatus );
-  $(".btn-contact")[0].disabled = false;
-  $(".cssload-thecube")[0].style.display = "none";
+$(".hamburger").click(function (ev) {
+  $(".mobile-header-list").slideToggle("slow", function () {});
 });
 
-})*/
-/*
-function animate({duration, draw, timing}) {
+$(".btn-menu").click(function () {
+  $(".desk-menu").toggleClass("desk-menu-opened");
+});
 
-  let start = performance.now();
-
-  requestAnimationFrame(function animate(time) {
-    let timeFraction = (time - start) / duration;
-    if (timeFraction > 1) timeFraction = 1;
-
-    let progress = timing(timeFraction)
-
-    draw(progress);
-
-    if (timeFraction < 1) {
-      requestAnimationFrame(animate);
-    }
-
-  });
-}*/
-window.onpopstate = (e)=> {
-  if(e.state !== 1) {
-     $(".exit").click();
-  }
-  else {
-    if($(".btn-call-mobile").is(":visible")) {
+window.onpopstate = (e) => {
+  if (e.state !== 1) {
+    $(".exit").click();
+  } else {
+    if ($(".btn-call-mobile").is(":visible")) {
       $(".btn-call-mobile").click();
       console.log(".btn-call-mobile");
-    }
-    else {
+    } else {
       $(".btn-call").click();
       console.log(".btn-call");
     }
   }
 };
 $(".reviews-block").slick({
-        slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    
-    
-    arrows: true,
-    
-    lazyLoad: 'ondemand',
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: "unslick",
-         
-      }]
-  });
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  infinite: true,
+
+  arrows: true,
+
+  lazyLoad: "ondemand",
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: "unslick",
+    },
+  ],
+});

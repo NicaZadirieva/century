@@ -15,4 +15,4 @@
 - entities (in progress)
 - app (in progress)
 
-4. Расписать, что делает и зачем каждый action в old_code
+4. Отключить прокрутку при открытом popup

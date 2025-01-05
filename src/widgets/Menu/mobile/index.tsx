@@ -1,32 +1,34 @@
 import cn from 'classnames';
-import Button from '../../Button';
+import { useState } from 'react';
 import styles from './index.module.css';
 /**TODO: возможно это все-таки MobileHeader */
 export default function MobileMenu() {
+  const [displayed, setDisplayed] = useState(false);
+  const toggleMenu = function() {
+    setDisplayed(!displayed);
+  }
   return (
-    <>
+    <div className={styles["header__mobile"]}>
       <header
         className={cn(
           styles["header"],
-          "showInMobile",
+          "d-flex",
           "flex-row",
-          "justify-content-around",
-          "align-items-center"
         )}
       >
-        <div className={cn(styles["hamburger"], "d-flex", "flex-column")}>
+        <div onClick={toggleMenu} className={cn(styles["hamburger"], "d-flex", "flex-column")}>
           <span className={styles["hamburger-line"]}></span>
           <span className={styles["hamburger-line"]}></span>
           <span className={styles["hamburger-line"]}></span>
         </div>
-        <div className="d-flex flex-row">
-          <div className={styles["logo"]}></div>
-          <p>Новый век технологий</p>
+        <div className={cn("d-flex", "flex-row", styles["logo"])}>
+          <div className={styles["logo__img"]}></div>
+          <h2 className={styles["logo__title"]}>Новый век технологий</h2>
         </div>
         <div className={styles["search"]}></div>
       </header>
-      <div className={cn(styles["header__list"], "showInMobile")}>
-        <ul className="p-0 m-0">
+      <div style={{display: displayed ? "block" : "none"}} >
+        <ul className={cn(styles["header__list"], "m-0")}>
           <li>
             <a href="#">Капельное орошение</a>
           </li>
@@ -55,8 +57,8 @@ export default function MobileMenu() {
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <Button onClick={() => {}}>Заказать звонок</Button>
+       
       </div>
-    </>
+    </div>
   );
 }

@@ -2,7 +2,7 @@ import cn from "classnames";
 import styles from "./index.module.css";
 export default function Menu() {
   return (
-    <>
+    <div className={styles['header__menu']}>
       <ul
         className={cn(
           styles["header__menu__list"],
@@ -68,6 +68,6 @@ export default function Menu() {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }

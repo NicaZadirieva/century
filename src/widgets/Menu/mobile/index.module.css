@@ -1,21 +1,87 @@
 /* основные стили */
-@import url(../index.module.css);
-
-.header.showInMobile {
-    display: flex;
-    background: #f5f6f8;
-    height: 68px;
+.header {
+    padding-left: 64px;
+    padding-right: 64px;
 }
 
-.header__list.showInMobile a {
+.header__mobile {
+    display: none;
+}
+
+.header__mobile .header__list a {
     text-decoration: none;
     color: black;
+    transition: .3s;
 }
 
-@media screen and (min-device-width: 768px) {
+.header__mobile .header__list a:hover {
+    color: #24aa17;
+}
+/**HAMBURGER MENU*/
 
-    .header {
-        padding-left: 64px;
-        padding-right: 64px;
+.hamburger-menu {
+    margin-right: 11px;
+}
+
+.hamburger:hover {
+    background: #dddddd;
+}
+
+.hamburger,
+.hamburger-menu {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    background-color: #24aa17;
+    width: 15px;
+    height: 3px;
+}
+
+.hamburger-line:nth-child(n + 2) {
+    margin-top: 4px;
+}
+
+/**HAMBURGER MENU END*/
+
+@media screen and (max-width: 1200px) {
+    /*TODO: упростить верстку*/
+    .header__mobile {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .header__mobile > .header {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        gap: 15px;
+    }
+    .logo__title {
+        padding: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #24aa17;
+        font-size: 18px;
+    }
+
+    .header__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        list-style-type: none;
+        padding: 15px;
+    }
+   
+}
+
+@media screen and (max-width: 873px) {
+    .header__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

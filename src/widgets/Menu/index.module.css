@@ -95,15 +95,21 @@ ul.header__menu__list:hover {
 }
 
 /**HAMBURGER MENU END*/
+/*включить десктопную версию хедера*/
+.header__menu {
+    display: block;
+}
 
-@media screen and (min-device-width: 768px) {
-    
-    .desk.menu {
-        z-index: 1000;
-        transition: opacity 1s ease;
-    }
+.desk.menu {
+    z-index: 1000;
+    transition: opacity 1s ease;
+}
 
-    .desk.menu__opened {
-        opacity: 1
+.desk.menu__opened {
+    opacity: 1
+}
+@media screen and (max-width: 1200px) {
+    .header__menu {
+        display: none;
     }
 }

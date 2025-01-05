@@ -1,73 +1,51 @@
-import React from "react";
+import React, { FormEvent } from "react";
 
-export default function Popup() {
-  const onInput = () => {
-    // TODO: че это? понять, зачем надо
-    /*this.props.changeFields({
-      fio: document.forms["form-contact"].elements.fio.value,
-      phone: document.forms["form-contact"].elements.telephone.value,
-      region: document.forms["form-contact"].elements["select"].value,
-      message: document.forms["form-contact"].elements.textarea.value,
-    });*/
-  };
+export default function Popup({ sendForm } : {sendForm: ({fio, phone, region, message}) => void }) {
+  const [fio, setFio] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  const [region, setRegion] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  /**TODO: вот эту переменную можно в redux */
+  const [displayed, setDisplayed] = React.useState(false);
 
-  const validateForm = () => {
-    // TODO: проставить в props
-    /*console.log(this.props.current_fio);
-      console.log(this.props.current_telephone);
-      console.log(this.props.current_region);
-      console.log(this.props.current_message);
-      if (this.props.current_fio === "") {
-        alert("Необходимо ввести фамилию");
-
-        return false;
-      }
-      if (this.props.current_telephone === "") {
-        alert("Необходимо ввести телефон");
-        return false;
-      }
-      if (this.props.current_region === "") {
-        alert("Необходимо ввести регион");
-        return false;
-      }
-      if (this.props.current_message === "") {
-        alert("Необходимо ввести сообщение");
-        return false;
-      }
-      return true;*/
-      return true;
-  };
-  const onSubmit = (e) => {
-    if (validateForm()) {
-      /*this.props.sendForm({
-        fio: this.props.current_fio,
-        telephone: this.props.current_telephone,
-        region: this.props.current_region,
-        message: this.props.current_message,
-      });*/
+  const onInput = (e: FormEvent, changedField: string) => {
+    switch (changedField) {
+      case "fio":
+        setFio((e.target as HTMLInputElement).value);
+        break;
+      case "telephone":
+        setPhone((e.target as HTMLInputElement).value);
+        break;
+      case "region":
+        setRegion((e.target as HTMLSelectElement).value);
+        break;
+      case "message":
+        setMessage((e.target as HTMLTextAreaElement).value);
+        break;
     }
   };
 
-  const onClose = (e) => {
-    /*this.props.hideForm({
-      form: document.forms["form-contact"],
-      popup: document.querySelector(".popup"),
-    });
-    e.preventDefault();*/
+  const onSubmit = () => {
+      sendForm({
+        fio,
+        phone,
+        region,
+        message,
+      });
   };
+
+  const onClose = (e) => {
+    setDisplayed(false);
+    e.preventDefault();
+  };
+
   return (
-    <div className="popup-container">
+    <div className="popup-container" style={{display: displayed ? "block" : "none"}}>
       <div className="popup">
-        <div className="cssload-thecube">
-          <div className="cssload-cube cssload-c1"></div>
-          <div className="cssload-cube cssload-c2"></div>
-          <div className="cssload-cube cssload-c4"></div>
-          <div className="cssload-cube cssload-c3"></div>
-        </div>
         <div
           className="exit"
           onClick={(e) => {
-            this.onClose(e);
+            onClose(e);
           }}
         >
           X
@@ -77,41 +55,49 @@ export default function Popup() {
           name="form-contact"
           onSubmit={(e) => {
             e.preventDefault();
-            this.onSubmit(e);
+            onSubmit();
           }}
         >
           <input
             type="text"
             name="fio"
+            required
             placeholder="ФИО"
-            onInput={(e) => this.onInput(e)}
+            onInput={(e) => onInput(e, 'fio')}
+            value={fio}
           />
           <br />
           <input
+            required
             type="text"
             name="telephone"
             placeholder="телефон"
-            onInput={(e) => this.onInput(e)}
+            onInput={(e) => onInput(e, 'telephone')}
+            value={phone}
           />
           <br />
+          <label htmlFor="region">Регион:</label>
           <select
-            name="select"
+            required
+            id="region"
+            name="region"
             onChange={(e) => {
-              this.onInput(e);
+              onInput(e, 'region');
             }}
+            value={region}
           >
-            <option selected="selected" value="Регион">
-              Регион
-            </option>
             <option value="Краснодарский край">Краснодарский край</option>
             <option value="Московская область">Московская область</option>
           </select>
           <br />
           <textarea
+            required
             name="textarea"
-            onInput={(e) => this.onInput(e)}
+            onInput={(e) => onInput(e, 'message')}
             placeholder="Сообщение"
+            value={message}
           ></textarea>
+
           <input className="btn btn-contact" value="Отправить" type="submit" />
         </form>
       </div>

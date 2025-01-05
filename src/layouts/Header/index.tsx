@@ -1,19 +1,22 @@
 import cn from "classnames";
 
+import { useDispatch } from "react-redux";
 import { Trailer } from '../../features';
+import {
+  sendDataActions
+} from "../../store/sendData.slice";
+import { appDispatch } from "../../store/store";
 import { Button, Logo, MobileMenu, Ticks } from '../../widgets';
 import ContactDetails from '../../widgets/ContactDetails';
 import Menu from '../../widgets/Menu';
 import styles from "./index.module.css";
-export default function Header(/* props: HeaderProps */) {
-  // TODO:
-  // function showForm() {
-  //   props.showForm({
-  //     /**Здесь должны быть ref */
-  //     form: document.forms["form-contact"],
-  //     popup: document.querySelector(".popup"),
-  //   });
-  // }
+
+export default function Header() {
+  const dispatch = useDispatch<appDispatch>();
+  
+  function showForm() {
+    dispatch(sendDataActions.showForm());
+  }
   return (
     <header>
       <div
@@ -29,7 +32,7 @@ export default function Header(/* props: HeaderProps */) {
         <Logo />
         <Ticks/>
         <ContactDetails/>
-        <Button onClick={() => {}}>Заказать звонок</Button>
+        <Button onClick={() => { showForm(); }}>Заказать звонок</Button>
       </div>
 
       <Menu />

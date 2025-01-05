@@ -29,9 +29,10 @@ const initialState : SendDataState = {
     message: loadState<SendDataPersistent>(SEND_DATA_PERSISTENT_STATE)?.message ?? undefined 
 };
 
-export const sendDataToFormCarry = createAsyncThunk('sendData/sendDataToFormCarry',
+export const saveData = createAsyncThunk('sendData/saveData',
     async (params: SendData) => {
-        const response = await requestSendData({...params});
+        const response = await requestSendData(params);
+        console.log(response);
         if (response.ok) {
             return await response.json();
         } else {

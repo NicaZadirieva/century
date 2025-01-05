@@ -14,5 +14,3 @@
 - features (in progress)
 - entities (in progress)
 - app (in progress)
-
-4. Расписать, что делает и зачем каждый action в old_code

@@ -1,12 +1,12 @@
 import { FormEvent, MouseEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  saveData,
   sendDataActions,
   SendDataFields,
-  sendDataToFormCarry,
 } from "../../store/sendData.slice";
 import { appDispatch, RootState } from "../../store/store";
-
+import styles from './index.module.css';
 export default function Popup() {
   const dispatch = useDispatch<appDispatch>();
   const fio = useSelector((s: RootState) => s.sendData.fio);
@@ -26,10 +26,10 @@ export default function Popup() {
 
   const onSubmit = () => {
     const dataIsCorrect = fio && phone && region && message;
-
+    console.log("Send data:", { fio, phone, region, message });
     if (dataIsCorrect) {
       dispatch(
-        sendDataToFormCarry({
+        saveData({
           fio,
           phone,
           region,
@@ -38,6 +38,7 @@ export default function Popup() {
       );
       dispatch(sendDataActions.hideForm());
     }
+
   };
 
   const onClose = (e: MouseEvent) => {
@@ -47,19 +48,19 @@ export default function Popup() {
 
   return (
     <div
-      className="popup-container"
+      className={styles["popup-container"]}
       style={{ display: displayed ? "block" : "none" }}
     >
-      <div className="popup">
+      <div className={styles["popup"]}>
         <div
-          className="exit"
+          className={styles["exit"]}
           onClick={(e) => {
             onClose(e);
           }}
         >
           X
         </div>
-        <div className="clearfix"></div>
+        <div className={styles["clearfix"]}></div>
         <form
           name="form-contact"
           onSubmit={(e) => {
@@ -73,7 +74,7 @@ export default function Popup() {
             required
             placeholder="ФИО"
             onInput={(e) => onInput(e, "fio")}
-            value={fio}
+            value={fio || ""}
           />
           <br />
           <input
@@ -82,7 +83,7 @@ export default function Popup() {
             name="telephone"
             placeholder="телефон"
             onInput={(e) => onInput(e, "phone")}
-            value={phone}
+            value={phone || ""}
           />
           <br />
           <label htmlFor="region">Регион:</label>
@@ -93,8 +94,9 @@ export default function Popup() {
             onChange={(e) => {
               onInput(e, "region");
             }}
-            value={region}
+            value={region || ""}
           >
+            <option value={""}>Регион</option>
             <option value="Краснодарский край">Краснодарский край</option>
             <option value="Московская область">Московская область</option>
           </select>
@@ -104,10 +106,10 @@ export default function Popup() {
             name="textarea"
             onInput={(e) => onInput(e, "message")}
             placeholder="Сообщение"
-            value={message}
+            value={message || ""}
           ></textarea>
 
-          <input className="btn btn-contact" value="Отправить" type="submit" />
+          <button className={styles["btn-contact"]} type="submit">Отправить</button>
         </form>
       </div>
     </div>

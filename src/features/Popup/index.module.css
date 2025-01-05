@@ -3,13 +3,16 @@
     min-height: 203px;
     background: white;
     position: relative;
-
-    left: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .popup {
+    padding-top: 15px;
     padding-left: 21px;
     padding-right: 21px;
+    padding-bottom: 15px;
 }
 
 .popup input {
@@ -69,12 +72,24 @@
 
 }
 
+
+
+
 .btn-contact {
-    height: 37px !important;
-    width: 132px !important;
+    background: #24aa17;
+    height: 37px;
+    width: 100%;
     position: relative;
-    left: 30%;
-    top: -5px;
+    color: white;
+    border-radius: 0px;
+    text-align: center;
+    transition: .3s;
+    border: none;
+    text-transform: lowercase;
+}
+
+.btn-contact:hover {
+    color: black;
 }
 
 .exit {

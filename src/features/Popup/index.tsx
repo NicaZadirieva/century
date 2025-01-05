@@ -1,46 +1,55 @@
-import React, { FormEvent } from "react";
+import { FormEvent, MouseEvent } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  sendDataActions,
+  SendDataFields,
+  sendDataToFormCarry,
+} from "../../store/sendData.slice";
+import { appDispatch, RootState } from "../../store/store";
 
-export default function Popup({ sendForm } : {sendForm: ({fio, phone, region, message}) => void }) {
-  const [fio, setFio] = React.useState("");
-  const [phone, setPhone] = React.useState("");
-  const [region, setRegion] = React.useState("");
-  const [message, setMessage] = React.useState("");
-  /**TODO: вот эту переменную можно в redux */
-  const [displayed, setDisplayed] = React.useState(false);
+export default function Popup() {
+  const dispatch = useDispatch<appDispatch>();
+  const fio = useSelector((s: RootState) => s.sendData.fio);
+  const phone = useSelector((s: RootState) => s.sendData.phone);
+  const region = useSelector((s: RootState) => s.sendData.region);
+  const message = useSelector((s: RootState) => s.sendData.message);
+  const displayed = useSelector((s: RootState) => s.sendData.displayed);
 
-  const onInput = (e: FormEvent, changedField: string) => {
-    switch (changedField) {
-      case "fio":
-        setFio((e.target as HTMLInputElement).value);
-        break;
-      case "telephone":
-        setPhone((e.target as HTMLInputElement).value);
-        break;
-      case "region":
-        setRegion((e.target as HTMLSelectElement).value);
-        break;
-      case "message":
-        setMessage((e.target as HTMLTextAreaElement).value);
-        break;
-    }
+  const onInput = (e: FormEvent, changedField: SendDataFields) => {
+    dispatch(
+      sendDataActions.setFormData({
+        key: changedField,
+        value: (e.target as HTMLFormElement).value,
+      })
+    );
   };
 
   const onSubmit = () => {
-      sendForm({
-        fio,
-        phone,
-        region,
-        message,
-      });
+    const dataIsCorrect = fio && phone && region && message;
+
+    if (dataIsCorrect) {
+      dispatch(
+        sendDataToFormCarry({
+          fio,
+          phone,
+          region,
+          message,
+        })
+      );
+      dispatch(sendDataActions.hideForm());
+    }
   };
 
-  const onClose = (e) => {
-    setDisplayed(false);
+  const onClose = (e: MouseEvent) => {
+    dispatch(sendDataActions.hideForm());
     e.preventDefault();
   };
 
   return (
-    <div className="popup-container" style={{display: displayed ? "block" : "none"}}>
+    <div
+      className="popup-container"
+      style={{ display: displayed ? "block" : "none" }}
+    >
       <div className="popup">
         <div
           className="exit"
@@ -63,7 +72,7 @@ export default function Popup({ sendForm } : {sendForm: ({fio, phone, region, me
             name="fio"
             required
             placeholder="ФИО"
-            onInput={(e) => onInput(e, 'fio')}
+            onInput={(e) => onInput(e, "fio")}
             value={fio}
           />
           <br />
@@ -72,7 +81,7 @@ export default function Popup({ sendForm } : {sendForm: ({fio, phone, region, me
             type="text"
             name="telephone"
             placeholder="телефон"
-            onInput={(e) => onInput(e, 'telephone')}
+            onInput={(e) => onInput(e, "phone")}
             value={phone}
           />
           <br />
@@ -82,7 +91,7 @@ export default function Popup({ sendForm } : {sendForm: ({fio, phone, region, me
             id="region"
             name="region"
             onChange={(e) => {
-              onInput(e, 'region');
+              onInput(e, "region");
             }}
             value={region}
           >
@@ -93,7 +102,7 @@ export default function Popup({ sendForm } : {sendForm: ({fio, phone, region, me
           <textarea
             required
             name="textarea"
-            onInput={(e) => onInput(e, 'message')}
+            onInput={(e) => onInput(e, "message")}
             placeholder="Сообщение"
             value={message}
           ></textarea>

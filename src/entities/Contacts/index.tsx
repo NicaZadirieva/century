@@ -27,7 +27,8 @@ export default function Contacts() {
         className={cn(
           styles["contact-with-us__content"],
           "d-flex",
-          "flex-column"
+          "flex-column",
+          "content"
         )}
       >
         <Title level={2} className={styles["contact-with-us__title"]}>

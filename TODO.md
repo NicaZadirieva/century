@@ -1,5 +1,4 @@
-1. (!) Перейти на адаптив
-2. Пересмотреть пропсы контейнеров (заканчиваются на 's')
+1. Перейти на БЭМ
 
 - widgets (done)
 - layouts (done)
@@ -7,12 +6,4 @@
 - entities (in progress)
 - app (in progress)
 
-3. Перейти на БЭМ
-
-- widgets (done)
-- layouts (done)
-- features (in progress)
-- entities (in progress)
-- app (in progress)
-
-4. Отключить прокрутку при открытом popup
+2. Отключить прокрутку при открытом popup

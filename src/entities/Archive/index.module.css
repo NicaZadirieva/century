@@ -1,15 +1,11 @@
 .archive {
-    background: url("/assets/big_field_bg.jpg");
+    background-image: url("/assets/big_field_bg.jpg");
+    background-color: transparent;
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 132px;
-    height: 100vh;
 }
 
-.title {
-    font-weight: bold;
-    font-size: 2rem;
-}
 
 .title-container {
     display: flex;
@@ -21,4 +17,18 @@
 
 .news-container {
     gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .title-container {
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .archive__btn {
+
+        border-radius: 15px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
 }

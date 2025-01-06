@@ -1,7 +1,7 @@
 /* Main + Header + Footer **/
 
 .showInMobile {
-  display: block;
+  display: none;
 }
 
 
@@ -9,15 +9,38 @@ p {
   margin-top: 0;
 }
 
-@media screen and (min-device-width: 768px) {
+.restrict-width {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1135px;
+}
+
+@media screen and (max-width: 1200px) {
+  .restrict-width {
+      max-width: 1160px;
+      margin: 0 auto;
+  }
+
+  .showInMobile.block {
+    display: block;
+  }
 
   .showInMobile {
-    display: none;
+    display: flex;
   }
 
-  .restrict-width {
-    max-width: 1260px;
-    margin: 0 auto;
+
+  .desk {
+    display: none !important;
   }
+}
+
+@media screen and (max-width: 873px) {
+  .content {
+      max-width: 800px;
+    }
   
 }

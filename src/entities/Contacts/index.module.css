@@ -14,3 +14,10 @@
     padding-bottom: 190px;
     gap: 20px;
 }
+
+@media screen and (max-width: 1200px) {
+    .contact-with-us__content > p,
+    .contact-with-us__btns > button {
+        margin-left: 15px;
+    }
+}

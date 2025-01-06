@@ -2,7 +2,7 @@ import cn from "classnames";
 import styles from "./index.module.css";
 export default function Menu() {
   return (
-    <>
+    <div className={styles['header__menu']}>
       <ul
         className={cn(
           styles["header__menu__list"],
@@ -20,13 +20,7 @@ export default function Menu() {
             "align-items-center"
           )}
         >
-          <div
-            className={cn(styles["hamburger-menu"], "d-flex", "flex-column")}
-          >
-            <span className={styles["hamburger-line"]}></span>
-            <span className={styles["hamburger-line"]}></span>
-            <span className={styles["hamburger-line"]}></span>
-          </div>
+          
 
           <a href="#">Продукция</a>
         </li>
@@ -68,6 +62,6 @@ export default function Menu() {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }

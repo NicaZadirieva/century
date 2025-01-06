@@ -1,5 +1,6 @@
 .suggests {
     list-style-type: none;
+    display: block;
 }
 
 .suggest {
@@ -25,3 +26,9 @@
 }
 
 /** TICKS ON MOBILE END */
+
+@media screen and (max-width: 1200px) {
+    .suggests {
+        display: none;
+    }
+}

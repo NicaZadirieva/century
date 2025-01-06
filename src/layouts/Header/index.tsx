@@ -22,17 +22,13 @@ export default function Header() {
       <div
         className={cn(
           styles["header"],
-          "desk",
-          "d-flex",
-          "flex-row",
-          "justify-content-between",
           "align-items-center"
         )}
       >
         <Logo />
         <Ticks/>
         <ContactDetails/>
-        <Button onClick={() => { showForm(); }}>Заказать звонок</Button>
+        <Button className={styles["header__btn"]} onClick={() => { showForm(); }}>Заказать звонок</Button>
       </div>
 
       <Menu />

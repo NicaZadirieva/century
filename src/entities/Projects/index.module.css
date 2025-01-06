@@ -10,6 +10,7 @@
      align-items: center;
      margin-bottom: 30px;
  }
+ 
 
  .projects-container {
      display: flex;
@@ -20,5 +21,13 @@
  @media screen and (max-width: 1200px) {
      .projects-container {
          justify-content: center;
+     }
+
+    .title-container {
+        flex-wrap: wrap;
+     }
+     .title__btn {
+        margin-top: 5px;
+        margin-left: 15px;
      }
  }

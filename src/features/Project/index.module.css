@@ -2,6 +2,9 @@
     width: 280px;
     height: 280px;
     margin-bottom: 18px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .info {
@@ -14,10 +17,4 @@
 .upper-paragraph {
     text-transform: uppercase;
     font-weight: bold;
-}
-
-@media screen and (min-device-width: 768px) {
-    .project {
-        margin-right: 20px;
-    }
 }

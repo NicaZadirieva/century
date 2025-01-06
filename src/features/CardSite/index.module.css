@@ -6,6 +6,8 @@
   width: 372px;
   height: 240px;
   margin-right: 35px;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
 }
 
 .img-left {
@@ -17,6 +19,7 @@
 .paragraph {
   position: absolute;
   top: 177px;
+  left: 25px;
   padding-bottom: 2px;
 }
 
@@ -43,8 +46,6 @@
   .card-site {
     min-width: 100%;
     overflow: hidden;
-    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 35px;
     top: 0;
   }
 

@@ -20,13 +20,7 @@ export default function Menu() {
             "align-items-center"
           )}
         >
-          <div
-            className={cn(styles["hamburger-menu"], "d-flex", "flex-column")}
-          >
-            <span className={styles["hamburger-line"]}></span>
-            <span className={styles["hamburger-line"]}></span>
-            <span className={styles["hamburger-line"]}></span>
-          </div>
+          
 
           <a href="#">Продукция</a>
         </li>

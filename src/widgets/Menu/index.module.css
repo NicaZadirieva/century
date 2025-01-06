@@ -65,6 +65,13 @@ ul.header__menu__list:hover {
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
 }
+.header__menu__li > a {
+    transition: .3s;
+}
+
+.header__menu__li > a:hover {
+    color: #24aa17;
+}
 
 /** MENU on DESKTOP END **/
 

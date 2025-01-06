@@ -105,7 +105,7 @@ export default function Content() {
         </Projects>
         {/**Advantages массив */}
         <div className={styles["advantages"]}>
-          <Title level={2} className={styles["advantages__title"]}> Преимущества компании "Новый век агротехнологий"</Title>
+          <Title level={2} className={styles["advantages__title"]}> Преимущества компании <br/> "Новый век агротехнологий"</Title>
           <Advantages>
             {/**Advantage */}
             <Advantage

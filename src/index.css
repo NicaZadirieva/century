@@ -14,6 +14,10 @@ p {
   margin: 0 auto;
 }
 
+.content {
+  max-width: 1135px;
+}
+
 @media screen and (max-width: 1200px) {
   .restrict-width {
       max-width: 1160px;
@@ -22,6 +26,8 @@ p {
 }
 
 @media screen and (max-width: 873px) {
-
+  .content {
+      max-width: 800px;
+    }
   
 }

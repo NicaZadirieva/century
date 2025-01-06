@@ -1,19 +1,24 @@
  .projects {
-    display: flex;
-    flex-direction: column;
+     display: flex;
+     flex-direction: column;
  }
- 
+
  .title-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 30px;
  }
 
  .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 5px;
+ }
+
+ @media screen and (max-width: 1200px) {
+     .projects-container {
+         justify-content: center;
+     }
  }

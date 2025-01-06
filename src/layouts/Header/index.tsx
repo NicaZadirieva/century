@@ -22,7 +22,6 @@ export default function Header() {
       <div
         className={cn(
           styles["header"],
-          "desk",
           "align-items-center"
         )}
       >

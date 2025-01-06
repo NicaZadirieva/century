@@ -23,6 +23,19 @@ p {
       max-width: 1160px;
       margin: 0 auto;
   }
+
+  .showInMobile.block {
+    display: block;
+  }
+
+  .showInMobile {
+    display: flex;
+  }
+
+
+  .desk {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 873px) {

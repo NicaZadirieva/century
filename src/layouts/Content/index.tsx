@@ -1,4 +1,3 @@
-import cn from 'classnames';
 import { Advantages, Archive, Articles, BelievedUsCompanies, CardSites, Contacts, Projects, Reviews } from '../../entities';
 import { Advantage, Article, CardSite, NewsItem, Project, Review } from '../../features';
 import { Title } from '../../widgets';
@@ -53,14 +52,6 @@ export default function Content() {
         {/**Projects */}
         <Projects>
           {/** TODO: Сделать массив */}
-          <div
-            className={cn(
-              styles["projects-container"],
-              "d-flex",
-              "order-1",
-              "order-md-2"
-            )}
-          >
             {/** Project */}
             <Project
               image={{
@@ -109,7 +100,7 @@ export default function Content() {
               dateCreated="26.04.2019"
               seenCount={34}
             />
-          </div>
+
           {/** Projects maxCounter=4. if maxCounter < length => show this*/}
         </Projects>
         {/**Advantages массив */}

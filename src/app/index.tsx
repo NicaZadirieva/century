@@ -3,11 +3,13 @@ import Popup from '../features/Popup';
 import Content from '../layouts/Content';
 import Footer from '../layouts/Footer';
 import Header from '../layouts/Header';
+import Seo from '../widgets/Seo';
 
 
 export default function App() {
   return (
     <HelmetProvider>
+      <Seo title="century" description='Сайт для сельскохозяйственных услуг' canonical='' image='' schemaMarkup=''/>
       <div className="App">
         <Header />
         <Content />

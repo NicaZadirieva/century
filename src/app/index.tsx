@@ -9,7 +9,12 @@ import Seo from '../widgets/Seo';
 export default function App() {
   return (
     <HelmetProvider>
-      <Seo title="century" description='Сайт для сельскохозяйственных услуг' canonical='' image='' schemaMarkup=''/>
+      <Seo title="century" description='Сайт для сельскохозяйственных услуг' canonical='' image='' schemaMarkup={{
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Your Site',
+        url: 'https://yourdomain.com/',
+      }} />
       <div className="App">
         <Header />
         <Content />
